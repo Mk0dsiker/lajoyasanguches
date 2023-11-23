@@ -1,0 +1,84 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+/* CSS header */
+.header {
+    background-color: black;
+    width: 100%;
+    height: 80px;
+    padding: 10px 20px;
+    border-bottom: 4px solid #c4a800;
+
+    display: flex;
+    align-items: center;
+
+    /* position: fixed; */
+    /* top: 0; */
+}
+
+.header img {
+    width: 100px;
+}
+
+/* CSS section 1 */
+
+.section1 {
+    height: 500px;
+    background-image: url("/lajoyasanguches/assets/img/background_section1.png");
+    background-size: cover;
+    background-position: 0 -100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.s1_background {
+width: 375px;
+
+margin-top: 100px;
+position: relative;
+top: 0;
+z-index: -1;
+
+}
+
+.cover {
+    height: 200px;
+    background-image: url("/lajoyasanguches/assets/img/s1_cover.png");
+    background-size: cover;
+
+    padding: 0 80px;
+
+    display: flex;
+    align-items: center;
+
+    font-family: 'Vina Sans', sans-serif;
+    letter-spacing: -0.8px;
+    line-height: 1.4;
+    text-align: center;
+    /* font-weight: 700; */
+    /* text-transform: capitalize; */
+    
+}
+
+/* CSS section 2 */
+
+.section2 {
+    height: 500px;
+    background-image: url("/lajoyasanguches/assets/img/background_section2.png");
+    background-size: cover;
+    background-position: 0 -100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+

@@ -1,32 +1,73 @@
-/* CSS section 1 */
+/* CSS main */
 
-.section1 {
-    height: 500px;
-    background-image: url("/lajoyasanguches/assets/img/background_section1.png");
-    background-size: cover;
-    background-position: 0 -100px;
+.section_1 {
+    background-image: url("/lajoyasanguches/assets/img/background_section_1.png");
+    background-size: contain;
+    height: 650px;
+
+    /* transform: translateY(-50px); */
+}
+
+.section_2 {
+    background-image: url("/lajoyasanguches/assets/img/background_section_2.png");
+    background-size: contain;
+    height: 650px;
 
     display: flex;
     flex-direction: column;
+    /* align-items: center; */
     justify-content: flex-end;
+
+    /* transform: translateY(-50px); */
 }
 
-.s1_background {
-width: 375px;
+.section_3 {
+    background-image: url("/lajoyasanguches/assets/img/background_section_3.png");
+    background-size: contain;
+    height: 650px;
 
-margin-top: 100px;
-position: relative;
-top: 0;
-z-index: -1;
-
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
 }
 
-.cover {
-    height: 200px;
+.s3_top {
+    padding: 30px 20px 0 20px;
+
+    color: white;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.s3_logo {
+    width: 150px;
+}
+
+.s3_top h2 {
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.s3_top h4 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.s3_img {
+    transform: translateY(30px);
+}
+
+.s2_cover {
+    height: 180px;
     background-image: url("/lajoyasanguches/assets/img/s1_cover.png");
     background-size: cover;
-
-    padding: 0 80px;
+    
+    padding: 5px 80px;
 
     display: flex;
     align-items: center;
@@ -40,15 +81,18 @@ z-index: -1;
     
 }
 
-/* CSS section 2 */
-
-.section2 {
+.s3_cover {
     height: 500px;
-    background-image: url("/lajoyasanguches/assets/img/background_section2.png");
+    background-image: url("/lajoyasanguches/assets/img/s1_cover.png");
     background-size: cover;
-    background-position: 0 -100px;
+
+    padding: 20px 20px;
 
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: flex-end;
+
+    
+    
+    /* transform: translateY(-20px); */
 }

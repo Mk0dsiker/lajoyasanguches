@@ -102,7 +102,7 @@ bottom: 40%;
 
 .categories li:hover {
     background-color: #867302;
-    transform: scale(120%);
+    transform: scale(128%);
     transition: transform 300ms;
 
     user-select: none;

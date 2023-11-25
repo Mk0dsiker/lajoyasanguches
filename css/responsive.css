@@ -1,3 +1,143 @@
 @media only screen and (max-width: 480px){
+    .section_2 {
+        background-position: 0px -100px;
+    }
+
+    .s2_cover {
+        padding: 20px 20px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .section_2 {
+        background-position: 0px -100px;
+    }
+
+    .s2_cover {
+        padding: 20px 20px;
+    }
+}
+
+
+@media only screen and (min-width: 768px){
+
+    .section_1 {
+        background-position: 0 -130px;
+    }
+
+    .section_2 {
+        background-position: 0 750px;
+    }
+
+    .s2_cover {
+        padding: 40px 180px;
+        font-size: 30px;
+    }
+
+    .section_3 {
+        background-position: 0 750px;
+    }
+
+    .s3_top h2 {
+        font-size: 40px;
+    }
+
+    .s3_top h4 {
+        font-size: 30px;
+        padding: 0 30px;
+    }
+
+    .s3_img {
+        position: relative;
+        top: 50px;
+        transform: scale(1.2);
+    }
+
+    .s3_cover {
+        padding: 0 20px 0 20px;
+        
+    }
+
+    .s3_cover img {
+        width: 200px;
+    }
+
+    .menu_icon {
+        left: 90%;
+    }
+
+    .x {
+        right: 10%;
+    }
+
+    .categories li:hover {
+        transform: scale(112%); 
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .section_1 {
+        background-position: 0 800px;
+        border-bottom: 15px solid black;
+    }
+
+    .section_2 {
+        background-position: 0 890px;
+        border-bottom: 15px solid black;
+    }
+
+    .s3_top h4 {
+        padding: 0 80px;
+    }
+
+    .s3_img {
+        transform: scale(1.6);
+        top: 100px;
+    }
+
+    .s3_cover {
+        padding: 40px 40px 40px 40px;
+        
+    }
+
+    .menu {
+        width: 25%;
+    }
+
+    .menu_icon {
+        left: 90%;
+    }
+
+    .x {
+        right: 14%;
+    }
+
+}
+
+@media only screen and (min-width: 1280px){
+    .section_1 {
+        background-position: 0 1000px;
+        border-bottom: 20px solid black;
+    }
+
+    .section_2 {
+        background-position: 0 980px;
+        border-bottom: 20px solid black;
+    }
+
+
+    .s3_top h4 {
+        padding: 0 80px;
+    }
+
+    .s3_img {
+        transform: scale(1.6);
+        top: 100px;
+    }
+
+    .s3_cover {
+        padding: 40px 40px 40px 40px;
+        
+    }
 
 }

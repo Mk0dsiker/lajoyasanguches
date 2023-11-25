@@ -46,6 +46,22 @@ body {
 
 /* CSS menu */
 
+.menu-on {
+    height: 100%;
+    overflow: hidden;
+    
+}
+
+.menu-on::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    bottom: 0;
+}
+
+
 .menu {
     box-sizing: border-box;
     background-color: #c4a800;
@@ -94,10 +110,12 @@ bottom: 40%;
 }
 
 .x {
-    width: 20px;
-
     position: relative;
     top: 20px;
     right: 20%;
     cursor: pointer;
+}
+
+.x img {
+    width: 20px;
 }

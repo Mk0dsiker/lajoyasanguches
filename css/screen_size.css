@@ -5,7 +5,8 @@ body::before{
     font-weight: bold;
     position: fixed;
     top: 0;
-    right: 0;
+    right: 1rem;
+    z-index: 100;
 }
 
 @media (min-width: 576px) {

@@ -88,6 +88,7 @@
 
 .s3_cover {
     background-image: url("/lajoyasanguches/assets/img/cover.png");
+    /* commit -m */
     background-size: cover;
 
     padding: 40px 20px 40px 20px;

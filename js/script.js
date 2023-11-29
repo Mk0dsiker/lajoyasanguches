@@ -13,3 +13,11 @@ function menuOff() {
     
     
 }
+
+function mostrar_pagina(element) {
+    select = element.innerText;
+    console.log(select);
+    if(select == "Para compartir"){
+        console.log("Para compartir fue elegido");
+    }
+}

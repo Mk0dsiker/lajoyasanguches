@@ -49,7 +49,7 @@
     content: "";
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 2000px;
     background-color: rgba(0, 0, 0, .6);
     bottom: 0;
 }
@@ -100,6 +100,11 @@ bottom: 40%;
 
     user-select: none;
     
+}
+
+.categories a {
+    text-decoration: none;
+    color: white;
 }
 
 .x {

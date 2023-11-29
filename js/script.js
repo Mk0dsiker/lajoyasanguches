@@ -2,7 +2,7 @@ function menuOn() {
     var menu = document.querySelector(".menu");
     menu.style.transform = "none";
     document.querySelector('body').classList.add('menu-on');
-    
+        
     
 }
 

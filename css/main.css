@@ -81,8 +81,8 @@
 }
 
 .s3_top_img {
-    
-    transform: translateY(45px);
+    width: 240px;
+    transform: translateY(60px);
 }
 
 

@@ -1,0 +1,135 @@
+/* CSS main */
+.container {
+    
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-image: url("/lajoyasanguches/assets/img/background_beige.png");
+}
+
+.card {
+    width: 19rem;
+    margin: 0 auto;
+
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+
+    height: 160px;
+
+    padding: 20px;
+    position: relative;
+}
+
+.c_head {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+    top: 20px;
+
+}
+
+.c_title h4 {
+    
+    font-size: 28px;
+
+}
+
+.c_subt p {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 5px;
+}
+
+.c_body {
+    width: 150px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.c_content {
+    
+    font-size: 12px;
+    text-align: left;
+}
+
+.c_price {
+    font-size: 14px;
+}
+
+.c_img img {
+    width: 180px;
+    position: absolute;
+    top: 10%;
+    right: 0px;
+}
+
+
+/* CSS Segunta tarjeta */
+
+.c_head2 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    position: absolute;
+    top: 3rem;
+    right: 2rem;
+
+}
+
+.c_title2 h4 {
+    
+    font-size: 28px;
+
+}
+
+.c_subt2 p {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 5px;
+}
+
+.c_body2 {
+    width: 150px;
+    height: 80px;
+    position: absolute;
+    top: 5rem;
+    right: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.c_content2 {
+    
+    font-size: 12px;
+    text-align: center;
+}
+
+.c_price2 {
+    font-size: 14px;
+    
+}
+
+.c_img2 img {
+    width: 180px;
+    position: absolute;
+    top: 2rem;
+    left: 0;
+}

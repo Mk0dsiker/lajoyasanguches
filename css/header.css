@@ -102,6 +102,9 @@ bottom: 40%;
 .categories li:hover {
     background-color: black;
     color: white;
+
+    border-radius: 5px;
+    
     transform: scale(128%);
     transition: transform 300ms;
 

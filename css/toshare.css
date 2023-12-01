@@ -20,6 +20,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    padding: 10px 0 40px 0;
     
 }
 
@@ -103,6 +105,8 @@
 .c_price p {
     font-size: 14px;
     font-family: 'Andora';
+    margin-top: 10px;
+
 }
 
 .c_img img {
@@ -164,6 +168,8 @@
 .c_price2 p {
     font-size: 14px;
     font-family: 'Andora';
+    margin-top: 10px;
+
     
 }
 
@@ -227,6 +233,7 @@
 .c_price3 p {
     font-size: 14px;
     font-family: 'Andora';
+    margin-top: 10px;
     
 }
 
@@ -235,4 +242,12 @@
     position: absolute;
     top: 2rem;
     right: 0;
+}
+
+.h_divisor {
+    padding: 0 10px;
+}
+
+.h_divisor img {
+    width: 100%;
 }

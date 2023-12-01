@@ -5,4 +5,16 @@
     height: 100px;
     border-top: 4px solid #c4a800;
 
+    padding: 30px 10px;
+
+}
+
+.rowf { 
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.colf img {
+    width: 100px;
 }

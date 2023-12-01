@@ -102,3 +102,11 @@
     justify-content: flex-end;
 
 }
+
+/* Section 4 */
+
+.section_4 {
+    background-image: url("../assets/img/background_section_4.png");
+    background-size: contain;
+    height: 650px
+}

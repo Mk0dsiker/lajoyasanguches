@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Drustic Dialy';
+    src: url("../assets/fonts/DrusticDialy-Sans.otf");
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src:    
+            url("../assets/fonts/AvenirLTStd-Roman.otf"),
+
+            url("../assets/fonts/AvenirLTStd-Book.otf"),
+            
+            url("../assets/fonts/AvenirLTStd-Black.otf");
+}
+
+@font-face {
+    font-family: 'Andora';
+    src: url("../assets/fonts/DrusticDialy-ScriptHalftone.otf");
+}

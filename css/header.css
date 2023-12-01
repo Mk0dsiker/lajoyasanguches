@@ -17,7 +17,7 @@
     background-color: black;
     
     padding: 10px 20px;
-    border-bottom: 4px solid #c4a800;
+    border-bottom: 4px solid #ffbe00;
 
     display: flex;
     align-items: center;
@@ -57,7 +57,7 @@
 
 .menu {
     
-    background-color: #c4a800;
+    background-color: #ffbe00;
     /* background-color: rgba(0, 0, 0, .6); */
     
     height: 100%;
@@ -91,10 +91,17 @@ line-height: 2.5;
 
 position: relative;
 bottom: 40%;
+
+
+}
+
+.categories li {
+    font-family: 'Drustic Dialy';
 }
 
 .categories li:hover {
-    background-color: #867302;
+    background-color: black;
+    color: white;
     transform: scale(128%);
     transition: transform 300ms;
 
@@ -105,6 +112,7 @@ bottom: 40%;
 .categories a {
     text-decoration: none;
     color: white;
+    font-family: 'Drustic Dialy';
 }
 
 .x {

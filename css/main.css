@@ -32,11 +32,12 @@
     align-items: center;
     justify-content: center;
 
-    font-family: 'Vina Sans', sans-serif;
+    font-family: 'Drustic Dialy';
     letter-spacing: -0.8px;
     line-height: 1.4;
     text-align: center;
     font-size: 20px;
+    
     
 }
 
@@ -67,10 +68,11 @@
 }
 
 .s3_top h2 {
-    color: #c4a800;
+    color: #ffbe00;
     font-size: 26px;
     text-transform: uppercase;
     margin-top: 20px;
+    font-family: 'Drustic Dialy';
 }
 
 .s3_top h4 {
@@ -78,6 +80,8 @@
     font-size: 16px;
     text-align: center;
     margin-top: 10px;
+
+    font-family: 'Avenir';
 }
 
 .s3_top_img {

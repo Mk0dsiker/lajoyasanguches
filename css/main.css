@@ -107,6 +107,6 @@
 
 .section_4 {
     background-image: url("../assets/img/background_section_4.png");
-    background-size: contain;
+    background-size: cover;
     height: 650px
 }

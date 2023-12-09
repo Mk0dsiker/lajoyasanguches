@@ -64,12 +64,12 @@
 @media only screen and (min-width: 1024px){
     .section_1 {
         background-position: 0 800px;
-        border-bottom: 15px solid black;
+        border-bottom: 15px solid #ffbe00;
     }
 
     .section_2 {
         background-position: 0 890px;
-        border-bottom: 15px solid black;
+        border-bottom: 15px solid #ffbe00;
     }
 
     .s3_top h4 {
@@ -103,14 +103,14 @@
 @media only screen and (min-width: 1280px){
     .section_1 {
         background-position: 0 1000px;
-        border-bottom: 20px solid black;
+        border-bottom: 20px solid #ffbe00;
         
     }
 
     .section_2 {
         
         background-position: 0 980px;
-        border-bottom: 20px solid black;
+        border-bottom: 20px solid #ffbe00;
     }
 
     .s3_top h4 {
@@ -132,12 +132,12 @@
 @media only screen and (min-width: 1920px){
     .section_1 {
         background-position: 0 1200px;
-        border-bottom: 20px solid black;
+        border-bottom: 20px solid #ffbe00;
     }
 
     .section_2 {
         background-position: 0 1380px;
-        border-bottom: 20px solid black;
+        border-bottom: 20px solid #ffbe00;
     }
 
     .s2_cover {

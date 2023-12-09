@@ -2,8 +2,10 @@
 
 /* Section 1 */
 .section_1 {
-    background-image: url("/lajoyasanguches/assets/img/background_section_1b.png");
-    background-size: cover;
+    /* background-image: url("/lajoyasanguches/assets/img/background_section_1b.png"); */
+    /* background-size: cover; */
+
+    background-color: black;
     height: 650px;
 
     border-bottom: 5px solid #ffbe00;
@@ -13,6 +15,13 @@
     justify-content: space-between;
 
 }
+
+.bg_section_1 {
+    height: inherit;
+    margin: 0 auto;
+
+}
+
 .corner_ul {
     display: flex;
     align-items: flex-start;

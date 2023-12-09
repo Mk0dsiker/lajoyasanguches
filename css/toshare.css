@@ -8,8 +8,9 @@
     flex-direction: column;
     align-items: center;
     
-    background-image: url("/lajoyasanguches/assets/img/background_beige.png");
-    background-size: cover;
+    background-image: url("/lajoyasanguches/assets/img/background_beige2.png");
+    background-size: contain;
+    background-repeat: repeat-y;
 }
 
 .page_header {
@@ -22,6 +23,8 @@
     justify-content: space-between;
 
     padding: 10px 0 40px 0;
+
+    
     
 }
 

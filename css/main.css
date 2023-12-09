@@ -2,7 +2,7 @@
 
 /* Section 1 */
 .section_1 {
-    background-image: url("/lajoyasanguches/assets/img/background_section_1.png");
+    background-image: url("/lajoyasanguches/assets/img/background_section_1b.png");
     background-size: cover;
     height: 650px;
 
@@ -80,7 +80,7 @@
 /* Section 3 */
 
 .section_3 {
-    background-image: url("/lajoyasanguches/assets/img/background_section_3.png");
+    background-image: url("/lajoyasanguches/assets/img/background_section_3b.png");
     background-size: cover;
     height: 650px;
 
@@ -146,7 +146,7 @@
 /* Section 4 */
 
 .section_4 {
-    background-image: url("../assets/img/background_section_4.png");
+    background-image: url("../assets/img/background_section_4b.png");
     background-size: cover;
     height: 650px
 }

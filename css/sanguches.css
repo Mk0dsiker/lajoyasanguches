@@ -1,0 +1,541 @@
+/* CSS main */
+
+body {
+    background-color: black;
+}
+
+main {
+    position: relative;
+}
+
+.container {
+    width: 375px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 30px 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-image: url("/lajoyasanguches/assets/img/background_black2.png");
+    background-size: cover;
+    /* background-repeat: repeat-y; */
+
+    position: relative;
+}
+
+
+/* CSS Burger top */
+
+.sanguche_head {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.sanguche_title h4 {
+    
+    font-size: 48px;
+    font-family: 'Andora';
+    color: #ffbe00;
+
+}
+
+.sanguche_subt {
+    display: flex;
+}
+
+.sanguche_subt p {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 5px;
+    font-family: 'Drustic Dialy';
+    color: white;
+    
+}
+
+.card {
+    width: 19rem;
+    margin: 0 auto;
+    border-radius: 5px;
+
+    height: 160px;
+
+    padding: 15px;
+
+    position: relative;
+}
+
+.card8 {
+    width: 19rem;
+    margin: 0 auto;
+    border-radius: 5px;
+
+    height: 160px;
+    margin-bottom: 9rem;
+    padding: 15px;
+
+    position: relative;
+}
+
+/* CSS Primera columna */
+.c_head {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    position: absolute;
+    top: 2rem;
+
+}
+
+.c_head5 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    position: absolute;
+    top: 2rem;
+
+}
+
+.c_title h4 {
+    
+    font-size: 28px;
+    font-family: 'Drustic Dialy';
+    color: #ffbe00;
+
+}
+
+.c_subt p {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 5px;
+
+    font-family: 'Andora';
+    color: white;
+}
+
+.c_body {
+    width: 150px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.c_content p {
+    
+    font-size: 10px;
+    text-align: left;
+    font-family: 'Avenir';
+    color: white;
+}
+
+.c_price p {
+    font-size: 14px;
+    font-family: 'Andora';
+    color: white;
+    margin-top: 10px;
+
+}
+
+.c_img img {
+    width: 180px;
+    position: absolute;
+    bottom: 1rem;
+    right: 0px;
+}
+
+
+/* CSS Segunta columna */
+
+.c_head2 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+
+}
+
+
+.c_head4 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    position: absolute;
+    top: 2rem;
+    right: -1rem;
+
+}
+
+.c_head6 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+
+}
+
+.c_head8 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+}
+
+.c_headc {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    position: absolute;
+    top: 3rem;
+    left: 0rem;
+
+}
+
+.c_title2 h4 {
+    
+    font-size: 24px;
+    font-family: 'Drustic Dialy';
+    color:  #ffbe00;
+
+}
+
+.c_titlec h4 {
+    
+    font-size: 24px;
+    font-family: 'Andora';
+    color:  #ffbe00;
+
+}
+
+.c_subt2 p {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 5px;
+    font-family: 'Andora';
+    color: white;
+}
+
+.c_body2 {
+    width: 150px;
+    height: 80px;
+    position: absolute;
+    bottom: 2rem;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.c_bodyc {
+    width: 150px;
+    height: 80px;
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.c_content2 p {
+    
+    font-size: 12px;
+    text-align: left;
+    font-family: 'Avenir';
+    color: white;
+}
+
+.c_price2 p {
+    font-size: 14px;
+    font-family: 'Andora';
+    color: white;
+    margin-top: 10px;
+
+    
+}
+
+.c_img2 img {
+    width: 180px;
+    position: absolute;
+    top: 2rem;
+    left: 0;
+}
+
+.c_img6 img {
+    width: 180px;
+    position: absolute;
+    top: 2rem;
+    left: 0;
+}
+
+.c_imgc img {
+    width: 180px;
+    position: absolute;
+    top: 2rem;
+    right: 0;
+}
+
+
+
+/* CSS Tercera columna */
+
+.c_head3 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+
+}
+
+.c_head7 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    position: absolute;
+    top: 0;
+    left: 1rem;
+
+}
+
+
+.c_title3 h4 {
+    
+    font-size: 28px;
+    font-family: 'Drustic Dialy';
+    color: #ffbe00;
+
+}
+
+.c_subt3 p {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 5px;
+    font-family: 'Drustic Dialy';
+    color: #ffbe00;
+}
+
+.c_body3 {
+    width: 150px;
+    height: 80px;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+
+
+.c_content3 p {
+    
+    font-size: 10px;
+    text-align: left;
+    font-family: 'Avenir';
+    color: white;
+}
+
+.c_price3 p {
+    font-size: 14px;
+    font-family: 'Andora';
+    color: white;
+    margin-top: 10px;
+    
+}
+
+.c_img3 img {
+    width: 160px;
+    position: absolute;
+    top: 1rem;
+    right: 0;
+}
+
+.c_img7 img {
+    width: 170px;
+    position: absolute;
+    top: 3rem;
+    right: 0;
+}
+/* Tarjeta columna, contiene flex los objetos dentro se comportan como bloques */
+.card2 {
+    width: 11rem;
+    margin: 0 auto;
+
+    /* background-color: white; */
+    /* border: 1px solid black; */
+    border-radius: 5px;
+
+    /* height: 160px; */
+
+    /* padding: 20px; */
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* CSS Cuarta columna */
+
+.card_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.c_head6 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+
+}
+
+.c_title6 h4 {
+    
+    font-size: 26px;
+    font-family: 'Drustic Dialy';
+    color: #ffbe00;
+
+}
+
+.c_subt6 p {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 5px;
+    font-family: 'Drustic Dialy';
+    color: white;
+}
+
+.c_body6 {
+    width: 150px;
+    /* height: 80px; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.c_content6 p {
+    
+    font-size: 10px;
+    text-align: left;
+    font-family: 'Avenir';
+    color: white;
+}
+
+.c_price6 p {
+    font-size: 14px;
+    font-family: 'Andora';
+    margin-top: 10px;
+    color: white;
+    
+}
+
+.c_img6 img {
+    width: 160px;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    
+}
+
+
+/* CSS divisor */
+
+.v_divisor img {
+    height: 200px;
+    padding: 0 10px;
+
+}
+
+.h_divisor {
+    padding: 0 10px;
+}
+
+.h_divisor img {
+    width: 100%;
+}
+
+.topcorners {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gcorner_top {
+    width: 60px;
+}
+
+.bottomcorners {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: absolute;
+    bottom: 12rem;
+}
+
+.bottomcorners img {
+    width: 60px;
+}
+
+/* CSS cover */
+.sanguche_cover {
+    background-image: url("/lajoyasanguches/assets/img/cover_2.png");
+    /* commit -m */
+    background-size: cover;
+    width: 100%;
+
+    position: absolute;
+    bottom: 0;
+
+}

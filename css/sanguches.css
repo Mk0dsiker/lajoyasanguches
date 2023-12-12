@@ -529,12 +529,18 @@ main {
 }
 
 /* CSS cover */
+.sanguche_container {
+    position: relative;
+    width: 400px;
+    margin: 0 auto;
+}
+
 .sanguche_cover {
     background-image: url("/lajoyasanguches/assets/img/cover_2.png");
-    /* commit -m */
     background-size: cover;
-    width: 100%;
 
+    width: 400px;
+    
     position: absolute;
     bottom: 0;
 

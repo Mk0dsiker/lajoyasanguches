@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-    width: 375px;
+    width: 400px;
     margin: 0 auto;
     margin-top: 100px;
 
@@ -51,7 +51,7 @@ body {
 }
 
 /* CSS Modos de tarjeta */
-/* Tarjeta contenedor, objetos flotan en ella utiliando positions, sin flex */
+/* Tarjeta contenedor, objetos flotan en ella utiliando positions, sin flex  Utilizado en col_a*/
 .card {
     width: 19rem;
     margin: 0 auto;
@@ -65,7 +65,7 @@ body {
     padding: 20px;
     position: relative;
 }
-/* Tarjeta columna, contiene flex los objetos dentro se compartonan como bloques */
+/* Tarjeta columna, contiene flex los objetos dentro se comportan como bloques */ /* Utilizado dentro de col_b, disposicion de tarjetas en pareja, utilizado tambien en col_c, en flex alineado con su propia imagen.*/
 .card2 {
     width: 11rem;
     margin: 0 auto;

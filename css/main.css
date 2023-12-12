@@ -2,6 +2,7 @@
 
 .container {
     background-color: black;
+        
 }
 
 /* Section 1 */
@@ -10,8 +11,8 @@
     /* background-size: cover; */
 
     /* background-color: black; */
-    width: 375px;
-    height: 650px;
+    width: 400px;
+    /* height: 650px; */
     margin: 0 auto;
 
     display: flex;
@@ -20,36 +21,25 @@
 
 }
 
-.divisor {
-    border-bottom: 5px solid #ffbe00;
-}
-
-.bg_section_1 {
-    height: inherit;
-    width: 375px;
-    
-
-}
-
 /* Section 2 */
 
 .section_2 {
-    width: 375px;
+    width: 400px;
     margin: 0 auto;
     
     position: relative;
 }
 
 .bg_section_2 {
-    width: 375px;
+    width: 100%;
 }
 
 .s2_cover {
     background-image: url("../assets/img/cover.png");
     background-size: cover;
     /* background-repeat: no-repeat; */
-
-    padding: 30px 0;
+    /* height: 100px; */
+    padding: 30px 5px;
 
     position: absolute;
     bottom: 0;
@@ -69,19 +59,17 @@
 
 .section_3 {
     background-image: url("/lajoyasanguches/assets/img/background_section_3b.png");
-    background-size: cover;
+    background-size: contain;
     height: 650px;
 
-    width: 375px;
+    width: 400px;
     margin: 0 auto;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-    position: relative;
-
-    
+    position: relative;   
 
 }
 
@@ -108,7 +96,7 @@
 
 .s3_top h4 {
     color: white;
-    font-size: 16px;
+    font-size: 15px;
     text-align: center;
     margin-top: 10px;
 
@@ -117,16 +105,15 @@
 
 .s3_top_img {
     width: 280px;
-    transform: translateY(50px);
+    transform: translateY(70px);
 }
 
 
 .s3_cover {
     background-image: url("/lajoyasanguches/assets/img/cover.png");
-    /* commit -m */
     background-size: cover;
 
-    padding: 40px 10px 0 10px;
+    padding: 40px 10px 10px 10px;
 
     display: flex;
     align-items:flex-start;
@@ -141,9 +128,16 @@
 
 .section_4 {
     background-image: url("../assets/img/background_section_4b.png");
-    background-size: cover;
-    height: 650px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 700px;
 
-    width: 375px;
+    width: 400px;
     margin: 0 auto;
+}
+
+
+/* CSS divisores */
+.divisor {
+    border-bottom: 5px solid #ffbe00;
 }

@@ -60,7 +60,7 @@
 .section_3 {
     background-image: url("/lajoyasanguches/assets/img/background_section_3b.png");
     background-size: contain;
-    height: 650px;
+    height: 700px;
 
     width: 400px;
     margin: 0 auto;
@@ -86,6 +86,12 @@
     width: 100px;
 }
 
+.s3_ingredientes {
+    width: 400px;
+    position: absolute;
+    top: 14rem;
+}
+
 .s3_top h2 {
     color: #ffbe00;
     font-size: 26px;
@@ -99,6 +105,7 @@
     font-size: 15px;
     text-align: center;
     margin-top: 10px;
+    margin-bottom: 60px;
 
     font-family: 'Avenir';
 }

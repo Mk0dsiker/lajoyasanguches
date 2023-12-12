@@ -22,6 +22,8 @@ function mostrar_pagina(element) {
     }
 }
 
+var idioma = 0; /* 0 = español, 1 = ingles */
+
 function cambiar_idioma_ingles(){
     document.querySelector(".categories").innerHTML = `<li><a href="index.html" target="_self">Home</a></li>
     <li><a href="toshare.html" target="_self">To Share</a></li>
@@ -34,6 +36,9 @@ function cambiar_idioma_ingles(){
 
     document.querySelector(".en").style = "background-color: black;"
     document.querySelector(".es").style = "background-color: #ffbe00;"
+
+    idioma = 1;
+    console.log("Idioma actual: Ingles");
     
 }
 
@@ -49,4 +54,13 @@ function cambiar_idioma_español(){
 
     document.querySelector(".es").style = "background-color: black;"
     document.querySelector(".en").style = "background-color: #ffbe00;"
+
+    idioma = 0;
+    console.log("Idioma actual: Español ");
+}
+
+if(idioma == 0){
+    cambiar_idioma_español();
+} else if(idioma == 1){
+    cambiar_idioma_ingles();
 }

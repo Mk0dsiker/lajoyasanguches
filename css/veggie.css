@@ -31,7 +31,7 @@ body {
 
 /* CSS Burger top */
 
-.salads_head {
+.veggie_head {
 
     display: flex;
     flex-direction: column;
@@ -43,7 +43,7 @@ body {
     width: 180px;
 }
 
-.salads_title h4 {
+.veggie_title h4 {
     
     font-size: 48px;
     font-family: 'Drustic Dialy';
@@ -51,7 +51,7 @@ body {
 
 }
 
-.salads_subt h4 {
+.veggie_subt h4 {
     font-size: 44px;
     font-family: 'Andora';
     color: green;

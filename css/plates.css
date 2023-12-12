@@ -79,6 +79,21 @@ body {
     position: relative;
 }
 
+.card3 {
+    width: 19rem;
+    margin: 0 auto;
+    margin-bottom: 180px;
+
+    /* background-color: white; */
+    /* border: 1px solid black; */
+    border-radius: 5px;
+
+    height: 160px;
+
+    padding: 20px;
+    position: relative;
+}
+
 
 
 /* CSS Segunta columna */
@@ -352,15 +367,61 @@ body {
 }
 
 
+/* CSS Menu peques */
 
-/* CSS Logo Ahumada White */
-.logo_ahumada_white {
+.menu_peques {
+    background-image: url("../assets/img/cover_2.png");
+    background-size: cover;
     position: absolute;
-    top: 46%;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 40px 20px 20px 20px;
 }
 
-.logo_ahumada_white img {
-    width: 100px;
+.mp_head h4 {
+    font-family: 'Drustic Dialy';
+    color: #ffbe00;
+    font-size: 28px;
 }
 
+.mp_head h2 {
+    font-family: 'Drustic Dialy';
+    color: white;
+    font-size: 18px;
+}
 
+.mp_body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.mp_head h4 {
+    font-family: 'Drustic Dialy';
+    color: #ffbe00;
+    font-size: 28px;
+}
+
+.mp_content p {
+    margin-top: 10px;
+    font-family: 'Avenir';
+    color: white;
+    font-size: 12px;
+}
+
+.mp_price p {
+    margin-top: 10px;
+    font-family: 'Andora';
+    color: white;
+    font-size: 14px;
+}
+
+.mp_divisor img {
+    height: 140px;
+    padding: 0 10px; 
+}

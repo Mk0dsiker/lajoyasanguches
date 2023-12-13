@@ -74,7 +74,7 @@ body {
     /* height: 160px; */
 
     /* padding: 20px; */
-    position: relative;
+    /* position: relative; */
 
     display: flex;
     flex-direction: column;
@@ -347,7 +347,7 @@ body {
 
 .c_img7 img {
     width: 180px;
-    transform: translateY(-30px);
+    /* transform: translateY(-30px); */
     margin-left: 20px;
     
 }

@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-    width: 400px;
+    width: 375px;
     margin: 0 auto;
     margin-top: 100px;
 
@@ -27,16 +27,12 @@ body {
     justify-content: space-between;
 
     padding: 10px 0 40px 0;
-
-    
-    
 }
 
 .page_title h2 {
     font-size: 40px;
     font-family: 'Drustic Dialy';
     margin-left: 20px;
-    
 }
 
 .page_title h4 {
@@ -50,34 +46,250 @@ body {
     margin-right: 20px;
 }
 
+/* CSS Modos de Fila */
+
+.row_a {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* CSS Modos de tarjeta */
-/* Tarjeta contenedor, objetos flotan en ella utiliando positions, sin flex  Utilizado en col_a*/
+/* Tarjeta contenedor, objetos flotan en ella utiliando positions, sin flex  Utilizado en row_a*/
 .card {
-    width: 19rem;
-    margin: 0 auto;
+    width: 100%;
+    height: 180px;
 
-    /* background-color: white; */
-    /* border: 1px solid black; */
-    border-radius: 5px;
-
-    height: 160px;
-
-    padding: 20px;
     position: relative;
 }
-/* Tarjeta columna, contiene flex los objetos dentro se comportan como bloques */ /* Utilizado dentro de col_b, disposicion de tarjetas en pareja, utilizado tambien en col_c, en flex alineado con su propia imagen.*/
+
+/* CSS card primera version */
+.c_head, .c_head2 {
+    width: 150px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;    
+}
+
+.c_head {
+    top: 0;
+    left: 5%;
+}
+
+.c_head2 {    
+    top: 15%;
+    right: 5%;    
+}
+
+.c_title h4, .c_title2 h4 {
+    
+    font-size: 28px;
+    font-family: 'Drustic Dialy';
+
+}
+.c_subt p {
+    font-family: 'Drustic Dialy';
+}
+
+.c_body, .c_body2, .c_body9 {
+    width: 150px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+}
+
+.c_body {
+    bottom: 15%;
+    left: 5%;    
+}
+
+.c_body2 {
+    bottom: 15%;
+    right: 5%;    
+}
+
+#trilogia .c_body{
+    bottom: 4%;
+    left: 4%;    
+}
+
+.c_content p, .c_content2 p {
+    text-align: center;
+
+    font-size: 12px;
+    font-family: 'Avenir';
+}
+
+.c_price p, .c_price2 p {
+    margin-top: 10px;
+
+    font-size: 16px;
+    font-family: 'Andora';
+    
+
+}
+
+.c_img {
+    position: absolute;
+    top: 4%;
+    right: 2%;
+}
+
+#trilogia .c_img{
+    top: 0%;
+    right: 2%;
+}
+
+.c_img img, .c_img2 img {
+    width: 200px;
+    
+}
+
+.c_img2 {
+    position: absolute;
+    top: 4%;
+    left: 4%;
+}
+
+
+/* CSS card tercera version */
+
+.c_head3 {
+    width: 150px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+    top: -4%;
+    left: 2%
+}
+
+.c_title3 h4 {
+    margin-left: 25%;
+    
+    font-size: 32px;
+    font-family: 'Drustic Dialy';
+
+}
+
+.c_subt3 p {
+    font-size: 24px;
+    font-family: 'Drustic Dialy';
+}
+
+.c_body3 {
+    width: 160px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+
+    position: absolute;
+    bottom: -4%;
+    right: 4%;
+}
+
+.c_content3 p {
+    
+    font-size: 12px;
+    text-align: right;
+    font-family: 'Avenir';
+}
+
+.c_price3 p {
+    margin-top: 10px;
+
+    font-size: 14px;
+    font-family: 'Andora';
+}
+
+.c_img3 {
+    position: absolute;
+    bottom: -2%;
+    left: 0%;
+}
+
+.c_img3 img {
+    width: 220px;    
+}
+
+/* CSS card cuarta version */
+#patrimonial.card{
+    height: 240px;
+}
+
+
+.c_head10 {
+    width: 150px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+
+.c_head10 img {
+    width: 270px;
+}
+
+.c_body10 {
+    width: 150px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    position: absolute;
+    bottom: 0%;
+    left: 4%;
+}
+
+.c_content10 p {
+    
+    font-size: 12px;
+    text-align: left;
+    font-family: 'Avenir';
+}
+
+.c_price10 p {
+    font-size: 16px;
+    font-family: 'Andora';
+    margin-top: 10px;
+
+    
+}
+
+.c_img10 img {
+    width: 220px;
+    position: absolute;
+    top: 0rem;
+    right: 0;
+}
+
+
+/* Tarjeta columna, contiene flex los objetos dentro se comportan como bloques */ /* Utilizado dentro de row_b: disposicion de tarjetas en pareja, utilizado tambien en row_c, en flex alineado con su propia imagen.*/
 .card2 {
     width: 11rem;
     margin: 0 auto;
 
-    /* background-color: white; */
-    /* border: 1px solid black; */
     border-radius: 5px;
-
-    /* height: 160px; */
-
-    /* padding: 20px; */
-    /* position: relative; */
 
     display: flex;
     flex-direction: column;
@@ -92,193 +304,6 @@ body {
     justify-content: space-between;
 }
 
-/* CSS Primera columna */
-.c_head {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    position: absolute;
-    top: 20px;
-
-}
-
-.c_title h4 {
-    
-    font-size: 28px;
-    font-family: 'Drustic Dialy';
-
-}
-
-.c_subt p {
-    font-size: 14px;
-    font-weight: 700;
-    padding: 5px;
-
-    font-family: 'Drustic Dialy';
-}
-
-.c_body {
-    width: 150px;
-    height: 80px;
-    position: absolute;
-    top: 50%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.c_content p {
-    
-    font-size: 10px;
-    text-align: left;
-    font-family: 'Avenir';
-}
-
-.c_price p {
-    font-size: 14px;
-    font-family: 'Andora';
-    margin-top: 10px;
-
-}
-
-.c_img img {
-    width: 220px;
-    position: absolute;
-    top: 10%;
-    right: 0px;
-}
-
-
-/* CSS Segunta columna */
-
-.c_head2 {
-
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-
-    position: absolute;
-    top: 3rem;
-    right: 3rem;
-
-}
-
-.c_title2 h4 {
-    
-    font-size: 28px;
-    font-family: 'Drustic Dialy';
-
-}
-
-.c_subt2 p {
-    font-size: 14px;
-    font-weight: 700;
-    padding: 5px;
-    font-family: 'Drustic Dialy';
-}
-
-.c_body2 {
-    width: 150px;
-    height: 80px;
-    position: absolute;
-    top: 5rem;
-    right: 1rem;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.c_content2 p {
-    
-    font-size: 12px;
-    text-align: center;
-    font-family: 'Avenir';
-}
-
-.c_price2 p {
-    font-size: 14px;
-    font-family: 'Andora';
-    margin-top: 10px;
-
-    
-}
-
-.c_img2 img {
-    width: 180px;
-    position: absolute;
-    top: 2rem;
-    left: 0;
-}
-
-
-
-/* CSS Tercera columna */
-
-.c_head3 {
-
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-
-    position: absolute;
-    top: 1rem;
-    left: 3rem;
-
-}
-
-.c_title3 h4 {
-    
-    font-size: 28px;
-    font-family: 'Drustic Dialy';
-
-}
-
-.c_subt3 p {
-    font-size: 14px;
-    font-weight: 700;
-    padding: 5px;
-    font-family: 'Drustic Dialy';
-}
-
-.c_body3 {
-    width: 150px;
-    height: 80px;
-    position: absolute;
-    top: 5rem;
-    left: 1rem;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.c_content3 p {
-    
-    font-size: 10px;
-    text-align: left;
-    font-family: 'Avenir';
-}
-
-.c_price3 p {
-    font-size: 14px;
-    font-family: 'Andora';
-    margin-top: 10px;
-    
-}
-
-.c_img3 img {
-    width: 200px;
-    position: absolute;
-    top: 2rem;
-    right: 0;
-}
 
 /* CSS Divisores */
 
@@ -297,7 +322,7 @@ body {
 }
 
 /* CSS Cuarta columna (dos productos en ella) */
-.col_b {
+.row_b {
     display: flex;
     align-items: center;
     /* justify-content: space-between; */
@@ -413,7 +438,7 @@ body {
 
 /* CSS Quinta Columna */
 
-.col_c{
+.row_c{
     display: flex;
     align-items: center;
     
@@ -531,19 +556,18 @@ body {
 /* Segunda tarjeta pequeña, columa 6 */
 
 .c_head8{
+    width: 150;
 
     display: flex;
     flex-direction: column;
-    align-items: start;
-
+    align-items: center;
+    justify-content: center;
 
 }
 
-.c_title8 h4 {
-    
+.c_title8 h4 {    
     font-size: 32px;
     font-family: 'Drustic Dialy';
-
 }
 
 .c_subt8 p {
@@ -583,138 +607,6 @@ body {
     /* transform: translateY(-10px); */
     margin-right: 20px;
     
-}
-
-/* CSS Septima Columna */
-
-.c_head9 {
-
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-
-}
-
-.c_title9 h4 {
-    
-    font-size: 36px;
-    font-family: 'Drustic Dialy';
-
-}
-
-.c_subt9 p {
-    font-size: 18px;
-    font-weight: 700;
-    padding: 5px;
-    font-family: 'Drustic Dialy';
-}
-
-.c_body9 {
-    width: 150px;
-    height: 80px;
-    position: absolute;
-    top: 2rem;
-    right: 1rem;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-end;
-}
-
-.c_content9 p {
-    
-    font-size: 10px;
-    text-align: right;
-    font-family: 'Avenir';
-}
-
-.c_price9 p {
-    font-size: 14px;
-    font-family: 'Andora';
-    margin-top: 10px;
-
-    
-}
-
-.c_img9 img {
-    width: 220px;
-    position: absolute;
-    top: 6rem;
-    left: 0;
-}
-
-/* CSS Octava columna */
-
-
-.c_head10 {
-
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-
-}
-
-.c_head10 img {
-    width: 250px;
-}
-
-.c_title10 h4 {
-    
-    font-size: 36px;
-    font-family: 'Drustic Dialy';
-
-}
-
-.c_subt10 p {
-    font-size: 18px;
-    font-weight: 700;
-    padding: 5px;
-    font-family: 'Drustic Dialy';
-}
-
-.c_body10 {
-    width: 150px;
-    height: 80px;
-    position: absolute;
-    top: 6rem;
-    left: 1rem;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    
-}
-
-.c_content10 p {
-    
-    font-size: 10px;
-    text-align: left;
-    font-family: 'Avenir';
-}
-
-.c_price10 p {
-    font-size: 14px;
-    font-family: 'Andora';
-    margin-top: 10px;
-
-    
-}
-
-.c_img10 img {
-    width: 220px;
-    position: absolute;
-    top: 0rem;
-    right: 0;
 }
 
 /* CSS Novena columna */

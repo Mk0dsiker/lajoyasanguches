@@ -6,12 +6,9 @@ body {
 .container {
     width: 375px;
     margin: 0 auto;
+    
     margin-top: 100px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
     background-image: url("/lajoyasanguches/assets/img/background_beige2.png");
     background-size: contain;
     background-repeat: repeat-y;
@@ -46,265 +43,6 @@ body {
     margin-right: 20px;
 }
 
-/* CSS Modos de Fila */
-
-.row_a {
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* CSS Modos de tarjeta */
-/* Tarjeta contenedor, objetos flotan en ella utiliando positions, sin flex  Utilizado en row_a*/
-.card {
-    width: 100%;
-    height: 180px;
-
-    position: relative;
-}
-
-/* CSS card primera version */
-.c_head, .c_head2 {
-    width: 150px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    position: absolute;    
-}
-
-.c_head {
-    top: 0;
-    left: 5%;
-}
-
-.c_head2 {    
-    top: 15%;
-    right: 5%;    
-}
-
-.c_title h4, .c_title2 h4 {
-    
-    font-size: 28px;
-    font-family: 'Drustic Dialy';
-
-}
-.c_subt p {
-    font-family: 'Drustic Dialy';
-}
-
-.c_body, .c_body2, .c_body9 {
-    width: 150px;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    position: absolute;
-}
-
-.c_body {
-    bottom: 15%;
-    left: 5%;    
-}
-
-.c_body2 {
-    bottom: 15%;
-    right: 5%;    
-}
-
-#trilogia .c_body{
-    bottom: 4%;
-    left: 4%;    
-}
-
-.c_content p, .c_content2 p {
-    text-align: center;
-
-    font-size: 12px;
-    font-family: 'Avenir';
-}
-
-.c_price p, .c_price2 p {
-    margin-top: 10px;
-
-    font-size: 16px;
-    font-family: 'Andora';
-    
-
-}
-
-.c_img {
-    position: absolute;
-    top: 4%;
-    right: 2%;
-}
-
-#trilogia .c_img{
-    top: 0%;
-    right: 2%;
-}
-
-.c_img img, .c_img2 img {
-    width: 200px;
-    
-}
-
-.c_img2 {
-    position: absolute;
-    top: 4%;
-    left: 4%;
-}
-
-
-/* CSS card tercera version */
-
-.c_head3 {
-    width: 150px;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    position: absolute;
-    top: -4%;
-    left: 2%
-}
-
-.c_title3 h4 {
-    margin-left: 25%;
-    
-    font-size: 32px;
-    font-family: 'Drustic Dialy';
-
-}
-
-.c_subt3 p {
-    font-size: 24px;
-    font-family: 'Drustic Dialy';
-}
-
-.c_body3 {
-    width: 160px;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-
-    position: absolute;
-    bottom: -4%;
-    right: 4%;
-}
-
-.c_content3 p {
-    
-    font-size: 12px;
-    text-align: right;
-    font-family: 'Avenir';
-}
-
-.c_price3 p {
-    margin-top: 10px;
-
-    font-size: 14px;
-    font-family: 'Andora';
-}
-
-.c_img3 {
-    position: absolute;
-    bottom: -2%;
-    left: 0%;
-}
-
-.c_img3 img {
-    width: 220px;    
-}
-
-/* CSS card cuarta version */
-#patrimonial.card{
-    height: 240px;
-}
-
-
-.c_head10 {
-    width: 150px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-
-    position: absolute;
-    top: 2%;
-    left: 2%;
-}
-
-.c_head10 img {
-    width: 270px;
-}
-
-.c_body10 {
-    width: 150px;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    
-    position: absolute;
-    bottom: 0%;
-    left: 4%;
-}
-
-.c_content10 p {
-    
-    font-size: 12px;
-    text-align: left;
-    font-family: 'Avenir';
-}
-
-.c_price10 p {
-    font-size: 16px;
-    font-family: 'Andora';
-    margin-top: 10px;
-
-    
-}
-
-.c_img10 img {
-    width: 220px;
-    position: absolute;
-    top: 0rem;
-    right: 0;
-}
-
-
-/* Tarjeta columna, contiene flex los objetos dentro se comportan como bloques */ /* Utilizado dentro de row_b: disposicion de tarjetas en pareja, utilizado tambien en row_c, en flex alineado con su propia imagen.*/
-.card2 {
-    width: 11rem;
-    margin: 0 auto;
-
-    border-radius: 5px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.card3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
 /* CSS Divisores */
 
 .h_divisor {
@@ -318,360 +56,340 @@ body {
 .v_divisor img {
     height: 200px;
     padding: 0 10px;
-
 }
 
-/* CSS Cuarta columna (dos productos en ella) */
+/* CSS Modos de Fila */
+
+.row_a {
+    /* primera version fila, comportamiento block */
+    width: 100%;
+}
+
 .row_b {
+    /* segunda version fila, comportamiento flex */
+    width: 100%;
+    
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
+    justify-content: center;    
 }
 
-/* Primera tarjeta pequeña */
+/* CSS Tarjeta */
 
-.c_head4 {
+.card {
+    /* primer tipo de tarjeta, comportamiento block */
+    width: 100%;
+    height: 180px;
+
+    position: relative;
+}
+
+#patrimonial.card {
+    height: 240px;
+}
+
+#chorrillana.card {
+    height: 210px;
+}
+
+.card2 {
+    /* segundo tipo de tarjeta, comportamiento flex column */
+    width: 100%;
+    /* height: 180px; */
 
     display: flex;
     flex-direction: column;
-    align-items: start;
-
-
+    align-items: center;
+    justify-content: space-between;
 }
 
-.c_title4 h4 {
-    
-    font-size: 28px;
-    font-family: 'Drustic Dialy';
+/* Tarjeta: header */
 
-}
-
-.c_subt4 p {
-    font-size: 14px;
-    font-weight: 700;
-    padding: 5px;
-    font-family: 'Drustic Dialy';
-}
-
-.c_body4 {
+.c_head {
     width: 150px;
-    height: 80px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.c_content4 p {
-    
-    font-size: 10px;
-    text-align: center  ;
-    font-family: 'Avenir';
-}
-
-.c_price4 p {
-    font-size: 14px;
-    font-family: 'Andora';
-    margin-top: 10px;
-    
-}
-
-.c_img4 img {
-    width: 160px;
-    
-}
-
-/* Segunda tarjeta pequeña */
-
-.c_head5 {
-
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-
-
-}
-
-.c_title5 h4 {
-    
-    font-size: 28px;
-    font-family: 'Drustic Dialy';
-
-}
-
-.c_subt5 p {
-    font-size: 14px;
-    font-weight: 700;
-    padding: 5px;
-    font-family: 'Drustic Dialy';
-}
-
-.c_body5 {
-    width: 150px;
-    height: 80px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.c_content5 p {
-    
-    font-size: 10px;
-    text-align: left;
-    font-family: 'Avenir';
-}
-
-.c_price5 p {
-    font-size: 14px;
-    font-family: 'Andora';
-    margin-top: 10px;
-    
-}
-
-.c_img5 img {
-    width: 160px;
-
-}
-
-/* CSS Quinta Columna */
-
-.row_c{
-    display: flex;
-    align-items: center;
-    
-}
-
-.c_head6 {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-.c_title6 h4 {
-    
-    font-size: 32px;
-    font-family: 'Drustic Dialy';
-
-}
-
-.c_subt6 p {
-    font-size: 16px;
-    font-family: 'Andora';
-}
-
-.c_body6 {
-    width: 150px;
-    height: 80px;
-
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.c_content6 p {
-    
-    font-size: 10px;
-    text-align: left;
-    font-family: 'Avenir';
-}
-
-.c_price6 p {
-    font-size: 14px;
-    font-family: 'Andora';
-    margin-top: 10px;
-
-}
-
-.c_img6 img {
-    width: 180px;
-
-}
-
-/* CSS Sexta Columna */
-
-/* Primera tarjeta pequeña, columna 6 */
-
-.c_head7{
-
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-
-
-}
-
-.c_title7 h4 {
-    
-    font-size: 32px;
-    font-family: 'Andora';
-
-}
-
-.c_subt7 p {
-    font-size: 18px;
-    font-weight: 700;
-    font-family: 'Drustic Dialy';
-}
-
-.c_body7 {
-    width: 150px;
-    height: 80px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.c_content7 p {
-    
-    font-size: 10px;
-    text-align: left;
-    font-family: 'Avenir';
-}
-
-.c_price7 p {
-    font-size: 14px;
-    font-family: 'Andora';
-    /* margin-top: 10px; */
-    transform: translateX(-40px);
-    
-    
-}
-
-.c_img7 img {
-    width: 180px;
-    /* transform: translateY(-30px); */
-    margin-left: 20px;
-    
-}
-
-/* Segunda tarjeta pequeña, columa 6 */
-
-.c_head8{
-    width: 150;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
+    position: absolute;    
 }
 
-.c_title8 h4 {    
-    font-size: 32px;
-    font-family: 'Drustic Dialy';
+#papasjoya .c_head {
+    position: relative;
 }
 
-.c_subt8 p {
-    font-size: 18px;
-    font-weight: 700;
-    font-family: 'Andora';
+#papasgringas .c_head {
+    position: relative;
 }
 
-.c_body8 {
-    width: 150px;
-    height: 80px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+#papasveggie .c_head {
+    top: 2%;
+    left: 2%;
 }
 
-.c_content8 p {
-    
-    font-size: 10px;
-    text-align: left;
-    font-family: 'Avenir';
+#aroscebolla .c_head {
+    position: relative;
 }
 
-.c_price8 p {
-    font-size: 14px;
-    font-family: 'Andora';
-    /* margin-top: 10px; */
-    transform: translateX(-40px);
-    
-    
+#victoria .c_head {
+    position: relative;
+}
+#caleta .c_head {
+    top: 0;
+    left: 5%;
 }
 
-.c_img8 img {
-    width: 160px;
-    /* transform: translateY(-10px); */
-    margin-right: 20px;
-    
+#fring .c_head {    
+    top: 15%;
+    right: 5%;    
 }
 
-/* CSS Novena columna */
+#trilogia .c_head{
+    top: 0%;
+    left: 4%;
+}
 
+#pacifico .c_head {
+    top: -4%;
+    left: 2%    
+}
 
-.c_head11 {
-
-    display: flex;
-    flex-direction: column;
+#patrimonial .c_head {
     align-items: start;
 
-    position: absolute;
-    top: 0rem;
-    right: 5rem;
-
+    top: 2%;
+    left: 2%;
 }
 
+#patrimonial .c_head img {
+    width: 270px;
+}
 
-.c_title11 h4 {
-    
-    font-size: 36px;
+#chorrillana .c_head {
+    align-items: start;
+
+    top: -5%;
+    right: 4%
+}
+
+/* Tarjeta: títulos */
+
+.c_title h4 {
+    font-size: 26px;
     font-family: 'Drustic Dialy';
+}
+
+#pacifico .c_title {
+    margin-left: 25%;
+    font-size: 32px;
+}
+
+#chorrillana .c_title h4 {
+    font-size: 32px;
     transform: translateX(40px);
-
 }
 
-.c_subt11 p {
-    font-size: 20px;
-    font-weight: 700;
+/* Tarjeta: subtitulos */
+
+.c_subt p {
     font-family: 'Drustic Dialy';
+}
+
+#pacifico .c_subt p {
+    font-size: 24px;
+}
+
+#chorrillana .c_subt p {
+    font-size: 20px;
     transform: translateY(10px);
 }
 
-.c_body11 {
+/* Tarjeta: body */
+.c_body {
     width: 150px;
-    height: 80px;
-    position: absolute;
-    top: 5rem;
-    right: 1rem;
-
+    
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-end;
-    
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
 }
 
-.c_content11 p {
+#papasjoya .c_body {
+    position: relative;
+}
+
+#papasgringas .c_body {
+    position: relative;
+}
+
+#papasveggie .c_body {
+    bottom: 10%;
+    left: 4%;
+}
+
+#aroscebolla .c_body {
+    position: relative;
+}
+
+#victoria .c_body {
+    position: relative;
+}
+#caleta .c_body {
+    bottom: 15%;
+    left: 5%;    
+}
+
+#fring .c_body {
+    bottom: 15%;
+    right: 5%;    
+}
+
+#trilogia .c_body{
+    bottom: 4%;
+    left: 4%;    
+}
+
+#pacifico .c_body {
+    align-items: flex-end;
     
-    font-size: 10px;
-    text-align: right;
+    bottom: -4%;
+    right: 4%;
+}
+
+#patrimonial .c_body {
+    align-items: flex-start;
+    
+    bottom: 0%;
+    left: 4%;
+}
+
+#chorrillana .c_body {
+    align-items: flex-end;
+    
+    bottom: 10%;
+    right: 2%;
+}
+
+/* Tarjeta: contenido */
+
+.c_content p {
+    text-align: center;
+
+    font-size: 12px;
     font-family: 'Avenir';
 }
 
-.c_price11 p {
-    font-size: 14px;
-    font-family: 'Andora';
-    margin-top: 10px;
-
-    
+#pacifico .c_content p {
+    text-align: right;
 }
 
-.c_img11 img {
-    width: 180px;
+#patrimonial .c_content p {
+    text-align: left;
+}
+
+#chorrillana .c_content p {
+    text-align: right;
+}
+
+/* Tarjeta: precio */
+.c_price p {
+    margin-top: 10px;
+
+    font-size: 16px;
+    font-family: 'Andora';
+}
+
+/* Tarjeta: imagen */
+.c_img {
     position: absolute;
-    top: 2rem;
-    left: 0;
+}
+
+.c_img img {
+    width: 200px;
+}
+
+#papasjoya .c_img {
+    position: relative;
+}
+
+#papasjoya .c_img img {
+    width: 160px;
+}
+
+#papasgringas .c_img {
+    position: relative;
+}
+
+#papasgringas .c_img img {
+    width: 150px;
+}
+
+#papasveggie .c_img {
+    top: 14%;
+    right: 4%;
+}
+
+#papasveggie .c_img img {
+    width: 190px;
+}
+
+#aroscebolla .c_img {
+    position: relative;
+}
+
+#aroscebolla .c_img img {
+    width: 170px;
+}
+#victoria .c_img {
+    position: relative;
+}
+
+#victoria .c_img img {
+    width: 160px;
+}
+
+#caleta .c_img {
+    top: 4%;
+    right: 2%;
+}
+
+#fring .c_img {
+    top: 4%;
+    left: 4%;
+}
+
+#trilogia .c_img{
+    top: 10%;
+    right: 2%;
+}
+
+#pacifico .c_img {
+    bottom: -4%;
+    left: 2%;
+}
+
+#pacifico .c_img img {
+    width: 220px;
+}
+
+#patrimonial .c_img {
+    top: 2%;
+    right: 0%;
+}
+
+#patrimonial .c_img img {
+    width: 220px;
+}
+
+#chorrillana .c_img {
+    top: 8%;
+    left: 0%;
+}
+
+#chorrillana .c_img img {
+    width: 220px;
 }

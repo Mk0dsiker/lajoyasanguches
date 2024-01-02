@@ -38,11 +38,6 @@ body {
     font-family: 'Drustic Dialy';    
 }
 
-
-.page_header img { 
-    width: 100px;    
-}
-
 .page_subt {
     display: flex;
     align-items: center;
@@ -52,6 +47,50 @@ body {
     font-size: 20px;
     font-family: 'Drustic Dialy';
     margin-left: 20px;
+}
+
+.page_header img { 
+    width: 120px;    
+}
+
+/* css pagina:pagina */
+.sello_logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.sello_logo img {
+    width: 100px;
+    transform: translate(-50%, -50%)
+}
+
+/*css footer:pagina */
+.pagef {
+    padding: 20px;
+    position: relative;
+}
+
+.pagef p {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Drustic Dialy';    
+}
+
+
+/*css fila*/
+.row {
+    /* primera version fila, comportamiento block */
+    width: 100%;
+}
+
+.twocardsrow {
+    /* segunda version fila, comportamiento flex */
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* css divisores */
@@ -67,22 +106,6 @@ body {
 .v_divisor img {
     height: 250px;
     padding: 0 10px;
-}
-
-/*css fila*/
-
-.row {
-    /* primera version fila, comportamiento block */
-    width: 100%;
-}
-
-.tworows {
-    /* segunda version fila, comportamiento flex */
-    width: 100%;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 /* css tarjeta */

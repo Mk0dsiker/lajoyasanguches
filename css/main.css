@@ -1,51 +1,31 @@
-/* CSS main */
-
-.container {
-    background-color: black;
-        
-}
-
-/* Section 1 */
+/* css section 1 */
 .section_1 {
-    /* background-image: url("/lajoyasanguches/assets/img/background_section_1b.png"); */
-    /* background-size: cover; */
-
-    /* background-color: black; */
-    width: 400px;
-    /* height: 650px; */
-    margin: 0 auto;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
 
-/* Section 2 */
+/* css section 2 */
 
 .section_2 {
-    width: 400px;
-    margin: 0 auto;
-    
     position: relative;
 }
 
-.bg_section_2 {
+.section_2 img {
     width: 100%;
 }
 
-.s2_cover {
+#index .pagef {
     background-image: url("../assets/img/cover.png");
     background-size: cover;
-    /* background-repeat: no-repeat; */
-    /* height: 100px; */
+    
     padding: 30px 5px;
 
     position: absolute;
     bottom: 0;
 }
 
-.s2_cover p {
+#index .pagef p {
 
     font-family: 'Drustic Dialy';
     letter-spacing: -0.8px;
@@ -55,15 +35,12 @@
         
 }
 
-/* Section 3 */
+/* css section 3 */
 
 .section_3 {
     background-image: url("/lajoyasanguches/assets/img/background_section_3b.png");
     background-size: contain;
     height: 700px;
-
-    width: 400px;
-    margin: 0 auto;
 
     display: flex;
     flex-direction: column;
@@ -87,7 +64,7 @@
 }
 
 .s3_ingredientes {
-    width: 400px;
+    width: 100%;
     position: absolute;
     top: 14rem;
 }
@@ -131,16 +108,14 @@
     width: 100px;
 }
 
-/* Section 4 */
+/* css section 4 */
 
 .section_4 {
     background-image: url("../assets/img/background_section_4b.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 700px;
 
-    width: 400px;
-    margin: 0 auto;
+    height: 600px;
 }
 
 

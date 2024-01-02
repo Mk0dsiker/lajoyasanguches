@@ -5,10 +5,9 @@
 
 /*css header:pagina */
 #burgers .page_header {
-    background-image: none;
-
     margin-top: 100px;
     padding-top: 20px;
+
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -30,13 +29,9 @@
     margin: 0;
     color: white;
 }
-.page_header img {
-    width: 120px;
-    margin-bottom: 15px;
-}
 
-/* contenedor de pagina utilizado como referencia para posiciones. */
-#ahumadas { 
+/* css pagina:pagina */
+#ahumadas {
     position: relative;
 }
 
@@ -64,17 +59,6 @@
 
 #ahumadas .c_img img {
     width: 140px;
-}
-
-.sello_logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-}
-
-.sello_logo img {
-    width: 100px;
-    transform: translate(-50%, -50%)
 }
 
 .topcorners {
@@ -108,7 +92,7 @@
 
 /* css tarjetas normales */
 #normalb {
-    padding: 20px;
+    padding: 20px 20px 0 20px;
 }
 
 #normalb .card {

@@ -43,6 +43,15 @@ body {
     margin-right: 20px;
 }
 
+.page_subt {
+    display: flex;
+}
+.page_subt p {
+    font-size: 20px;
+    font-family: 'Drustic Dialy';
+    margin-left: 20px;
+}
+
 /* CSS Divisores */
 
 .h_divisor {

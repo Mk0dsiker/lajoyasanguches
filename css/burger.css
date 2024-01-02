@@ -1,14 +1,14 @@
 /* css main */
-
 #burgers.container {
     background-image: url("../assets/img/background_black.png");
 }
 
-
-/* primer bloque de contenido, header de la pagina */
+/*css header:pagina */
 #burgers .page_header {
-background-image: none;
+    background-image: none;
 
+    margin-top: 100px;
+    padding-top: 20px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -106,6 +106,7 @@ background-image: none;
     margin-bottom: 20px;
 }
 
+/* css tarjetas normales */
 #normalb {
     padding: 20px;
 }

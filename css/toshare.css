@@ -1,12 +1,5 @@
-/* CSS main */
-body {
-    background-color: black;
-}
-
-.container {
-    width: 375px;
-    margin: 0 auto;
-    
+/* css main container */
+#toshare.container {    
     margin-top: 100px;
 
     background-image: url("/lajoyasanguches/assets/img/background_beige2.png");
@@ -14,85 +7,32 @@ body {
     background-repeat: repeat-y;
 }
 
-.page_header {
-    width: 100%;
+/* css header:pagina */
+#toshare .page_header {
     background-image: url("/lajoyasanguches/assets/img/cover_top.png");
     background-size: cover;
 
-    display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-between;
 
-    padding: 10px 0 40px 0;
+    padding: 10px 0 30px 0;
 }
 
-.page_title h2 {
-    font-size: 40px;
+#toshare .page_title h2 {
     font-family: 'Drustic Dialy';
     margin-left: 20px;
 }
 
-.page_title h4 {
-    font-size: 30px;
+#toshare .page_title h4 {
     font-family: 'Andora';
     margin-left: 38px;
 }
 
-.page_header img {
-    width: 100px;
+#toshare .page_header img {
     margin-right: 20px;
 }
 
-.page_subt {
-    display: flex;
-}
-.page_subt p {
-    font-size: 20px;
-    font-family: 'Drustic Dialy';
-    margin-left: 20px;
-}
-
-/* CSS Divisores */
-
-.h_divisor {
-    padding: 0 10px;
-}
-
-.h_divisor img {
-    width: 100%;
-}
-
-.v_divisor img {
-    height: 200px;
-    padding: 0 10px;
-}
-
-/* CSS Modos de Fila */
-
-.row_a {
-    /* primera version fila, comportamiento block */
-    width: 100%;
-}
-
-.row_b {
-    /* segunda version fila, comportamiento flex */
-    width: 100%;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;    
-}
-
-/* CSS Tarjeta */
-
-.card {
-    /* primer tipo de tarjeta, comportamiento block */
-    width: 100%;
-    height: 180px;
-
-    position: relative;
-}
-
+/* css tarjetas */
 #patrimonial.card {
     height: 240px;
 }
@@ -101,35 +41,17 @@ body {
     height: 210px;
 }
 
-.card2 {
-    /* segundo tipo de tarjeta, comportamiento flex column */
-    width: 100%;
-    /* height: 180px; */
+#papasjoya.card, #papasgringas.card, #aroscebolla.card, #victoria.card {
+    height: 270px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-/* Tarjeta: header */
-
-.c_head {
-    width: 150px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    position: absolute;    
-}
-
-#papasjoya .c_head {
-    position: relative;
-}
-
-#papasgringas .c_head {
+/* css header:tarjeta */
+#papasjoya .c_head, #papasgringas .c_head, #aroscebolla .c_head, #victoria .c_head {
     position: relative;
 }
 
@@ -138,13 +60,6 @@ body {
     left: 2%;
 }
 
-#aroscebolla .c_head {
-    position: relative;
-}
-
-#victoria .c_head {
-    position: relative;
-}
 #caleta .c_head {
     top: 0;
     left: 5%;
@@ -183,29 +98,13 @@ body {
     right: 4%
 }
 
-/* Tarjeta: títulos */
-
-.c_title h4 {
-    font-size: 26px;
-    font-family: 'Drustic Dialy';
-}
-
-#pacifico .c_title {
-    margin-left: 25%;
-    font-size: 32px;
-}
-
+/* css titles:tarjeta */
 #chorrillana .c_title h4 {
     font-size: 32px;
     transform: translateX(40px);
 }
 
-/* Tarjeta: subtitulos */
-
-.c_subt p {
-    font-family: 'Drustic Dialy';
-}
-
+/* css subt:tarjeta */
 #pacifico .c_subt p {
     font-size: 24px;
 }
@@ -215,23 +114,8 @@ body {
     transform: translateY(10px);
 }
 
-/* Tarjeta: body */
-.c_body {
-    width: 150px;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    position: absolute;
-}
-
-#papasjoya .c_body {
-    position: relative;
-}
-
-#papasgringas .c_body {
+/* css body:tarjeta */
+#papasjoya .c_body, #papasgringas .c_body, #aroscebolla .c_body, #victoria .c_body {
     position: relative;
 }
 
@@ -240,13 +124,6 @@ body {
     left: 4%;
 }
 
-#aroscebolla .c_body {
-    position: relative;
-}
-
-#victoria .c_body {
-    position: relative;
-}
 #caleta .c_body {
     bottom: 15%;
     left: 5%;    
@@ -283,16 +160,8 @@ body {
     right: 2%;
 }
 
-/* Tarjeta: contenido */
-
-.c_content p {
-    text-align: center;
-
-    font-size: 12px;
-    font-family: 'Avenir';
-}
-
-#pacifico .c_content p {
+/* css contenido:tarjeta */
+#pacifico .c_content p, #chorrillana .c_content p {
     text-align: right;
 }
 
@@ -300,27 +169,8 @@ body {
     text-align: left;
 }
 
-#chorrillana .c_content p {
-    text-align: right;
-}
 
-/* Tarjeta: precio */
-.c_price p {
-    margin-top: 10px;
-
-    font-size: 16px;
-    font-family: 'Andora';
-}
-
-/* Tarjeta: imagen */
-.c_img {
-    position: absolute;
-}
-
-.c_img img {
-    width: 200px;
-}
-
+/* css imagen:tarjeta */
 #papasjoya .c_img {
     position: relative;
 }

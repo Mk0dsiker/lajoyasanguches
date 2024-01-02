@@ -1,0 +1,158 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+/* css main */
+body {
+    background-color: black;
+}
+
+/* css main container */
+.container {
+    width: 375px;
+    margin: 0 auto; 
+}
+
+/* css header:pagina*/
+.page_header {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.page_title h2 {
+    font-size: 40px;
+    font-family: 'Andora';
+}
+
+.page_title h4 {
+    font-size: 30px;
+    font-family: 'Drustic Dialy';    
+}
+
+
+.page_header img { 
+    width: 100px;    
+}
+
+.page_subt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page_subt p {
+    font-size: 20px;
+    font-family: 'Drustic Dialy';
+    margin-left: 20px;
+}
+
+/* css divisores */
+
+.h_divisor {
+    padding: 0 10px;
+}
+
+.h_divisor img {
+    width: 100%;
+}
+
+.v_divisor img {
+    height: 250px;
+    padding: 0 10px;
+}
+
+/*css fila*/
+
+.row {
+    /* primera version fila, comportamiento block */
+    width: 100%;
+}
+
+.tworows {
+    /* segunda version fila, comportamiento flex */
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* css tarjeta */
+
+.card {
+    /* primer tipo de tarjeta, comportamiento block */
+    width: 100%;
+    height: 180px;
+
+    position: relative;
+}
+
+/* css header:tarjeta */
+
+.c_head {
+    width: 150px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;    
+}
+
+/* css title:tarjeta */
+
+.c_title h4 {
+    font-size: 26px;
+    font-family: 'Drustic Dialy';
+}
+
+/* css subt:tarjeta */
+.c_subt p {
+    font-family: 'Drustic Dialy';
+}
+
+/* css body:tarjeta */
+.c_body {
+    width: 150px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+}
+
+/* css contenido:tarjeta */
+.c_content p {
+    text-align: center;
+
+    font-size: 12px;
+    font-family: 'Avenir';
+}
+
+/* css precio:tarjeta */
+.c_price p {
+    margin-top: 10px;
+
+    font-size: 16px;
+    font-family: 'Andora';
+}
+
+/* css imagen:tarjeta */
+.c_img {
+    position: absolute;
+}
+
+.c_img img {
+    width: 200px;
+}

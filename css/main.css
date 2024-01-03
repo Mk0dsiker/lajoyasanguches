@@ -15,7 +15,7 @@
     width: 100%;
 }
 
-#index .pagef {
+#section_2 .pagef {
     background-image: url("../assets/img/cover.png");
     background-size: cover;
     
@@ -25,7 +25,7 @@
     bottom: 0;
 }
 
-#index .pagef p {
+#section_2 .pagef p {
 
     font-family: 'Drustic Dialy';
     letter-spacing: -0.8px;
@@ -39,9 +39,11 @@
 
 .section_3 {
     background-image: url("/lajoyasanguches/assets/img/background_section_3b.png");
-    background-size: contain;
+    background-size: cover;
     height: 700px;
 
+    padding-top: 20px;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -50,62 +52,65 @@
 
 }
 
-.s3_top {
-    padding: 20px 20px 0 20px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
-.s3_top_logo {
-    width: 100px;
-}
-
-.s3_ingredientes {
-    width: 100%;
-    position: absolute;
-    top: 14rem;
-}
-
-.s3_top h2 {
+#index .page_title h2 {
     color: #ffbe00;
-    font-size: 26px;
+    font-size: 38px;
     text-transform: uppercase;
     margin-top: 20px;
     font-family: 'Drustic Dialy';
 }
 
-.s3_top h4 {
+#index .page_subt p {
     color: white;
-    font-size: 15px;
-    text-align: center;
+    
+    margin-left: 0;
     margin-top: 10px;
     margin-bottom: 60px;
 
+    text-align: center;
+    font-size:  18px;
     font-family: 'Avenir';
 }
 
-.s3_top_img {
-    width: 280px;
-    transform: translateY(70px);
+#index .s3_top_img {
+    width: 250px;
+    
+    position: absolute;
+    bottom: 10%;
+    z-index: 2;
 }
 
+#index .s3_ingredientes {
+    width: 100%;
+    position: absolute;
+    bottom: 25%;
+    z-index: 3;
+}
 
-.s3_cover {
+#section_3 .pagef {
     background-image: url("/lajoyasanguches/assets/img/cover.png");
     background-size: cover;
 
-    padding: 40px 10px 10px 10px;
+    width: 100%;
+    height: 140px;
 
-    display: flex;
-    align-items:flex-start;
-    justify-content: flex-end;
+    padding: 0;
+    
+    bottom: 0;
 }
 
-.s3_cover img {
-    width: 100px;
+#index .sello_logo {
+    right: 6%;
+    bottom: 6%;
+
+    top: unset;
+    left: unset;
+
+    z-index: 4;
+}
+
+#index .sello_logo img {
+    transform: none;
 }
 
 /* css section 4 */
@@ -119,7 +124,7 @@
 }
 
 
-/* CSS divisores */
+/* css divisores */
 .divisor {
     border-bottom: 5px solid #ffbe00;
 }

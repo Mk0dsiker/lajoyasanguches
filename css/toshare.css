@@ -33,64 +33,12 @@
 }
 
 /* css tarjetas */
-#patrimonial.card {
-    height: 240px;
-}
-
 #chorrillana.card {
-    height: 210px;
+    margin-bottom: 20px;
 }
-
-#papasjoya.card, #papasgringas.card, #aroscebolla.card, #victoria.card {
-    height: 270px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
 /* css header:tarjeta */
-#papasjoya .c_head, #papasgringas .c_head, #papasveggie .c_head, #aroscebolla .c_head, #victoria .c_head {
-    position: relative;
-}
-
-#caleta .c_head {
-    top: 0;
-    left: 5%;
-}
-
-#fring .c_head {    
-    top: 15%;
-    right: 5%;    
-}
-
-#trilogia .c_head{
-    top: 0%;
-    left: 4%;
-}
-
-#pacifico .c_head {
-    top: -4%;
-    left: 2%    
-}
-
-#patrimonial .c_head {
-    align-items: start;
-
-    top: 2%;
-    left: 2%;
-}
-
 #patrimonial .c_head img {
-    width: 270px;
-}
-
-#chorrillana .c_head {
-    align-items: start;
-
-    top: -5%;
-    right: 4%
+    width: 200px;
 }
 
 /* css titles:tarjeta */
@@ -110,66 +58,13 @@
 }
 
 /* css body:tarjeta */
-#papasjoya .c_body, #papasgringas .c_body, #papasveggie .c_body, #aroscebolla .c_body, #victoria .c_body {
-    position: relative;
-}
-
-#papasveggie .c_body {
-    bottom: 10%;
-    left: 4%;
-}
-
-#caleta .c_body {
-    bottom: 15%;
-    left: 5%;    
-}
-
-#fring .c_body {
-    bottom: 15%;
-    right: 5%;    
-}
-
-#trilogia .c_body{
-    bottom: 4%;
-    left: 4%;    
-}
-
-#pacifico .c_body {
-    align-items: flex-end;
-    
-    bottom: -4%;
-    right: 4%;
-}
-
-#patrimonial .c_body {
-    align-items: flex-start;
-    
-    bottom: 0%;
-    left: 4%;
-}
-
-#chorrillana .c_body {
-    align-items: flex-end;
-    
-    bottom: 10%;
-    right: 2%;
-}
 
 /* css contenido:tarjeta */
-#pacifico .c_content p, #chorrillana .c_content p {
-    text-align: right;
-}
-
-#patrimonial .c_content p {
+#trilogia .c_content p, #pacifico .c_content p, #chorrillana .c_content p, #patrimonial .c_content p {
     text-align: left;
 }
 
-
 /* css imagen:tarjeta */
-#papasjoya .c_img, #papasgringas .c_img, #papasveggie .c_img {
-    position: relative;
-}
-
 #papasjoya .c_img img {
     width: 160px;
 }
@@ -182,57 +77,16 @@
     width: 190px;
 }
 
-#aroscebolla .c_img {
-    position: relative;
-}
-
 #aroscebolla .c_img img {
     width: 170px;
-}
-#victoria .c_img {
-    position: relative;
-}
-
-#victoria .c_img img {
-    width: 160px;
-}
-
-#caleta .c_img {
-    top: 4%;
-    right: 2%;
-}
-
-#fring .c_img {
-    top: 4%;
-    left: 4%;
-}
-
-#trilogia .c_img{
-    top: 10%;
-    right: 2%;
-}
-
-#pacifico .c_img {
-    bottom: -4%;
-    left: 2%;
 }
 
 #pacifico .c_img img {
     width: 220px;
 }
 
-#patrimonial .c_img {
-    top: 2%;
-    right: 0%;
-}
-
 #patrimonial .c_img img {
-    width: 220px;
-}
-
-#chorrillana .c_img {
-    top: 8%;
-    left: 0%;
+    width: 150px;
 }
 
 #chorrillana .c_img img {

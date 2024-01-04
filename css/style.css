@@ -77,14 +77,8 @@ body {
     font-family: 'Drustic Dialy';    
 }
 
-
-/*css fila*/
+/* css fila */
 .row {
-    /* primera version fila, comportamiento block */
-    width: 100%;
-}
-
-.twocardsrow {
     /* segunda version fila, comportamiento flex */
     width: 100%;
     
@@ -97,19 +91,14 @@ body {
 
 /* css tarjeta */
 .card {
-/* primer tipo de tarjeta, comportamiento block */
     width: 100%;
-    height: 180px;
 
-    position: relative;
-}
-
-.cardflex {
-/* segundo tipo de tarjeta, comportamiento flex */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+
+    position: relative;
 }
 
 /* css header:tarjeta */
@@ -120,8 +109,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    position: absolute;    
 }
 
 /* css title:tarjeta */
@@ -143,8 +130,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    position: absolute;
 }
 
 /* css contenido:tarjeta */
@@ -164,10 +149,6 @@ body {
 }
 
 /* css imagen:tarjeta */
-.c_img {
-    position: absolute;
-}
-
 .c_img img {
     width: 200px;
 }
@@ -207,6 +188,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 .bottomcorners img {
     width: 60px;

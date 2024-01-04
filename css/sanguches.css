@@ -24,8 +24,12 @@
 }
 
 /* css pagina:pagina */
-#sanguchesp {
+#sanguches {
     position: relative;
+}
+
+#sanguchesp {
+    padding: 0 20px;
 }
 
 /* css footer:pagina */
@@ -54,9 +58,6 @@ width: 200px;
 }
 
 /* css tarjeta */
-#sanguches .c_head, #sanguches .c_body, #sanguches .c_img {
-    position: relative;
-}
 
 /* css header:tarjeta */
 
@@ -110,7 +111,7 @@ width: 200px;
 
 /* css imagen:tarjeta */
 #lengua .c_img img {
-    width: 190px;
+    width: 170px;
 }
 
 #lucho .c_img img {

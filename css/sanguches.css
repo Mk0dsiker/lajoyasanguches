@@ -1,211 +1,79 @@
-/* CSS main */
-
-body {
-    background-color: black;
-}
-
-main {
-    position: relative;
-}
-
-.container {
-    width: 375px;
-    margin: 0 auto;
+/* css main container */
+#sanguches.container {
     margin-top: 100px;
-    padding: 30px 10px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     
     background-image: url("/lajoyasanguches/assets/img/background_black2.png");
     background-size: cover;
-    /* background-repeat: repeat-y; */
-
-    position: relative;
-}
-
-
-/* CSS Burger top */
-
-.sanguche_head {
-
+    
     display: flex;
     flex-direction: column;
     align-items: center;
-
+}
+/* css pagina:pagina */
+#sanguchesp {
+    position: relative;
 }
 
-.sanguche_title h4 {
-    
+/* css header:pagina*/
+#sanguches .page_title h2 {
     font-size: 48px;
     font-family: 'Andora';
     color: #ffbe00;
-
 }
 
-.sanguche_subt {
-    display: flex;
+/* css tarjeta */
+
+#sanguches {
+    padding-top: 20px;
 }
 
-.sanguche_subt p {
-    font-size: 14px;
-    font-weight: 700;
-    padding: 5px;
-    font-family: 'Drustic Dialy';
-    color: white;
-    
-}
-
-.card {
-    width: 19rem;
-    margin: 0 auto;
-    border-radius: 5px;
-
-    height: 160px;
-
-    padding: 15px;
-
+#sanguches .c_head, #sanguches .c_body {
     position: relative;
 }
 
-.card8 {
-    width: 19rem;
-    margin: 0 auto;
-    border-radius: 5px;
-
-    height: 160px;
-    margin-bottom: 9rem;
-    padding: 15px;
-
-    position: relative;
+/* css header:tarjeta */
+#sanguches .c_head {
+    width: 200px;
 }
 
-/* CSS Primera columna */
-.c_head {
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    position: absolute;
-    top: 2rem;
-
-}
-
-.c_head5 {
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    position: absolute;
-    top: 2rem;
-
-}
-
-.c_title h4 {
-    
+/* css title:tarjeta */
+#sanguches .c_title h4 {
     font-size: 28px;
-    font-family: 'Drustic Dialy';
     color: #ffbe00;
-
 }
 
-.c_subt p {
-    font-size: 14px;
-    font-weight: 700;
+/* css subt:tarjeta */
+#sanguches .c_subt p {
     padding: 5px;
 
+    font-size: 16px;
     font-family: 'Andora';
     color: white;
 }
 
-.c_body {
-    width: 150px;
-    height: 80px;
-    position: absolute;
-    top: 50%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
+/* css body:tarjeta */
+#sanguches .c_body {
+    left: 4%;
 }
 
-.c_content p {
-    
-    font-size: 10px;
-    text-align: left;
-    font-family: 'Avenir';
+/* css contenido:tarjeta */
+#sanguches .c_content p {
     color: white;
 }
 
-.c_price p {
-    font-size: 14px;
-    font-family: 'Andora';
-    color: white;
-    margin-top: 10px;
-
+/* css precio:tarjeta */
+#sanguches .c_price p {
+    color: white;  
 }
 
-.c_img img {
+/* css imagen:tarjeta */
+#sanguches .c_img {
+    top: 4%;
+    right: 4%;
+}
+
+#sanguches .c_img img {
     width: 180px;
-    position: absolute;
-    bottom: 1rem;
-    right: 0px;
-}
-
-
-/* CSS Segunta columna */
-
-.c_head2 {
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    position: absolute;
-    top: 2rem;
-    right: 1rem;
-
-}
-
-
-.c_head4 {
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    position: absolute;
-    top: 2rem;
-    right: -1rem;
-
-}
-
-.c_head6 {
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    position: absolute;
-    top: 1rem;
-    right: 3rem;
-
-}
-
-.c_head8 {
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-
 }
 
 .c_headc {
@@ -220,14 +88,6 @@ main {
 
 }
 
-.c_title2 h4 {
-    
-    font-size: 24px;
-    font-family: 'Drustic Dialy';
-    color:  #ffbe00;
-
-}
-
 .c_titlec h4 {
     
     font-size: 24px;
@@ -236,269 +96,9 @@ main {
 
 }
 
-.c_subt2 p {
-    font-size: 14px;
-    font-weight: 700;
-    padding: 5px;
-    font-family: 'Andora';
-    color: white;
-}
-
-.c_body2 {
-    width: 150px;
-    height: 80px;
-    position: absolute;
-    bottom: 2rem;
-    right: 0;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
-}
-
-.c_bodyc {
-    width: 150px;
-    height: 80px;
-    position: absolute;
-    bottom: 2rem;
-    left: 0;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
-}
-
-.c_content2 p {
-    
-    font-size: 12px;
-    text-align: left;
-    font-family: 'Avenir';
-    color: white;
-}
-
-.c_price2 p {
-    font-size: 14px;
-    font-family: 'Andora';
-    color: white;
-    margin-top: 10px;
-
-    
-}
-
-.c_img2 img {
-    width: 180px;
-    position: absolute;
-    top: 2rem;
-    left: 0;
-}
-
-.c_img6 img {
-    width: 180px;
-    position: absolute;
-    top: 2rem;
-    left: 0;
-}
-
-.c_imgc img {
-    width: 180px;
-    position: absolute;
-    top: 2rem;
-    right: 0;
-}
-
-
-
-/* CSS Tercera columna */
-
-.c_head3 {
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-
-}
-
-.c_head7 {
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    position: absolute;
-    top: 0;
-    left: 1rem;
-
-}
-
-
-.c_title3 h4 {
-    
-    font-size: 28px;
-    font-family: 'Drustic Dialy';
-    color: #ffbe00;
-
-}
-
-.c_subt3 p {
-    font-size: 18px;
-    font-weight: 700;
-    padding: 5px;
-    font-family: 'Drustic Dialy';
-    color: #ffbe00;
-}
-
-.c_body3 {
-    width: 150px;
-    height: 80px;
-    position: absolute;
-    bottom: 1rem;
-    left: 1rem;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
-}
-
-
-
-.c_content3 p {
-    
-    font-size: 10px;
-    text-align: left;
-    font-family: 'Avenir';
-    color: white;
-}
-
-.c_price3 p {
-    font-size: 14px;
-    font-family: 'Andora';
-    color: white;
-    margin-top: 10px;
-    
-}
-
-.c_img3 img {
-    width: 160px;
-    position: absolute;
-    top: 1rem;
-    right: 0;
-}
-
-.c_img7 img {
-    width: 170px;
-    position: absolute;
-    top: 3rem;
-    right: 0;
-}
-/* Tarjeta columna, contiene flex los objetos dentro se comportan como bloques */
-.card2 {
-    width: 11rem;
-    margin: 0 auto;
-
-    /* background-color: white; */
-    /* border: 1px solid black; */
-    border-radius: 5px;
-
-    /* height: 160px; */
-
-    /* padding: 20px; */
-    position: relative;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-/* CSS Cuarta columna */
-
-.card_content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.c_head6 {
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-
-}
-
-.c_title6 h4 {
-    
-    font-size: 26px;
-    font-family: 'Drustic Dialy';
-    color: #ffbe00;
-
-}
-
-.c_subt6 p {
-    font-size: 14px;
-    font-weight: 700;
-    padding: 5px;
-    font-family: 'Drustic Dialy';
-    color: white;
-}
-
-.c_body6 {
-    width: 150px;
-    /* height: 80px; */
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
-}
-
-.c_content6 p {
-    
-    font-size: 10px;
-    text-align: left;
-    font-family: 'Avenir';
-    color: white;
-}
-
-.c_price6 p {
-    font-size: 14px;
-    font-family: 'Andora';
-    margin-top: 10px;
-    color: white;
-    
-}
-
-.c_img6 img {
-    width: 160px;
-    position: absolute;
-    top: 1rem;
-    left: 0;
-    
-}
-
-
-/* CSS divisor */
-
-.v_divisor img {
+/* css divisor */
+#sanguches .v_divisor img {
     height: 200px;
-    padding: 0 10px;
-
-}
-
-.h_divisor {
-    padding: 0 10px;
-}
-
-.h_divisor img {
-    width: 100%;
 }
 
 .topcorners {
@@ -507,12 +107,12 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
 
+    margin-bottom: 20px;
+}
 .gcorner_top {
     width: 60px;
 }
-
 .bottomcorners {
     width: 100%;
 
@@ -520,28 +120,20 @@ main {
     align-items: center;
     justify-content: space-between;
 
-    position: absolute;
-    bottom: 12rem;
+    position: relative;
+    bottom: 0;
 }
-
 .bottomcorners img {
     width: 60px;
 }
 
-/* CSS cover */
-.sanguche_container {
-    position: relative;
-    width: 400px;
-    margin: 0 auto;
+/* css cover */
+#sanguches .pagef {
+    background-image: url("../assets/img/cover_2.png");
+    background-size: cover;
 }
 
-.sanguche_cover {
-    background-image: url("/lajoyasanguches/assets/img/cover_2.png");
-    background-size: cover;
-
-    width: 400px;
-    
-    position: absolute;
-    bottom: 0;
-
+#sanguches .pagef p {
+    text-align: left;
+    color: white;
 }

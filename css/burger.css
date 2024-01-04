@@ -96,7 +96,6 @@
 }
 
 #normalb .card {
-    
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -107,14 +106,17 @@
     position: relative;
 }
 
+/* css header:tarjeta */
 #normalb .c_title h4{
     color: #feb000;
 }
 
+/* css body:tarjeta */
 #normalb .c_subt p, #normalb .c_content p, #normalb .c_price p {
     color: white;
 }
 
+/* css imagen:tarjeta */
 #normalb .c_img {
     position: absolute;
     right: 0;

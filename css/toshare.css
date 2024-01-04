@@ -51,13 +51,8 @@
 }
 
 /* css header:tarjeta */
-#papasjoya .c_head, #papasgringas .c_head, #aroscebolla .c_head, #victoria .c_head {
+#papasjoya .c_head, #papasgringas .c_head, #papasveggie .c_head, #aroscebolla .c_head, #victoria .c_head {
     position: relative;
-}
-
-#papasveggie .c_head {
-    top: 2%;
-    left: 2%;
 }
 
 #caleta .c_head {
@@ -115,7 +110,7 @@
 }
 
 /* css body:tarjeta */
-#papasjoya .c_body, #papasgringas .c_body, #aroscebolla .c_body, #victoria .c_body {
+#papasjoya .c_body, #papasgringas .c_body, #papasveggie .c_body, #aroscebolla .c_body, #victoria .c_body {
     position: relative;
 }
 
@@ -171,7 +166,7 @@
 
 
 /* css imagen:tarjeta */
-#papasjoya .c_img {
+#papasjoya .c_img, #papasgringas .c_img, #papasveggie .c_img {
     position: relative;
 }
 
@@ -179,17 +174,8 @@
     width: 160px;
 }
 
-#papasgringas .c_img {
-    position: relative;
-}
-
 #papasgringas .c_img img {
     width: 150px;
-}
-
-#papasveggie .c_img {
-    top: 14%;
-    right: 4%;
 }
 
 #papasveggie .c_img img {

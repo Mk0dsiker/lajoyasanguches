@@ -8,38 +8,83 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-/* css pagina:pagina */
-#sanguchesp {
+
     position: relative;
 }
 
 /* css header:pagina*/
+#sanguches .page_header {
+    margin-top: 20px;
+}
+
 #sanguches .page_title h2 {
     font-size: 48px;
     font-family: 'Andora';
     color: #ffbe00;
 }
 
-/* css tarjeta */
-
-#sanguches {
-    padding-top: 20px;
+/* css pagina:pagina */
+#sanguchesp {
+    position: relative;
 }
 
-#sanguches .c_head, #sanguches .c_body {
+/* css footer:pagina */
+#sanguches .pagef {
+    background-image: url("../assets/img/cover_2.png");
+    background-size: cover;
+
+    margin-top: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sanguches .pagef p {
+width: 200px;
+
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Avenir';
+    color: white;
+}
+
+#sanguches .pagef img {
+    width: 160px;
+}
+
+/* css tarjeta */
+#sanguches .c_head, #sanguches .c_body, #sanguches .c_img {
     position: relative;
 }
 
 /* css header:tarjeta */
-#sanguches .c_head {
-    width: 200px;
-}
 
 /* css title:tarjeta */
 #sanguches .c_title h4 {
     font-size: 28px;
     color: #ffbe00;
+}
+
+#lengua .c_title h4 {
+    text-align: center;
+}
+
+#lucho .c_title h4 {
+    text-align: center;
+}
+
+#mechada .c_title h4 {
+    text-align: center;
+    font-size: 25px;
+}
+
+#donberna .c_title h4{
+    text-align: center;
+}
+
+#sinverguenza .c_title h4 {
+    text-align: center;
 }
 
 /* css subt:tarjeta */
@@ -52,9 +97,6 @@
 }
 
 /* css body:tarjeta */
-#sanguches .c_body {
-    left: 4%;
-}
 
 /* css contenido:tarjeta */
 #sanguches .c_content p {
@@ -67,33 +109,20 @@
 }
 
 /* css imagen:tarjeta */
-#sanguches .c_img {
-    top: 4%;
-    right: 4%;
+#lengua .c_img img {
+    width: 190px;
 }
 
-#sanguches .c_img img {
+#lucho .c_img img {
     width: 180px;
 }
 
-.c_headc {
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    position: absolute;
-    top: 3rem;
-    left: 0rem;
-
+#donberna .c_img img, #chispeza .c_img img {
+    width: 160px;
 }
 
-.c_titlec h4 {
-    
-    font-size: 24px;
-    font-family: 'Andora';
-    color:  #ffbe00;
-
+#mechada .c_img img {
+    width: 180px;
 }
 
 /* css divisor */
@@ -101,39 +130,12 @@
     height: 200px;
 }
 
-.topcorners {
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    margin-bottom: 20px;
-}
-.gcorner_top {
-    width: 60px;
-}
-.bottomcorners {
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    position: relative;
-    bottom: 0;
-}
-.bottomcorners img {
-    width: 60px;
+#sanguches .topcorners {
+    position: absolute;
+    top: 10px;
 }
 
-/* css cover */
-#sanguches .pagef {
-    background-image: url("../assets/img/cover_2.png");
-    background-size: cover;
-}
-
-#sanguches .pagef p {
-    text-align: left;
-    color: white;
+#sanguches .bottomcorners {
+    position: absolute;
+    bottom: 180px;
 }

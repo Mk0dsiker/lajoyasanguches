@@ -2,16 +2,12 @@
 .container {
     background-image: url("/lajoyasanguches/assets/img/background_black2.png");
     background-size: cover;
-
-    margin-top: 100px;
 }
 /* css header:pagina */
-#plates .page_title h4 {
-    
+#plates .page_title h4 {    
     font-size: 48px;
     font-family: 'Drustic Dialy';
     color: #ffbe00;
-
 }
 
 #plates .page_subt {
@@ -41,43 +37,48 @@
     color: white;
 }
 
-/* CSS Menu peques */
-#plates .pagef {
-    background-image: url("../assets/img/cover_2.png");
-    background-size: cover;
-    position: absolute;
-    bottom: 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    padding: 40px 20px 20px 20px;
+#platesp .c_img img {
+    width: 160px;
 }
 
-.mp_head h4 {
-    font-family: 'Drustic Dialy';
-    color: #ffbe00;
-    font-size: 28px;
+/* css corners */
+#plates .topcorners {
+    position: absolute;
+    top: 100px;
+}
+
+/* css footer:pagina*/
+#plates .pagef {
+    background-image: url("../assets/img/cover_2.png");
+    background-size: cover; 
+    
+    padding: 40px 20px 20px 20px;
 }
 
 .mp_head h2 {
     font-family: 'Drustic Dialy';
+    color: #ffbe00;
+    font-size: 26px;
+    text-align: left;
+}
+
+.mp_head h4 {
+    font-family: 'Drustic Dialy';
     color: white;
     font-size: 18px;
+}
+
+.mp_heada h2 {
+    text-align: center;
+    font-family: 'Drustic Dialy';
+    color: #ffbe00;
+    font-size: 26px;
 }
 
 .mp_body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 20px;
-}
-
-.mp_head h4 {
-    font-family: 'Drustic Dialy';
-    color: #ffbe00;
-    font-size: 28px;
 }
 
 .mp_content p {

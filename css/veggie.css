@@ -2,14 +2,11 @@
 #veggie.container {
     background-image: url("../assets/img/background_white.png");
     background-size: cover;
+
+    position: relative;
 }
 
 /*css header:pagina*/
-#veggie .page_header {
-    margin-top: 100px;
-    padding-top: 20px;
-}
-
 #veggie .page_title h2 {
     font-size: 48px;
     font-family: 'Drustic Dialy';  

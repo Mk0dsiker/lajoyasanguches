@@ -4,14 +4,6 @@
 }
 
 /*css header:pagina */
-#burgers .page_header {
-    margin-top: 100px;
-    padding-top: 20px;
-
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 #burgers .page_title h4 {
     font-size: 40px;
     font-family: 'Andora';
@@ -66,4 +58,8 @@
 /* css imagen:tarjeta */
 #normalb .c_img img {
     width: 160px;
+}
+
+#burgers .bottomcorners {
+    padding-bottom: 20px;
 }

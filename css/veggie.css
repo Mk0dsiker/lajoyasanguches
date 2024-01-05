@@ -8,10 +8,6 @@
 #veggie .page_header {
     margin-top: 100px;
     padding-top: 20px;
-
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 #veggie .page_title h2 {
@@ -30,61 +26,7 @@
     position: relative;
 }
 
-/* css tarjeta veggie*/
-#veggiep .card {
-    height: 280px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
-#veggiep .c_head, #veggiep .c_body, #veggiep .c_img {
-    position: relative;
-}
-
-#veggiep .c_img img {
-    width: 140px;
-}
-
-#carvallo.card {
-    height: 180px;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
-}
-
-#carvallo .c_head{
-    top: 6%;
-    left: 6%;
-}
-
-#carvallo .c_body {
-    bottom: 4%;
-    left: 6%;
-} 
-
-#carvallo .c_head, #carvallo .c_body, #carvallo .c_img{
-    position: absolute;
-}
-
-#carvallo .c_img {
-    right: 0;
-    transform: translateX(-20%);
-}
-
-#carvallo .c_img img {
-    width: 160px;
-}
-
-#veggie .sello_logo {
-    top: 60%;
-}
-
-
+/* css footer:pagina */
 #veggie .pagef {
     background-image: url("../assets/img/cover.png");
     background-size: cover;
@@ -96,4 +38,17 @@
 
     padding-top: 20px;
     color: green;
+}
+
+/* css tarjeta veggie*/
+#veggiep .c_img img {
+    width: 140px;
+}
+
+#caturrita .c_img img {
+    width: 160px;
+}
+
+#veggie .sello_logo {
+    top: 60%;
 }

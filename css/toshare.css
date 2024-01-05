@@ -32,6 +32,11 @@
     margin-right: 20px;
 }
 
+/* css pagina:pagina */
+#tosharep {
+    padding: 0 20px;
+}
+
 /* css tarjetas */
 #chorrillana.card {
     margin-bottom: 20px;
@@ -78,6 +83,10 @@
 }
 
 #aroscebolla .c_img img {
+    width: 170px;
+}
+
+#victoria .c_img img {
     width: 170px;
 }
 

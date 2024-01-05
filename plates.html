@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <!-- <link rel="stylesheet" href="css/screen_size.css"> -->
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/plates.css">
     <!-- My Fonts -->
     <link rel="stylesheet" href="css/font_rule.css">
@@ -19,36 +20,36 @@
         </div>
     </header>
     <main>
-    <div class="container">
-        <div class="page_1">
-            <div class="topcorners">
-                <img src="assets/icons/resource_golden_corner_tl.png" alt="top left golden corner 2 png" class="gcorner_top">
-                <div class="plates_head">
-                    <img src="assets/img/logo_golden.png" alt="logo golden png" class="s3_top_logo">
-                    <div class="plates_title">
-                        <h4>Platos</h4>
-                    </div>                    
-                </div>
-                <img src="assets/icons/resource_golden_corner_tr.png" alt="top rigth golden corner 2 png" class="gcorner_top">
-            </div>
-            <div class="col_b">
-                <div class="card2">
-                    <div class="c_img4">
+    <div id="plates" class="container">
+        <div class="topcorners">
+            <img src="assets/icons/resource_golden_corner_tl.png" alt="top left golden corner 2 png" class="gcorner_top">
+            <img src="assets/icons/resource_golden_corner_tr.png" alt="top rigth golden corner 2 png" class="gcorner_top">           
+        </div>
+        <div class="page_header">
+            <img src="assets/img/logo_golden.png" alt="logo golden png" class="s3_top_logo">
+            <div class="page_title">
+                <h4>Platos</h4>
+            </div>                    
+        </div>
+        <div id="platesp">            
+            <div class="row">
+                <div class="card">
+                    <div class="c_img">
                         <img src="assets/img/plates_lomo_pobre.png" alt="lomo a lo pobre png">
                     </div>
-                    <div class="c_head4">
-                        <div class="c_title4">
+                    <div class="c_head">
+                        <div class="c_title">
                             <h4>Lomo</h4>
                         </div>
-                        <div class="c_subt4">
+                        <div class="c_subt">
                             <p>a lo pobre</p>
                         </div>
                     </div>
-                    <div class="c_body4">
-                        <div class="c_content4">
+                    <div class="c_body">
+                        <div class="c_content">
                             <p>Lomo servido con papas joya, cebolla caramelizada, huevos fritos de gallina feliz acompañado con chimichurri.</p>
                         </div>
-                        <div class="c_price4">
+                        <div class="c_price">
                             <p>$11.900.-</p>
                         </div>
                     </div>
@@ -56,23 +57,23 @@
                 <div class="v_divisor">
                     <img src="assets/icons/v_divisor_yellow.png" alt="divisor yellow png">
                 </div>
-                <div class="card2">
-                    <div class="c_img4">
+                <div class="card">
+                    <div class="c_img">
                         <img src="assets/img/plates_costillar_bbq.png" alt="costillar bbq png">
                     </div>
-                    <div class="c_head4">
-                        <div class="c_title4">
+                    <div class="c_head">
+                        <div class="c_title">
                             <h4>Costillar</h4>
                         </div>
-                        <div class="c_subt4">
+                        <div class="c_subt">
                             <p>Barbecue</p>
                         </div>
                     </div>
-                    <div class="c_body4">
-                        <div class="c_content4">
+                    <div class="c_body">
+                        <div class="c_content">
                             <p>Costillar de cerdo bañado en salsa barbecue de la casa acompañado con papas fritas y coleslaw.</p>
                         </div>
-                        <div class="c_price4">
+                        <div class="c_price">
                             <p>$10.900.-</p>
                         </div>
                     </div>
@@ -81,55 +82,50 @@
             <div class="h_divisor">
                 <img src="/lajoyasanguches/assets/icons/h_divisor_yellow.png" alt="horizontal divisor yellow png">
             </div>
-            <div class="col_a">
+            <div id="marineria" class="row">
                 <div class="card">
-                    <div class="c_head2">
-                        <div class="c_title2">
+                    <div class="c_head">
+                        <div class="c_title">
                             <h4>La Marineria</h4>
                         </div>
                         
                     </div>
-                    <div class="c_body2">
-                        <div class="c_content2">
+                    <div class="c_body">
+                        <div class="c_content">
                             <p>Ceviche de salmón adobado en leche de tigre con cebollín, mix de pimientos y acompañado de quinoa, gajos de palta apanada, nori, cebollita morada y tostaditas.</p>
                         </div>
-                        <div class="c_price2">
+                        <div class="c_price">
                             <p>$11.900.-</p>
                         </div>
                     </div>
-                    <div class="c_img2">
-                        <img src="assets/img/plates_marineria.png" alt="la marineria png">
-                    </div>
+                </div>
+                <div class="c_img">
+                    <img src="assets/img/plates_marineria.png" alt="la marineria png">
                 </div>
             </div>
             <div class="h_divisor">
                 <img src="/lajoyasanguches/assets/icons/h_divisor_pua_yellow.png" alt="divisor">
             </div>
-            <div class="col_a">
-                <div class="card3">
-                    <div class="c_head3">
-                        <div class="c_title3">
+            <div id="crueldad" class="row">
+                <div class="card">
+                    <div class="c_head">
+                        <div class="c_title">
                             <h4>Crueldad</h4>
-                        </div>
-                    
+                        </div>                    
                     </div>
-                    <div class="c_body3">
-                        <div class="c_content3">
+                    <div class="c_body">
+                        <div class="c_content">
                             <p>Crudo de res servido con yema de huevo de codorniz, dip de mostazas, brunoise de cebolla morada, ají verdes y pepinillos encurtidos de la casa, mayo de cilantro y tostadas.</p>
                         </div>
-                        <div class="c_price3">
+                        <div class="c_price">
                             <p>$8.900.-</p>
                         </div>
-                    </div>
-                    <div class="c_img3">
-                        <img src="assets/img/plates_crueldad.png" alt="crueldad png">
-                    </div>
+                    </div>                    
+                </div>
+                <div class="c_img">
+                    <img src="assets/img/plates_crueldad.png" alt="crueldad png">
                 </div>
             </div>
-            <div class="h_divisor">
-                <img src="/lajoyasanguches/assets/icons/h_divisor_pua_yellow.png" alt="divisor">
-            </div>
-            
             <div class="bottomcorners">
                 <img src="assets/icons/resource_golden_corner_bl.png" alt="bottom left golden corner png">
                 <img src="assets/icons/resource_golden_corner_br.png" alt="bottom rigth golden corner png">

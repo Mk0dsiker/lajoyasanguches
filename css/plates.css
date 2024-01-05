@@ -2,6 +2,8 @@
 .container {
     background-image: url("/lajoyasanguches/assets/img/background_black2.png");
     background-size: cover;
+
+    position: relative;
 }
 /* css header:pagina */
 #plates .page_title h4 {    
@@ -47,7 +49,6 @@
 /* css corners */
 #plates .topcorners {
     position: absolute;
-    top: 100px;
 }
 
 /* css footer:pagina*/

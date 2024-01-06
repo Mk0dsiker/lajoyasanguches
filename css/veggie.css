@@ -12,7 +12,7 @@
     font-family: 'Drustic Dialy';  
 }
 
-#veggie .page_subt h4 {
+#veggie .page_subt p {
     font-size: 44px;
     font-family: 'Andora';
     color: green;
@@ -21,6 +21,10 @@
 /* css pagina:pagina */
 #veggiep {
     position: relative;
+}
+
+#veggie .sello_logo {
+    top: 60%;
 }
 
 /* css footer:pagina */
@@ -38,6 +42,7 @@
 }
 
 /* css tarjeta veggie*/
+/* css imagen:tarjeta */
 #veggiep .c_img img {
     width: 140px;
 }
@@ -46,6 +51,3 @@
     width: 160px;
 }
 
-#veggie .sello_logo {
-    top: 60%;
-}

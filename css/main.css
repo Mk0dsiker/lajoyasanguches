@@ -1,20 +1,13 @@
 /* css section 1 */
-.section_1 {
+.section_1, .section_2 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
+    justify-content: center;
 
-/* css section 2 */
-
-.section_2 {
     position: relative;
 }
 
-.section_2 img {
-    width: 100%;
-}
-
+/* css section 2 */
 #section_2 .pagef {
     background-image: url("../assets/img/cover.png");
     background-size: cover;
@@ -22,23 +15,11 @@
 }
 
 #section_2 .pagef p {
-
-    font-family: 'Drustic Dialy';
     letter-spacing: -0.8px;
     line-height: 1.4;
-    text-align: center;
-    font-size: 20px;
-        
 }
 
 /* css section 3 */
-#index .s3_ingredientes {
-    width: 100%;
-    position: absolute;
-    bottom: 24%;
-    z-index: 3;
-}
-
 .section_3 {
     background-image: url("/lajoyasanguches/assets/img/background_section_3b.png");
     background-size: cover;
@@ -56,16 +37,6 @@
 
 #section_3 .page_header{
     margin-top: 0;
-}
-
-#section_3 .pagef {
-    background-image: url("/lajoyasanguches/assets/img/cover.png");
-    background-size: cover;
-
-    width: 100%;
-    height: 140px;
-
-    padding: 0;
 }
 
 #index .page_title h2 {
@@ -96,6 +67,24 @@
     z-index: 2;
 }
 
+
+#index .s3_ingredientes {
+    width: 100%;
+    position: absolute;
+    bottom: 24%;
+    z-index: 3;
+}
+
+#section_3 .pagef {
+    background-image: url("/lajoyasanguches/assets/img/cover.png");
+    background-size: cover;
+
+    width: 100%;
+    height: 140px;
+
+    padding: 0;
+}
+
 #index .sello_logo {
     right: 6%;
     bottom: 6%;
@@ -111,15 +100,13 @@
 }
 
 /* css section 4 */
-
 .section_4 {
     background-image: url("../assets/img/background_section_4b.png");
     background-size: cover;
     background-repeat: no-repeat;
 
-    height: 600px;
+    height: 700px;
 }
-
 
 /* css divisores */
 .divisor {

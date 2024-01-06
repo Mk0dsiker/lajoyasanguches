@@ -9,15 +9,11 @@
 }
 
 #postres .page_header {
-    background-image: url("../assets/img/cover_top.png");
-    background-size: cover;
-
     flex-direction: row;
     justify-content: space-between;
 
     height: 100px;
     padding-top: 10px;
-    padding-bottom: 30px;
 }
 
 .page_title h2 {

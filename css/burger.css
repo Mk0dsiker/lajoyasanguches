@@ -1,24 +1,19 @@
-/* css main */
+/* css main container */
 #burgers.container {
     background-image: url("../assets/img/background_black.png");
 }
 
 /*css header:pagina */
-#burgers .page_title h4 {
-    font-size: 40px;
-    font-family: 'Andora';
-    margin: 0;
+#burgers .page_title h2 {
     color: #feb000;
 }
 
 #burgers .page_subt {
-    width: 80%;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #burgers .page_subt p {
-    margin: 0;
+    margin: 5px 20px;
     color: white;
 }
 
@@ -27,7 +22,12 @@
     position: relative;
 }
 
+#normalb {
+    padding: 0 20px;
+}
+/* css footer:pagina  */
 /* css tarjetas ahumadas */
+/* css header:tarjeta */
 #ahumadas .c_title h4 {
     color: #feb000;
 }
@@ -36,15 +36,12 @@
     color: white;
 }
 
+/* css imagen:tarjeta */
 #ahumadas .c_img img {
     width: 140px;
 }
 
 /* css tarjetas normales */
-#normalb {
-    padding: 0 20px;
-}
-
 /* css header:tarjeta */
 #normalb .c_title h4{
     color: #feb000;
@@ -60,6 +57,7 @@
     width: 160px;
 }
 
+/* css corners */
 #burgers .bottomcorners {
     padding-bottom: 20px;
 }

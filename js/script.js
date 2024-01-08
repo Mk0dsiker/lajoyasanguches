@@ -14,6 +14,14 @@ function menuOff() {
     
 }
 
+function mostrar_pagina(element) {
+    select = element.innerText;
+    console.log(select);
+    if(select == "Para compartir"){
+        console.log("Para compartir fue elegido");
+    }
+}
+
 var check = document.querySelector(".check");
 check.addEventListener('click', idioma);
 
@@ -43,29 +51,10 @@ function idioma() {
 
 
     let id = check.checked;
-    
     if(id == true){
         // location.href = "en/toshare.html"
         location.href = `en/${nameValue}.html`
     } else {
-        // location.href = `../${nameValue}.html`
-        console.log(nameValue);
-    }
-}
-
-var check = document.querySelector(".checkm");
-check.addEventListener('click', tipocarta);
-
-function tipocarta() { 
-    var checkm = document.querySelector(".checkm");
-
-    let id = checkm.checked;
-
-    if(id == true){
-    console.log("boton activado");
-    location.href = `index2.html`
-    } else {
-    console.log("boton desactivado");
-    location.href = `index.html`
+        location.href = `../${nameValue}.html`
     }
 }

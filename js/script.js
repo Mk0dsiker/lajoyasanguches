@@ -54,7 +54,7 @@ function idioma() {
 var check = document.querySelector(".checkm");
 check.addEventListener('click', tipocarta);
 
-function tipocarta() {   
+function tipocarta() {
     var checkm = document.querySelector(".checkm");
 
     let id = checkm.checked;

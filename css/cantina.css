@@ -52,32 +52,3 @@
 #imperial .c_content p, #morir .c_content p, #pasion .c_content p {
     text-align: center;
 }
-
-
-.menu_kind {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-    list-style: none;    
-}
-
-.menu_kind li {
-    padding: 2px;
-    color: black;
-    font-size: 20px;
-    font-family: 'Drustic Dialy';
-}
-
-.menu_kind li:hover {
-    background-color: black;
-    color: white;
-
-    border-radius: 5px;
-    
-    transform: scale(110%);
-    transition: transform 300ms;
-
-    user-select: none;
-    
-}

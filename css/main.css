@@ -7,6 +7,10 @@
     position: relative;
 }
 
+.section_1 {
+    margin-top: 100px;
+}
+
 /* css section 2 */
 #section_2 .pagef {
     background-image: url("../assets/img/cover.png");

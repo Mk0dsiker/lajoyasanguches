@@ -1,297 +1,303 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamburguesas</title>
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <!-- <link rel="stylesheet" href="../css/screen_size.css"> -->
-    <link rel="stylesheet" href="../css/burger.css">
+    <title>Burgers</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- <link rel="stylesheet" href="css/screen_size.css"> -->
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/burger.css">
+    
     <!-- My Fonts -->
-    <link rel="stylesheet" href="../css/font_rule.css">
+    <link rel="stylesheet" href="css/font_rule.css">
 </head>
 <body>
     <header>
         <div class="header">
-            <a href="index.html" target="_self"><img src="../assets/img/logo_white.png" alt="logo white png"></a>
-            <div class="menu_icon" type="button"><img src="../assets/icons/menu_icon.png" alt="menu icon" onclick="menuOn()"></div>
+            <a href="index.html" target="_self"><img src="assets/img/logo_white.png" alt="logo white png"></a>
+            <div class="menu_icon" type="button"><img src="assets/icons/menu_icon.png" alt="menu icon" onclick="menuOn()"></div>
         </div>
     </header>
     <main>
-        <div class="container">
-            <div class="burger_head">
-                <img src="../assets/img/logo_golden.png" alt="logo golden png" class="s3_top_logo">
-                <div class="burger_title">
-                    <h4>Burgers</h4>
+        <div id="burgers" class="container">
+            <!-- Seccion Burger - Header -->
+            <div class="page_header">
+                <img src="assets/img/logo_golden.png" alt="logo golden png" class="s3_top_logo">
+                <div class="page_title">
+                    <h2>Burgers</h2>
                 </div>
-                <div class="burger_subt">
+                <div class="page_subt">
                     <p>100% angus meat</p>
                     <p>Oak smoke</p>
                 </div>
             </div>
-            <div class="page_1">
-                <div class="col_b">
-                    <div class="card2">
-                        <div class="c_img4">
-                            <img src="../assets/img/burger_joyita.png" alt="la joyita png">
+            <!-- Pagina de hamburguesas 1,  -->
+            <div id="ahumadas"> 
+                <div class="row">
+                    <div class="card">
+                        <div class="c_img">
+                            <img src="assets/img/burger_joyita.png" alt="la joyita png">
                         </div>
-                        <div class="c_head4">
-                            <div class="c_title4">
+                        <div class="c_head">
+                            <div class="c_title">
                                 <h4>"La Joyita"</h4>
                             </div>
-                            <div class="c_subt4">
+                            <div class="c_subt">
                                 <p>House bread</p>
                             </div>
                         </div>
-                        <div class="c_body4">
-                            <div class="c_content4">
+                        <div class="c_body">
+                            <div class="c_content">
                                 <p>Angus burger smoked in French oak, sweet potato strings, mozzarella and cheddar cheese with roast beef, crispy onion, poached egg from happy hens</p>
                             </div>
-                            <div class="c_price4">
+                            <div class="c_price">
                                 <p>$12.900.-</p>
                             </div>
                         </div>
                     </div>
                     <div class="v_divisor">
-                        <img src="../assets/icons/v_divisor_yellow.png" alt="divisor yellow png">
+                        <img src="assets/icons/v_divisor_yellow.png" alt="divisor yellow png">
                     </div>
-                    <div class="card2">
-                        <div class="c_img4">
-                            <img src="../assets/img/burger_pituca.png" alt="pituca png">
+                    <div class="card">
+                        <div class="c_img">
+                            <img src="assets/img/burger_pituca.png" alt="pituca png">
                         </div>
-                        <div class="c_head4">
-                            <div class="c_title4">
+                        <div class="c_head">
+                            <div class="c_title">
                                 <h4>"Pituca"</h4>
                             </div>
-                            <div class="c_subt4">
+                            <div class="c_subt">
                                 <p>House bread</p>
                             </div>
                         </div>
-                        <div class="c_body4">
-                            <div class="c_content4">
+                        <div class="c_body">
+                            <div class="c_content">
                                 <p>Angus burger smoked in French oak, Camembert cheese, green chili and passion fruit jam, panko breaded avocado segments, hydroponic lettuce leaves and homemade mayo.</p>
                             </div>
-                            <div class="c_price4">
+                            <div class="c_price">
                                 <p>$10.900.-</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="h_divisor">
-                    <img src="../assets/icons/h_divisor_yellow.png" alt="horizontal divisor yellow png">
+                    <img src="/lajoyasanguches/assets/icons/h_divisor_yellow.png" alt="horizontal divisor yellow png">
                 </div>
-                <div class="col_b">
-                    <div class="card2">
-                        <div class="c_img4">
-                            <img src="../assets/img/burger_picardia.png" alt="picardia png">
+                <div class="row">
+                    <div class="card">
+                        <div class="c_img">
+                            <img src="assets/img/burger_picardia.png" alt="picardia png">
                         </div>
-                        <div class="c_head4">
-                            <div class="c_title4">
+                        <div class="c_head">
+                            <div class="c_title">
                                 <h4>"Picardia"</h4>
                             </div>
-                            <div class="c_subt4">
+                            <div class="c_subt">
                                 <p>House bread</p>
                             </div>
                         </div>
-                        <div class="c_body4">
-                            <div class="c_content4">
+                        <div class="c_body">
+                            <div class="c_content">
                                 <p>Angus burger smoked in French oak, mozzarella cheese, hydroponic lettuce leaves, grilled shrimp with bacon and accompanied with thousand island spicy sauce.</p>
                             </div>
-                            <div class="c_price4">
+                            <div class="c_price">
                                 <p>$10.900.-</p>
                             </div>
                         </div>
                     </div>
                     <div class="v_divisor">
-                        <img src="../assets/icons/v_divisor_yellow.png" alt="divisor yellow png">
+                        <img src="assets/icons/v_divisor_yellow.png" alt="divisor yellow png">
                     </div>
-                    <div class="card2">
-                        <div class="c_img4">
-                            <img src="../assets/img/burger_gaucha.png" alt="gaucha png">
+                    <div class="card">
+                        <div class="c_img">
+                            <img src="assets/img/burger_gaucha.png" alt="gaucha png">
                         </div>
-                        <div class="c_head4">
-                            <div class="c_title4">
+                        <div class="c_head">
+                            <div class="c_title">
                                 <h4>"La Gaucha"</h4>
                             </div>
-                            <div class="c_subt4">
+                            <div class="c_subt">
                                 <p>House bread</p>
                             </div>
                         </div>
-                        <div class="c_body4">
-                            <div class="c_content4">
+                        <div class="c_body">
+                            <div class="c_content">
                                 <p>Angus burger smoked in French oak, grilled provoleta with caramelized onion and mayochurri.</p>
                             </div>
-                            <div class="c_price4">
+                            <div class="c_price">
                                 <p>$10.900.-</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="logo_ahumada_white">
-                    <img src="../assets/img/sello_ahumada_white.png" alt="sello ahumada png">
+                <div class="sello_logo">
+                    <img src="assets/img/sello_ahumada_white.png" alt="sello ahumada png">
                 </div>
             </div>
             <div class="topcorners">
-                <img src="../assets/icons/resource_golden_corner_2_tl.png" alt="top left golden corner 2 png">
-                <img src="../assets/icons/resource_golden_corner_2_tr.png" alt="top rigth golden corner 2 png">
+                <img src="assets/icons/resource_golden_corner_2_tl.png" alt="top left golden corner 2 png">
+                <img src="assets/icons/resource_golden_corner_2_tr.png" alt="top rigth golden corner 2 png">
             </div>
-            <div class="col_a">
-                <div class="card">
-                    <div class="c_head">
-                        <div class="c_title">
-                            <h4>Macanuda</h4>
+            <div id="normalb">
+                <div class="row">
+                    <div class="card">
+                        <div class="c_head">
+                            <div class="c_title">
+                                <h4>Macanuda</h4>
+                            </div>
+                            <div class="c_subt">
+                                <p>House bread</p>
+                            </div>
                         </div>
-                        <div class="c_subt">
-                            <p>House bread</p>
-                        </div>
-                    </div>
-                    <div class="c_body">
-                        <div class="c_content">
-                            <p>Double 180 g Angus beef burger, triple cheddar cheese, bacon, onion rings, barbecue sauce and garlic lactonesaise.</p>
-                        </div>
-                        <div class="c_price">
-                            <p>$12.900.-</p>
-                        </div>
+                        <div class="c_body">
+                            <div class="c_content">
+                                <p>Double 180 g Angus beef burger, triple cheddar cheese, bacon, onion rings, barbecue sauce and garlic lactonesaise.</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$12.900.-</p>
+                            </div>
+                        </div>                        
                     </div>
                     <div class="c_img">
-                        <img src="../assets/img/burger_macanuda.png" alt="macanuda png">
+                        <img src="assets/img/burger_macanuda.png" alt="macanuda png">
                     </div>
                 </div>
-            </div>
-            <div class="h_divisor">
-                <img src="../assets/icons/h_divisor_pua_yellow.png" alt="divisor">
-            </div>
-            <div class="col_a">
-                <div class="card">
-                    <div class="c_head2">
-                        <div class="c_title2">
-                            <h4>Aprietadita</h4>
+                <div class="h_divisor">
+                    <img src="/lajoyasanguches/assets/icons/h_divisor_pua_yellow.png" alt="divisor">
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <div class="c_head">
+                            <div class="c_title">
+                                <h4>Aprietadita</h4>
+                            </div>
+                            <div class="c_subt">
+                                <p>House bread</p>
+                            </div>
                         </div>
-                        <div class="c_subt2">
-                            <p>House bread</p>
-                        </div>
+                        <div class="c_body">
+                            <div class="c_content">
+                                <p>Blend of artisanal Prieta and beef, caramelized onion, Mozzarella cheese, pork on stone, potato chips and homemade mayonnaise.</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$7.900.-</p>
+                            </div>
+                        </div>                        
                     </div>
-                    <div class="c_body2">
-                        <div class="c_content2">
-                            <p>Blend of artisanal Prieta and beef, caramelized onion, Mozzarella cheese, pork on stone, potato chips and homemade mayonnaise.</p>
-                        </div>
-                        <div class="c_price2">
-                            <p>$7.900.-</p>
-                        </div>
-                    </div>
-                    <div class="c_img2">
-                        <img src="../assets/img/burger_aprietadita.png" alt="aprietadita png">
+                    <div class="c_img">
+                        <img src="assets/img/burger_aprietadita.png" alt="aprietadita png">
                     </div>
                 </div>
-            </div>
-            <div class="h_divisor">
-                <img src="../assets/icons/h_divisor_pua_yellow.png" alt="divisor">
-            </div>
-            <div class="col_a">
-                <div class="card">
-                    <div class="c_head3">
-                        <div class="c_title3">
-                            <h4>Chica del 79</h4>
+                <div class="h_divisor">
+                    <img src="/lajoyasanguches/assets/icons/h_divisor_pua_yellow.png" alt="divisor">
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <div class="c_head">
+                            <div class="c_title">
+                                <h4>Chica del 79</h4>
+                            </div>
+                            <div class="c_subt">
+                                <p>House bread</p>
+                            </div>
                         </div>
-                        <div class="c_subt2">
-                            <p>House bread</p>
-                        </div>
+                        <div class="c_body">
+                            <div class="c_content">
+                                <p>Beef burger stuffed with camembert cheese, accompanied with smoked shredded beef, barbecue sauce, cheddar cheese, roasted peppers, hydroponic lettuce leaves and garlic sauce.</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$10.900.-</p>
+                            </div>
+                        </div>                        
                     </div>
-                    <div class="c_body3">
-                        <div class="c_content3">
-                            <p>Beef burger stuffed with camembert cheese, accompanied with smoked shredded beef, barbecue sauce, cheddar cheese, roasted peppers, hydroponic lettuce leaves and garlic sauce.</p>
-                        </div>
-                        <div class="c_price3">
-                            <p>$10.900.-</p>
-                        </div>
-                    </div>
-                    <div class="c_img3">
-                        <img src="../assets/img/burger_chica_79.png" alt="chica del 79 png">
+                    <div class="c_img">
+                        <img src="assets/img/burger_chica_79.png" alt="chica del 79 png">
                     </div>
                 </div>
-            </div>
-            <div class="h_divisor">
-                <img src="../assets/icons/h_divisor_pua_yellow.png" alt="divisor">
-            </div>
-            <div class="col_a">
-                <div class="card">
-                    <div class="c_head2">
-                        <div class="c_title2">
-                            <h4>Playera</h4>
+                <div class="h_divisor">
+                    <img src="/lajoyasanguches/assets/icons/h_divisor_pua_yellow.png" alt="divisor">
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <div class="c_head">
+                            <div class="c_title">
+                                <h4>Playera</h4>
+                            </div>
+                            <div class="c_subt">
+                                <p>House bread</p>
+                            </div>
                         </div>
-                        <div class="c_subt2">
-                            <p>House bread</p>
-                        </div>
+                        <div class="c_body">
+                            <div class="c_content">
+                                <p>Beef burger, Mozzarella cheese, guacamole, garlic shrimp and garlic lactonesaise.</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$8.900.-</p>
+                            </div>
+                        </div>                        
                     </div>
-                    <div class="c_body2">
-                        <div class="c_content2">
-                            <p>Beef burger, Mozzarella cheese, guacamole, garlic shrimp and garlic lactonesaise.</p>
-                        </div>
-                        <div class="c_price2">
-                            <p>$8.900.-</p>
-                        </div>
-                    </div>
-                    <div class="c_img2">
-                        <img src="../assets/img/burger_playera.png" alt="playera png">
+                    <div class="c_img">
+                        <img src="assets/img/burger_playera.png" alt="playera png">
                     </div>
                 </div>
-            </div>
-            <div class="h_divisor">
-                <img src="../assets/icons/h_divisor_pua_yellow.png" alt="divisor">
-            </div>
-            <div class="col_a">
-                <div class="card">
-                    <div class="c_head3">
-                        <div class="c_title3">
-                            <h4>Baronesa</h4>
+                <div class="h_divisor">
+                    <img src="/lajoyasanguches/assets/icons/h_divisor_pua_yellow.png" alt="divisor">
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <div class="c_head">
+                            <div class="c_title">
+                                <h4>Baronesa</h4>
+                            </div>
+                            <div class="c_subt">
+                                <p>House bread</p>
+                            </div>
                         </div>
-                        <div class="c_subt2">
-                            <p>House bread</p>
+                        <div class="c_body">
+                            <div class="c_content">
+                                <p>Beef burger, cheddar cheese, caramelized onion, pickles, sliced ​​tomatoes and hydroponic lettuce leaves.</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$8.900.-</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="c_body3">
-                        <div class="c_content3">
-                            <p>Beef burger, cheddar cheese, caramelized onion, pickles, sliced ​​tomatoes and hydroponic lettuce leaves.</p>
-                        </div>
-                        <div class="c_price3">
-                            <p>$8.900.-</p>
-                        </div>
-                    </div>
-                    <div class="c_img3">
-                        <img src="../assets/img/burger_chica_79.png" alt="chica del 79 png">
+                    </div>                    
+                    <div class="c_img">
+                        <img src="assets/img/burger_chica_79.png" alt="chica del 79 png">
                     </div>
                 </div>
-            </div>
-            <div class="h_divisor">
-                <img src="../assets/icons/h_divisor_pua_yellow.png" alt="divisor">
-            </div>
-            <div class="col_a">
-                <div class="card">
-                    <div class="c_head2">
-                        <div class="c_title2">
-                            <h4>Rubia<span>del</span>Puerto</h4>
+                <div class="h_divisor">
+                    <img src="/lajoyasanguches/assets/icons/h_divisor_pua_yellow.png" alt="divisor">
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <div class="c_head">
+                            <div class="c_title">
+                                <h4>Rubia<span>del</span>Puerto</h4>
+                            </div>
+                            <div class="c_subt">
+                                <p>House bread</p>
+                            </div>
                         </div>
-                        <div class="c_subt2">
-                            <p>House bread</p>
-                        </div>
+                        <div class="c_body">
+                            <div class="c_content">
+                                <p>Beef burger, blue cheese, caramelized onion, roasted apple, arugula and mushroom mayo.</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$8.900.-</p>
+                            </div>
+                        </div>                        
                     </div>
-                    <div class="c_body2">
-                        <div class="c_content2">
-                            <p>Beef burger, blue cheese, caramelized onion, roasted apple, arugula and mushroom mayo.</p>
-                        </div>
-                        <div class="c_price2">
-                            <p>$8.900.-</p>
-                        </div>
-                    </div>
-                    <div class="c_img2">
-                        <img src="../assets/img/burger_rubia_del_puerto.png" alt="playera png">
+                    <div class="c_img">
+                        <img src="assets/img/burger_rubia_del_puerto.png" alt="playera png">
                     </div>
                 </div>
             </div>
             <div class="bottomcorners">
-                <img src="../assets/icons/resource_golden_corner_2_bl.png" alt="top left golden corner 2 png">
-                <img src="../assets/icons/resource_golden_corner_2_br.png" alt="top rigth golden corner 2 png">
+                <img src="assets/icons/resource_golden_corner_2_bl.png" alt="top left golden corner 2 png">
+                <img src="assets/icons/resource_golden_corner_2_br.png" alt="top rigth golden corner 2 png">
             </div>
         </div>
     </main>
@@ -299,8 +305,8 @@
         <div class="footer">
             <div class="rowf">
                 <div class="colf2">
-                    <p>Follow Us on Social Media:</p>
-                    <a href="https://www.instagram.com/lajoyasanguches/?hl=es" target="_self"><img src="../assets/icons/instagram_icon.png" alt="instagram icono"></a>
+                    <p>Siguenos en Redes Sociales:</p>
+                    <a href="https://www.instagram.com/lajoyasanguches/?hl=es" target="_self"><img src="assets/icons/instagram_icon.png" alt="instagram icono"></a>
                 </div>
                 
                 <div class="colf">
@@ -311,7 +317,12 @@
         </div>
     </footer>
     <nav class="menu">
-        <div class="x" onclick="menuOff()" type="button"><img src="../assets/icons/x_icon.png" alt="x_icon"></div>
+        <div class="x" onclick="menuOff()" type="button"><img src="assets/icons/x_icon.png" alt="x_icon"></div>
+        <ul class="menu_kind">
+            <span class="comida">Food</span>
+            <input type="checkbox"class="checkm">
+            <span class="tragos">Drinks</span>
+        </ul>
         <ul class="categories">
             <li><a href="index.html" target="_self">Home</a></li>
             <li><a href="toshare.html" target="_self">To Share</a></li>
@@ -321,13 +332,13 @@
             <li><a href="plates.html" target="_self">Main courses</a></li>
             <li><a href="salads.html" target="_self">Salads</a></li>
             <li><a href="postres.html" target="_self">Desserts</a></li>
-        </ul>
+        </ul>        
         <div class="language">
-            <span class="es">Esp</span>
-            <input type="checkbox"class="check" checked>
+            <span class="es">Spa</span>
+            <input type="checkbox"class="check">
             <span class="en">Eng</span>
         </div>
     </nav>
-    <script src="../js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

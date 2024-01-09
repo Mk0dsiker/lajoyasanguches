@@ -2,14 +2,14 @@
 #toshare.container {    
     margin-top: 100px;
 
-    background-image: url("/lajoyasanguches/assets/img/background_beige2.png");
+    background-image: url("../assets/img/background_beige2.png");
     background-size: contain;
     background-repeat: repeat-y;
 }
 
 /* css header:pagina */
 #toshare .page_header {
-    background-image: url("/lajoyasanguches/assets/img/cover_top.png");
+    background-image: url("../assets/img/cover_top.png");
     background-size: cover;
 
     flex-direction: row;
@@ -37,10 +37,16 @@
     padding: 0 20px;
 }
 
+/* css fila */
+#patrimonial.row {
+    justify-content: flex-start;
+}
+
 /* css tarjetas */
 #chorrillana.card {
     margin-bottom: 20px;
 }
+
 /* css header:tarjeta */
 #patrimonial .c_head img {
     width: 200px;
@@ -94,8 +100,15 @@
     width: 220px;
 }
 
+#patrimonial .c_img {
+    position: absolute;
+    right: -6%;
+    
+    
+}
+
 #patrimonial .c_img img {
-    width: 150px;
+    width: 300px;
 }
 
 #chorrillana .c_img img {

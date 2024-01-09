@@ -26,7 +26,7 @@ function idioma() {
 
     if(namePage == "Inicio" || namePage == "Home"){
         nameValue = "index";
-    } else if (namePage == "Coctel" || namePage == "Cocktail") {
+    } else if(namePage == "Coctel" || namePage == "Cocktail"){
         nameValue = "index2";
     } else if(namePage == "Para Compartir" || namePage == "To Share"){
         nameValue = "toshare";
@@ -48,7 +48,7 @@ function idioma() {
     let id = check.checked;
     if(id == true){
         // location.href = "en/toshare.html"
-        location.href = `${nameValue}.html`
+        location.href = `en/${nameValue}.html`
     } else {
         location.href = `../${nameValue}.html`
     }
@@ -63,6 +63,6 @@ function cambiarmenu() {
         // location.href = "en/toshare.html"
         location.href = `index2.html`
     } else {
-        location.href = `en/index.html`
+        location.href = `index.html`
     }
 }

@@ -30,6 +30,8 @@ function idioma() {
         nameValue = "index2";
     } else if(namePage == "Para Compartir" || namePage == "To Share"){
         nameValue = "toshare";
+    } else if(namePage == "Cantina" || namePage == "Canteen"){
+        nameValue = "cantina";
     } else if(namePage == "Hamburguesas" || namePage == "Burgers"){
         nameValue = "burger";
     } else if(namePage == "Veggie"){

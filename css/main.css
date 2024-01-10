@@ -25,7 +25,7 @@
 
 /* css section 3 */
 .section_3 {
-    background-image: url("/lajoyasanguches/assets/img/background_section_3b.png");
+    background-image: url("../assets/img/background_section_3b.png");
     background-size: cover;
     height: 700px;
 
@@ -80,7 +80,7 @@
 }
 
 #section_3 .pagef {
-    background-image: url("/lajoyasanguches/assets/img/cover.png");
+    background-image: url("../assets/img/cover.png");
     background-size: cover;
 
     width: 100%;

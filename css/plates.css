@@ -1,6 +1,6 @@
 /* css main container */
 .container {
-    background-image: url("/lajoyasanguches/assets/img/background_black2.png");
+    background-image: url("../assets/img/background_black2.png");
     background-size: cover;
 
     position: relative;

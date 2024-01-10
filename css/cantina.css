@@ -5,6 +5,10 @@
     margin-top: 100px;
 }
 
+#coctel .row {
+    justify-content: center;
+}
+
 #clandestino.card, #fresco.card, #panchito.card, #deleite.card, #cardonal.card {
     flex-direction: row;
 }
@@ -38,8 +42,8 @@
     font-size: 10px;
 }
 
-#clandestino img, #fresco img, #panchito img, #deleite img, #cardonal img, #imperial img, #morir img, #pasion img {
-    width: 80px;
+#clandestino img, #fresco img, #panchito img, #deleite img, #cardonal img {
+    width: 60px;
 }
 #imperial .c_body, #morir .c_body, #pasion .c_body {
     align-items: center;
@@ -51,4 +55,20 @@
 
 #imperial .c_content p, #morir .c_content p, #pasion .c_content p {
     text-align: center;
+}
+
+#pasion img {
+    width: 120px;
+}
+
+#morir img {
+    width: 70px;
+}
+
+#imperial img {
+    width: 80px;
+}
+
+#coctel .v_divisor img {
+    height: 180px;
 }

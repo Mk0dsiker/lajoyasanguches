@@ -1,0 +1,56 @@
+/* css main container */
+#jarnsour.container {
+    height: 800px;
+    background-color: grey;
+    margin-top: 100px;
+
+    position: relative;
+}
+
+#jarcards.row {
+    margin-top: 10px;
+}
+
+#jarnsour .card {
+    width: 100px;
+}
+
+
+#jar img {
+    width: 160px;
+}
+
+#jar .c_title h4 {
+    font-size: 48px;
+    color: #feb000;
+}
+
+#jar .c_subt p {
+    font-family: 'Andora';
+    font-size: 28px;
+    color: white;
+}
+
+#jar .c_content p {
+    font-family: 'Avenir';
+    font-size: 32px;
+    font-weight: 700;
+    color: #feb000;
+}
+
+#jar .c_price p {
+    font-family: 'Avenir';
+    color: white;
+}
+
+
+#sangria .c_title p {
+    font-family: 'Avenir';
+    font-size: 28px;
+    text-align: center;
+    color: #feb000;
+}
+
+#sangria .c_content p {
+    color: white;
+}

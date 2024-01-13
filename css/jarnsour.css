@@ -15,6 +15,9 @@
     width: 100px;
 }
 
+#jar.row {
+    justify-content: center;
+}
 
 #jar img {
     width: 160px;
@@ -28,6 +31,7 @@
 #jar .c_subt p {
     font-family: 'Andora';
     font-size: 28px;
+    text-align: center;
     color: white;
 }
 
@@ -40,17 +44,64 @@
 
 #jar .c_price p {
     font-family: 'Avenir';
+    text-align: center;
     color: white;
 }
 
 
-#sangria .c_title p {
+#sangria .c_title p, #bogatuna .c_title p {
     font-family: 'Avenir';
-    font-size: 28px;
+    font-size: 24px;
     text-align: center;
     color: #feb000;
 }
 
-#sangria .c_content p {
+#sangria .c_content p, #summer .c_content p, #bogatuna .c_content p {
+    color: white;
+}
+
+#summer .c_title p {
+    font-family: 'Andora';
+    font-size: 22px;
+    text-align: center;
+    color: #feb000;
+}
+
+#sour.row {
+    justify-content: space-between;
+}
+
+#sour_img img {
+    width: 250px;
+}
+
+#sour_price.card {
+    width: 250px;
+}
+
+#sour .c_head {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#sour .c_body {
+    width: 100%;
+}
+
+#sour .c_title p {
+    font-family: 'Drustic Dialy';
+    font-size: 16px;
+    text-align: center;
+    color: #feb000;
+}
+
+#sour .c_price p {
+    font-size: 12px;
+    color: white;
+}
+
+#sour .c_content p {
+    text-align: left;
     color: white;
 }

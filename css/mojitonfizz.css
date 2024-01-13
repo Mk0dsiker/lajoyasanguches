@@ -1,0 +1,105 @@
+/* css main container */
+#mojitonfizz.container {
+    background-image: url("../assets/img/background_black2.png");
+    background-size: cover;
+    height: 800px;
+    background-color: grey;
+    margin-top: 100px;
+
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#mojito.row {
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#mojito .c_head {
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10%;
+}
+
+#mojito .c_body {
+    width: 100%;
+}
+
+#mojito .c_title p {
+    font-family: 'Drustic Dialy';
+    font-size: 16px;
+    text-align: center;
+    color: #feb000;
+}
+
+
+#mojito_price .c_body {
+    align-items: flex-start;
+}
+
+#mojito .c_price p {
+    font-size: 12px;
+    color: white;
+}
+
+#mojito .c_content p {
+    font-size: 10px;
+    text-align: left;
+    color: white;
+}
+#mojito_header {
+    position: absolute;
+    right: 0;
+}
+
+#mojito_header img {
+    position: absolute;
+    top: 80px;
+    right: 5px;
+    width: 120px;
+}
+
+#mojito_header2 img {
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    width: 100px;
+}
+
+#mojito_header  .c_subt p, #mojito_subt2.c_subt p {
+    text-align: center;
+}
+
+#mojito_title.c_title p, #mojito_title2.c_title p {
+    font-family: 'Drustic Dialy';
+    font-size: 36px;
+    color: white;
+    /* transform: skew(15deg, -20deg) */
+}
+
+#mojito_title2.c_title {
+    position: relative;
+    right: -15px;
+}
+
+#mojito_subt.c_subt {
+    width: 100px;
+}
+
+#mojito_subt.c_subt p, #mojito_subt2.c_subt p {
+    font-family: 'Andora';
+    font-size: 30px;
+    color: #feb000;
+    /* text-align: right; */
+    /* transform: skew(15deg, -20deg) */
+}
+
+#mojito_price.card {
+    width: 240px;
+}
+
+#jarcards .v_divisor img {
+    height: 140px;
+}

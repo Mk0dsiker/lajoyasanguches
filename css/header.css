@@ -110,17 +110,24 @@ margin-bottom: 50px;
     border-radius: 5px;
     
     transform: scale(128%);
-    transition: transform 300ms;
+    transition: transform 500ms;
 
     user-select: none;
     
 }
 
+.selected li {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
 .categories a {
     text-decoration: none;
     color: white;
+    font-size: 14px;
     font-family: 'Avenir';
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 .x {

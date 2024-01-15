@@ -41,12 +41,14 @@ function idioma() {
         nameValue = "mojitonfizz";
     } else if(namePage == "Sanguches" || namePage == "Sandwishes"){
         nameValue = "sanguches";
-    } else if(namePage == "Destilados" || namePage == "Spirits"){
-        nameValue = "destiled";
+    } else if(namePage == "Mules y Coctelería Clásica" || namePage == "Mules and Classics Cocktails"){
+        nameValue = "mulenclassic";
     } else if(namePage == "Platos" || namePage == "Main courses"){
         nameValue = "plates";
     } else if(namePage == "Ensaladas" || namePage == "Salads"){
         nameValue = "salads";
+    } else if(namePage == "Destilados" || namePage == "Spirits"){
+        nameValue = "destiled";
     } else if(namePage == "Postres" || namePage == "Desserts"){
         nameValue = "postres";
     }
@@ -107,6 +109,8 @@ function option_selected() {
         number = "3";
     } else if(namePage == "Mojitos, Spritz y Fizz" || namePage == "Mojitos, Spritz and Fizz"){
         number = "4";
+    } else if(namePage == "Mules y Coctelería Clásica" || namePage == "Mules and Classics Cocktails"){
+        number = "5";
     } else if(namePage == "Destilados" || namePage == "Spirits"){
         number = "7";
     } 

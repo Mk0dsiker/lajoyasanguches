@@ -8,19 +8,81 @@
     box-sizing: border-box;
 }
 
-#whisky .c_title p {
+#mule .c_title p {
     font-size: 32px;
     font-family: 'Drustic Dialy';
     color: #feb000;
     text-align: center;
 }
 
-#whisky .c_subt p {
+#mule .c_subt p {
     font-size: 28px;
     font-family: 'Andora';
     color: white;
 }
 
-#whisky .c_img img {
+#mule .c_img img {
     width: 140px;
+}
+
+#classic.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#classic .c_title h4 {
+    font-size: 32px;
+    color: #feb000;
+}
+
+#classic .c_title p {
+    text-align: center;
+}
+
+#classic .c_subt p {
+    font-size: 26px;
+    font-family: 'Andora';
+    text-align: center;
+    color: white;
+}
+
+#classic .page_header {
+    margin-top: 0;
+}
+
+#classic .c_price p, #classic .c_content p {
+    color: white;
+    margin-top: 0;
+}
+
+#shot.row {
+    justify-content: space-between;
+    gap: 2%;
+}
+
+#shot .c_head {
+    width: 100%;
+    justify-content: flex-start;
+}
+
+#shot .c_headflxr {
+    align-items: flex-start;
+}
+
+#shot_header .c_title h4 {
+    font-size: 26px;
+}
+
+#shot_header .c_subt p {
+    font-size: 20px;
+}
+
+#shot .c_title p {
+    font-size: 14px;
+}
+
+#shot .c_price p {
+    font-size: 12px;
 }

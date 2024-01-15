@@ -3,39 +3,99 @@
     background-size: cover;
     background-color: grey;
     margin-top: 100px;
-}
-#destiled .row {
-    align-items: flex-start;
+
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-#dest.card {
+#piscolon.card {
+    height: 250px;
     justify-content: flex-start;
 }
 
-#dest .dest_title.c_title {
+#piscolon .dest_title.c_title {
     position: absolute
 }
 
-#dest .c_title p {
+#piscolon .c_title p {
     color: white;
     font-size: 28px;
     font-family: 'Andora';
 }
 
-#dest .c_subt {
+#piscolon .c_subt {
     width: 100%;
 }
 
-#dest .c_subt p {
+#piscolon .c_subt p {
     color: #feb000;
     text-align: right;
     font-size: 18px;
     padding-right: 20px;
 }
 
-#destiled img {
+#piscolon .c_img {
     position: absolute;
     top: 5px;
     left: 10px;
+}
+
+#piscolon img {    
     width: 120px;
+}
+
+#piscolon .c_head {
+    justify-content: flex-start;
+}
+
+#whisky .c_title p {
+    font-size: 18px;
+    font-family: 'Drustic Dialy';
+    color: white;
+    text-align: center;
+}
+
+#gentle.c_title p {
+    font-size: 14px;
+}
+
+#whisky .c_subt p {
+    font-size: 20px;
+    font-family: 'Drustic Dialy';
+    color: white;
+}
+
+#whisky .c_img img {
+    width: 100px;
+}
+
+#gin.card {
+    height: 300px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#gin .c_title p {
+    color: white;
+    font-size: 28px;
+    font-family: 'Andora';
+}
+
+#gin .c_content {    
+    position: absolute;
+    bottom: 0;
+}
+
+#gin .c_content p {
+    font-size: 12px;
+    font-family: 'Avenir';
+    text-align: left;
+    color: white;
+}
+
+#gin .c_img img {
+    width: 90px;
+    position:absolute;
+    top: 0;
+    left: 15px;
 }

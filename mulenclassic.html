@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mules y Coctelería Clásica</title>
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/footer.css">
+    
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/mulenclassic.css">
+        
+        <!-- <link rel="stylesheet" href="css/screen_size.css"> -->
+        <!-- My Fonts -->
+        <link rel="stylesheet" href="css/font_rule.css">
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Vina+Sans&display=swap" rel="stylesheet">   
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <a href="index2.html" target="_self"><img src="assets/img/logo_white.png" alt="logo white png"></a>
+                <div class="menu_icon" type="button"><img src="assets/icons/menu_icon.png" alt="menu icon" onclick="menuOn()"></div>
+            </div>
+        </header>
+        <main>
+            <div id="mulenclassic" class="container">
+                <div class="row">
+                    <div id="whisky" class="card">
+                        <div class="c_head">
+                            <div id="dest_subt" class="c_subt">
+                                <p>Los</p>
+                            </div>
+                            <div id="dest_title" class="c_title">
+                                <p>"Mules"</p>
+                            </div>
+                            
+                        </div>
+                        <div class="c_img">
+                            <img src="assets/img/mule.png" alt="whiskey a las rocas png">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="c_headflxr">
+                            <div id="gentle" class="c_title">
+                                <p>Moscow Mule</p>
+                            </div>
+                            <div class="c_priceflxr">
+                                <p>$5.500</p>
+                            </div>
+                        </div>
+                        <div class="c_bodyflxr">
+                            <div class="c_contflxr">
+                                <p>Stolichnaya y Fentiman's ginger beer.</p>
+                            </div>
+                        </div>
+                        <div class="c_headflxr">
+                            <div class="c_title">
+                                <p>Berlín Mule</p>
+                            </div>
+                            <div class="c_priceflxr">
+                                <p>$6.000</p>
+                            </div>
+                        </div>
+                        <div class="c_bodyflxr">
+                            <div class="c_contflxr">
+                                <p>Jaggermaister y Fentiman's ginger beer.</p>
+                            </div>
+                        </div>
+                        <div class="c_headflxr">
+                            <div class="c_title">
+                                <p>London Mule</p>
+                            </div>
+                            <div class="c_priceflxr">
+                                <p>$6.900</p>
+                            </div>
+                        </div>
+                        <div class="c_bodyflxr">
+                            <div class="c_contflxr">
+                                <p>Gin Hendrick's y Fentiman's ginger beer.</p>
+                            </div>
+                        </div>
+                        <div class="c_headflxr">
+                            <div class="c_title">
+                                <p>Elqui Mule</p>
+                            </div>
+                            <div class="c_priceflxr">
+                                <p>$6.900</p>
+                            </div>
+                        </div>
+                        <div class="c_bodyflxr">
+                            <div class="c_contflxr">
+                                <p>Republicano triple destilado y Fentiman's ginger beer.</p>
+                            </div>
+                        </div>
+                        <div class="c_headflxr">
+                            <div class="c_title">
+                                <p>Tenesse Mule</p>
+                            </div>
+                            <div class="c_priceflxr">
+                                <p>$6.900</p>
+                            </div>
+                        </div>
+                        <div class="c_bodyflxr">
+                            <div class="c_contflxr">
+                                <p>Jack Daniel's N°7 y Fentiman's ginger beer.</p>
+                            </div>
+                        </div>                        
+                    </div>                    
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer">
+                <div class="rowf">
+                    <div class="colf2">
+                        <p>Siguenos en Redes Sociales:</p>
+                        <a href="https://www.instagram.com/lajoyasanguches/?hl=es" target="_self"><img src="assets/icons/instagram_icon.png" alt="instagram icono"></a>
+                    </div>
+                    
+                    <div class="colf">
+                        <a href="https://www.tripadvisor.cl/Restaurant_Review-g294306-d12595048-Reviews-La_Joya_Sanguches_Restaurant-Valparaiso_Valparaiso_Region.html" target="_blank"><img src="assets/img/trip_advisor_logo_white.png" alt="trip advisor logo"></a> 
+                        <a href="https://cav.cl/revista/articulo/el-dato-del-dia-joya-le-llaman" target="_self"><img src="assets/img/cav_logo.png" alt="cav logo"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <nav class="menu">
+            <div class="x" onclick="menuOff()" type="button"><img src="assets/icons/x_icon.png" alt="x_icon"></div>
+            <ul class="menu_kind">
+                <span class="comida">Comida</span>
+                <input type="checkbox"class="checkm">
+                <span class="tragos">Tragos</span>
+            </ul>
+            <ul id="parent" class="categories">
+                <li><a href="index.html" target="_self">Inicio</a></li>
+                <li><a href="toshare.html" target="_self">Para compartir</a></li>
+                <li><a href="burger.html" target="_self">Hamburguesas</a></li>
+                <li><a href="veggie.html" target="_self">Veggie</a></li>
+                <li><a href="sanguches.html" target="_self">Sanguches</a></li>
+                <li><a href="plates.html" target="_self">Platos</a></li>
+                <li><a href="salads.html" target="_self">Ensaladas</a></li>
+                <li><a href="postres.html" target="_self">Postres</a></li>
+            </ul>        
+            <div class="language">
+                <span class="es">Esp</span>
+                <input type="checkbox"class="check">
+                <span class="en">Eng</span>
+            </div>
+        </nav>
+        <script src="js/script.js"></script>
+<body>
+    
+</body>
+</html>

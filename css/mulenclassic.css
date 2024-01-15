@@ -1,0 +1,26 @@
+#mulenclassic.container {
+    background-image: url("../assets/img/background_black2.png");
+    background-size: cover;
+    background-color: grey;
+    margin-top: 100px;
+
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#whisky .c_title p {
+    font-size: 32px;
+    font-family: 'Drustic Dialy';
+    color: #feb000;
+    text-align: center;
+}
+
+#whisky .c_subt p {
+    font-size: 28px;
+    font-family: 'Andora';
+    color: white;
+}
+
+#whisky .c_img img {
+    width: 140px;
+}

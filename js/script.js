@@ -103,7 +103,7 @@ function option_selected() {
         number = "1";
     } else if(namePage == "Cantina" || namePage == "Canteen"){
         number = "2";
-    } else if(namePage == "Jarras y Sours" || namePage == "Jar and Sours"){
+    } else if(namePage == "Jarras y Sours" || namePage == "Jars and Sours"){
         number = "3";
     } else if(namePage == "Mojitos, Spritz y Fizz" || namePage == "Mojitos, Spritz and Fizz"){
         number = "4";

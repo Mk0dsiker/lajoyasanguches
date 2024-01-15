@@ -33,10 +33,16 @@ function idioma() {
         nameValue = "cantina";             
     } else if(namePage == "Hamburguesas" || namePage == "Burgers"){
         nameValue = "burger";
+    } else if(namePage == "Jarras y Sours" || namePage == "Jars and Sours"){
+        nameValue = "jarnsour";             
     } else if(namePage == "Veggie"){
         nameValue = "veggie";
+    } else if(namePage == "Mojitos, Spritz y Fizz" || namePage == "Mojitos, Spritz and Fizz"){
+        nameValue = "mojitonfizz";
     } else if(namePage == "Sanguches" || namePage == "Sandwishes"){
         nameValue = "sanguches";
+    } else if(namePage == "Destilados" || namePage == "Spirits"){
+        nameValue = "destiled";
     } else if(namePage == "Platos" || namePage == "Main courses"){
         nameValue = "plates";
     } else if(namePage == "Ensaladas" || namePage == "Salads"){
@@ -101,7 +107,7 @@ function option_selected() {
         number = "3";
     } else if(namePage == "Mojitos, Spritz y Fizz" || namePage == "Mojitos, Spritz and Fizz"){
         number = "4";
-    } else if(namePage == "Destilados" || namePage == "Destiled"){
+    } else if(namePage == "Destilados" || namePage == "Spirits"){
         number = "7";
     } 
     console.log(number);

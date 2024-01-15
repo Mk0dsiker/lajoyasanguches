@@ -4,7 +4,38 @@
     background-color: grey;
     margin-top: 100px;
 }
+#destiled .row {
+    align-items: flex-start;
+}
+
+#dest.card {
+    justify-content: flex-start;
+}
+
+#dest .dest_title.c_title {
+    position: absolute
+}
+
+#dest .c_title p {
+    color: white;
+    font-size: 28px;
+    font-family: 'Andora';
+}
+
+#dest .c_subt {
+    width: 100%;
+}
+
+#dest .c_subt p {
+    color: #feb000;
+    text-align: right;
+    font-size: 18px;
+    padding-right: 20px;
+}
 
 #destiled img {
-    width: 140px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 120px;
 }

@@ -53,6 +53,8 @@ function idioma() {
         nameValue = "destiled";
     } else if(namePage == "Postres" || namePage == "Desserts"){
         nameValue = "postres";
+    } else if(namePage == "Vinos y Espumosos" || namePage == "Wines and Sparklings"){
+        nameValue = "wine";
     }
 
 
@@ -101,7 +103,7 @@ function option_selected() {
         number = "7";
     } else if(namePage == "Postres" || namePage == "Desserts"){
         number = "8";
-    }
+    } 
 
     if(namePage == "Coctel" || namePage == "Cocktail"){
         number = "1";
@@ -117,7 +119,9 @@ function option_selected() {
         number = "6";
     } else if(namePage == "Destilados" || namePage == "Spirits"){
         number = "7";
-    } 
+    } else if(namePage == "Vinos y Espumosos" || namePage == "Wines and Sparklings"){
+        number = "8";
+    }
     console.log(number);
 
     let li = document.querySelector(`#parent :nth-child(${number})`);

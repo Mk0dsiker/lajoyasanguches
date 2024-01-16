@@ -1,15 +1,18 @@
 #shopnbeer.container {
-    background-image: url("/assets/img/background_black2.png");
+    background-image: url("../assets/img/background_black2.png");
     background-size: cover;
+    background-color: grey;    
 }
 
 #shopnbeer .page_header {
-    background-image: url("/assets/img/cover_top2.png");
+    background-image: url("../assets/img/cover_top2.png");
     background-size: cover;
     flex-direction: row;
     justify-content: space-around;
+
     padding: 10px 10px 40px 10px;
     box-sizing: border-box;
+    
 }
 
 #shopnbeer .page_title {
@@ -28,4 +31,108 @@
 
 #shop .c_title p {
     color: black;
+}
+
+#beerv .c_head {
+    width: 120px;
+}
+
+#beerv .c_subt p {
+    font-family: 'Avenir';
+    font-size: 12px;
+    text-align: center;
+    /* text-transform: uppercase; */
+    color: #feb000;
+    
+}
+
+#beerv .c_price p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: white;
+}
+
+#beerv_title p {
+    font-size: 34px;
+    text-align: center;
+}
+
+#beerv_subt.c_subt p {
+    font-size: 18px;
+    font-family: 'Drustic Dialy';
+    text-align: center;
+    color: white;
+
+    margin-bottom: 5px;
+    
+}
+
+#imp2.row {
+    align-items: baseline;
+}
+
+#imp2 .c_head {
+    width: 100%;
+}
+
+#imp2 .c_title p {
+    text-align: left;
+}
+
+#imp2 .c_subt p, #nac .c_subt p, #free .c_subt p {
+    font-size: 12px;
+    font-family: 'Avenir';
+    color: white;
+}
+
+#imp2 .c_price p, #nac .c_price p, #free .c_price p {
+    margin: 5px 0;
+    color: white;
+}
+
+#imp .c_headflxr, #nac .c_headflxr {
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#imp_title.c_title p {
+    font-size: 32px;
+}
+
+#imp_subt.c_subt p {
+    font-size: 22px;
+    font-family: 'Andora';
+    color: white;
+}
+#nacional .c_headflxr {
+    align-items: center;
+    justify-content: center;
+}
+
+#nacional_title p {
+    font-size: 30px;
+    text-align: center;
+}
+
+#nacional_subt.c_subt p {
+    font-size: 22px;
+    font-family: 'Andora';
+    text-align: center;
+    color: white;
+
+    margin-bottom: 5px;
+    
+}
+#nac .c_head, #free .c_head {
+    width: 100%;
+}
+#free_title.c_title p {
+    font-size: 28px;
+    font-family: 'Andora';
+    color: white;
+    text-align: center;
+}
+
+#estrella.c_title p {
+    font-size: 14px;
 }

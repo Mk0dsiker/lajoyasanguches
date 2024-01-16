@@ -45,6 +45,8 @@ function idioma() {
         nameValue = "mulenclassic";
     } else if(namePage == "Platos" || namePage == "Main courses"){
         nameValue = "plates";
+    } else if(namePage == "Shops y Cervezas" || namePage == "Shops and Beers"){
+        nameValue = "shopnbeer";
     } else if(namePage == "Ensaladas" || namePage == "Salads"){
         nameValue = "salads";
     } else if(namePage == "Destilados" || namePage == "Spirits"){
@@ -111,6 +113,8 @@ function option_selected() {
         number = "4";
     } else if(namePage == "Mules y Coctelería Clásica" || namePage == "Mules and Classics Cocktails"){
         number = "5";
+    } else if(namePage == "Shops y Cervezas" || namePage == "Shops and Beers"){
+        number = "6";
     } else if(namePage == "Destilados" || namePage == "Spirits"){
         number = "7";
     } 

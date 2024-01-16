@@ -1,0 +1,172 @@
+#wine.container {
+    background-image: url("../assets/img/background_section_3b.png");
+    background-size: contain;
+    background-position: 0 100px;
+
+    /* height: 800px; */
+    padding-bottom: 100px;
+    box-sizing: border-box;
+}
+
+#wine .page_header {
+    background-image: url("../assets/img/cover_2i.png");
+    background-size: cover;
+    padding-bottom: 40px;
+}
+
+#winenspark.row {
+    position: absolute;
+    top: 200px;
+    background-image: url("../assets/img/cover_double.png");
+    background-size: cover;
+    height: 500px;
+
+    flex-direction: column;
+    justify-content: flex-start;
+
+    padding-top: 40px;
+}
+
+#winecard.row {
+    align-items: flex-start;
+    justify-content: center;
+
+    padding: 50px 5px 0px 5px;
+    box-sizing: border-box;
+}
+
+#wine_title.c_head {
+    width: 100%;
+}
+
+#wine_title .c_title h4 {
+    font-size: 36px;
+}
+
+#wine_title span {
+    font-family: 'Andora';
+}
+
+#winecard .c_head {
+    width: 100%;
+    align-items: flex-start;
+}
+
+#winecard .c_headflxr {
+    display: flex;
+}
+
+#winecard .c_title2 p {
+    font-family: 'Andora';
+    text-align: left;
+}
+#winecard .c_title p {
+    color: black;
+    font-size: 12px;
+}
+
+#winecard .c_subt p {
+    font-family: 'Avenir';
+    font-size: 10px;
+}
+
+#winecard .c_price p {
+    font-size: 12px;
+}
+
+#wine .pagef {
+    background-image: url("../assets/img/cover_2.png");
+    background-size: cover;
+
+    height: 100px;
+    bottom: 0;
+    
+}
+
+#wine .pagef img {
+    width: 150px;
+}
+
+#wine .pagef .c_img2 img {
+    width: 100px;
+}
+
+#wine .pagef .c_img3 img {
+    width: 80px;
+}
+
+#premium.row {
+    background-image: url("../assets/img/cover_double.png");
+    background-size: cover;
+    height: 600px;
+
+    position: relative;
+    top: -50px;
+
+    flex-direction: column;
+    justify-content: flex-start;
+
+    padding-top: 40px;
+}
+
+#premium .c_head {
+    width: 100%;
+}
+
+#premium_title.c_title h4 {
+    font-family: 'Andora';
+    font-size: 48px;
+    padding-top: 60px;
+}
+#catp.c_head, #cati.c_head {
+    width: 100%;
+}
+
+#catp .c_title p, #cati .c_title p {
+    font-family: 'Andora';
+    font-size: 32px;
+}
+
+#premium .c_title p{
+    color: black;
+    text-align: center;
+}
+
+#premium .c_subt p{
+    font-family: 'Avenir';
+    font-size: 12px;
+}
+
+#premium .c_price {
+    margin-bottom: 10px;
+}
+#wine .topcorners {
+    position: absolute;
+}
+
+#wine .bottomcorners {
+    margin-top: 0;
+}
+
+#bi.c_img {
+    position: absolute;
+    left: 0px;
+    top: 250px;
+}
+
+#bd.c_img {
+    position: absolute;
+    right: 0px;
+    top: 250px;
+}
+
+#bi.c_img img{
+    width: 110px;
+}
+
+#bd.c_img img{
+    width: 100px;
+}
+
+
+

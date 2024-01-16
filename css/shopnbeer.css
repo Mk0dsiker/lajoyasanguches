@@ -1,0 +1,31 @@
+#shopnbeer.container {
+    background-image: url("/assets/img/background_black2.png");
+    background-size: cover;
+}
+
+#shopnbeer .page_header {
+    background-image: url("/assets/img/cover_top2.png");
+    background-size: cover;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 10px 40px 10px;
+    box-sizing: border-box;
+}
+
+#shopnbeer .page_title {
+    text-align: left;
+    /* transform: rotate(-90deg); */
+}
+
+#shopnbeer .page_title h4 {
+    font-size: 46px;
+    /* letter-spacing: 2px; */
+}
+
+#shopnbeer .c_img img {
+    width: 60px;
+}
+
+#shop .c_title p {
+    color: black;
+}

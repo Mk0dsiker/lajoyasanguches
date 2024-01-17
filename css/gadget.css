@@ -1,0 +1,72 @@
+
+body { 
+    background-color: grey;
+}
+
+
+.carta {
+    width: 100px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+
+    background: #eee;
+    border-radius: 25px;
+    
+    position: relative;
+}  
+
+
+.carta span {
+    text-transform: uppercase;
+    font-family: 'Drustic Dialy'; 
+    font-size: 14px;
+    color: black;
+
+    cursor: pointer;
+    /* position: absolute; */
+}
+
+.check {
+    position: relative;
+    width: 100px;
+    height: 50px;
+}
+
+.check::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    
+    /* background: #feb000;     */
+    border-radius: 25px;
+    
+    transform: translateX(-43px);
+}
+
+.check::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    /* background: #fff; */
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid #333;
+    box-sizing: border-box;
+    left: -43px;
+}
+
+.check:checked:after {
+    left: 8px;
+    /* border: 2px solid #00a1ff; */
+}
+
+.check:checked:before {
+    /* background:  #00a1ff; */
+    
+}

@@ -4,69 +4,136 @@ body {
 }
 
 
-.carta {
-    width: 100px;
-    height: 50px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1%;
-
-    background: #eee;
-    border-radius: 25px;
-    
-    position: relative;
-}  
-
-
-.carta span {
-    text-transform: uppercase;
-    font-family: 'Drustic Dialy'; 
-    font-size: 14px;
-    color: black;
-
-    cursor: pointer;
-    /* position: absolute; */
+.checkbox-wrapper-34 {
+  --blue: green ;
+  --g08: #333;
+  --g04: #eee;
+  align-self: center;
 }
 
-.check {
-    position: relative;
-    width: 100px;
-    height: 50px;
+.checkbox-wrapper-34 .tgl {
+  display: none;
 }
 
-.check::before {
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 50px;
-    
-    /* background: #feb000;     */
-    border-radius: 25px;
-    
-    transform: translateX(-43px);
+.checkbox-wrapper-34 .tgl,
+.checkbox-wrapper-34 .tgl:after,
+.checkbox-wrapper-34 .tgl:before,
+.checkbox-wrapper-34 .tgl *,
+.checkbox-wrapper-34 .tgl *:after,
+.checkbox-wrapper-34 .tgl *:before,
+.checkbox-wrapper-34 .tgl + .tgl-btn {
+  box-sizing: border-box;
 }
 
-.check::after {
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    /* background: #fff; */
-    border-radius: 25px;
-    transition: 0.25s;
-    border: 2px solid #333;
-    box-sizing: border-box;
-    left: -43px;
+/* .carta-checkbox .tgl,
+.carta-checkbox .tgl:after,
+.carta-checkbox .tgl:before,
+.carta-checkbox .tgl *,
+.carta-checkbox .tgl *:after,
+.carta-checkbox .tgl *:before,
+.carta-checkbox .tgl + .tgl-btn {
+  box-sizing: border-box;
+} */
+
+.checkbox-wrapper-34 .tgl::selection,
+.checkbox-wrapper-34 .tgl:after::selection,
+.checkbox-wrapper-34 .tgl:before::selection,
+.checkbox-wrapper-34 .tgl *::selection,
+.checkbox-wrapper-34 .tgl *:after::selection,
+.checkbox-wrapper-34 .tgl *:before::selection,
+.checkbox-wrapper-34 .tgl + .tgl-btn::selection {
+  background: none;
 }
 
-.check:checked:after {
-    left: 8px;
-    /* border: 2px solid #00a1ff; */
+/* .carta-checkbox .tgl::selection,
+.carta-checkbox .tgl:after::selection,
+.carta-checkbox .tgl:before::selection,
+.carta-checkbox .tgl *::selection,
+.carta-checkbox .tgl *:after::selection,
+.carta-checkbox .tgl *:before::selection,
+.carta-checkbox .tgl + .tgl-btn::selection {
+  background: none;
+} */
+
+.checkbox-wrapper-34 .tgl + .tgl-btn {
+  /*Definimos el estilo de la etiqueta segun la primera clase de nuestro checkbox*/
+  outline: 0;
+  display: block;
+  width: 120px;
+  height: 56px;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  font-size: 18px;
+  /* font-weight: 400; */
+  font-family: 'Drustic Dialy';
+  text-transform: uppercase;
+  color: #fff;
+}
+.checkbox-wrapper-34 .tgl + .tgl-btn:after,
+.checkbox-wrapper-34 .tgl + .tgl-btn:before { 
+  /*Definimos el contenido para la etiqueta segun la primera clase de nuestro checkbox*/
+  /*Esta clase define el texto que sera visto en las opciones*/
+  position: relative;
+  display: block; /*Se comportará como un bloque*/
+  content: "";    /*El contenido sera vacio, pero luego añadiremos el texto de las opciones comida y tragos*/
+  width: 44%;
+  height: 100%;
 }
 
-.check:checked:before {
-    /* background:  #00a1ff; */
-    
+/* .checkbox-wrapper-34 .tgl + .tgl-btn:after {
+  left: 0;
+} */
+
+.checkbox-wrapper-34 .tgl + .tgl-btn:before {  
+  /*Cuando no se ha marcado, el contenido vacio se inserta sobre la etiqueta*/
+  /* display: inline; */
+  position: absolute;
+  top: 32.5%;
+}
+.checkbox-wrapper-34 .tgl:checked + .tgl-btn:after {
+  /*Cuando se ha marcado el contenido vacio sera empujado al otro lado*/
+  left: 56.5%;
+}
+
+.checkbox-wrapper-34 .tgl-ios + .tgl-btn {
+  /*Definimos el estilo para la etiqueta segun la segunda clase de nuestro checkbox*/
+  background: var(--g08);
+  border-radius: 20rem;
+  padding: 2px;
+  /* transition: all 0.4s ease; */
+  /* box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1); */
+}
+.checkbox-wrapper-34 .tgl-ios + .tgl-btn:after {
+  /*Definimos el contenido para la etiqueta segun la segunda clase*/
+  border-radius: 2em;
+  background: #fff;
+  /* transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), padding 0.3s ease, margin 0.3s ease; */
+  /* box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2); */
+}
+.checkbox-wrapper-34 .tgl-ios + .tgl-btn:before {
+  content: "Comida";
+  left: 50%;
+  color: var(--g04);
+  /* transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+}
+/* .checkbox-wrapper-34 .tgl-ios + .tgl-btn:active {
+  box-shadow: inset 0 0 0 30px rgba(0, 0, 0, 0.1);
+} */
+/* .checkbox-wrapper-34 .tgl-ios + .tgl-btn:active:after {
+  padding-right: 0.4em;
+} */
+/* .checkbox-wrapper-34 .tgl-ios:checked + .tgl-btn {
+  background: var(--blue);
+} */
+/* .checkbox-wrapper-34 .tgl-ios:checked + .tgl-btn:active {
+  box-shadow: inset 0 0 0 30px rgba(0, 0, 0, 0.1);
+} */
+/* .checkbox-wrapper-34 .tgl-ios:checked + .tgl-btn:active:after {
+  margin-left: -0.4em;
+} */
+.checkbox-wrapper-34 .tgl-ios:checked + .tgl-btn:before {
+  content: "Tragos";
+  left: 8%;
+  /* color: #fff; */
 }

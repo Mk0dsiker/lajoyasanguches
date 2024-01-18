@@ -14,120 +14,181 @@ function menuOff() {
     
 }
 
-
-var check = document.querySelector(".check");
-check.addEventListener('click', idioma);
-
-function idioma() {
-    let nameValue = "";
-    let namePage = document.querySelector("title").innerText
-    console.log(namePage);
-
-    if(namePage == "Inicio" || namePage == "Home"){
-        nameValue = "index";
-    } else if(namePage == "Coctel" || namePage == "Cocktail"){
-        nameValue = "index2";
-    } else if(namePage == "Para Compartir" || namePage == "To Share"){
-        nameValue = "toshare";
-    } else if(namePage == "Cantina" || namePage == "Canteen"){
-        nameValue = "cantina";             
-    } else if(namePage == "Hamburguesas" || namePage == "Burgers"){
-        nameValue = "burger";
-    } else if(namePage == "Jarras y Sours" || namePage == "Jars and Sours"){
-        nameValue = "jarnsour";             
-    } else if(namePage == "Veggie"){
-        nameValue = "veggie";
-    } else if(namePage == "Mojitos, Spritz y Fizz" || namePage == "Mojitos, Spritz and Fizz"){
-        nameValue = "mojitonfizz";
-    } else if(namePage == "Sanguches" || namePage == "Sandwishes"){
-        nameValue = "sanguches";
-    } else if(namePage == "Mules y Coctelería Clásica" || namePage == "Mules and Classics Cocktails"){
-        nameValue = "mulenclassic";
-    } else if(namePage == "Platos" || namePage == "Main courses"){
-        nameValue = "plates";
-    } else if(namePage == "Shops y Cervezas" || namePage == "Shops and Beers"){
-        nameValue = "shopnbeer";
-    } else if(namePage == "Ensaladas" || namePage == "Salads"){
-        nameValue = "salads";
-    } else if(namePage == "Destilados" || namePage == "Spirits"){
-        nameValue = "destiled";
-    } else if(namePage == "Postres" || namePage == "Desserts"){
-        nameValue = "postres";
-    } else if(namePage == "Vinos y Espumosos" || namePage == "Wines and Sparklings"){
-        nameValue = "wine";
-    }
-
-
-    let id = check.checked;
-    if(id == true){
-        // location.href = "en/toshare.html"
-        location.href = `en/${nameValue}.html`
-    } else {
-        location.href = `../${nameValue}.html`
-    }
+function headerOff(){
+    let header = document.querySelector(".header");
+    header.style.transform = "translateY(-100%)";
 }
 
-var checkm = document.querySelector(".checkm");
-checkm.addEventListener('click', cambiarmenu);
-
-function cambiarmenu() {
-    let id = checkm.checked;
-    if(id == true){
-        // location.href = "en/toshare.html"
-        location.href = `index2.html`
-    } else {
-        location.href = `index.html`
-    }
+function header2Off(){
+    let header2 = document.querySelector(".header2");
+    header2.style.transform = "translateY(-100%)";
 }
 
-window.onload=option_selected();  
+window.onload = header2Off();
 
-function option_selected() {
-    let number = "";
-    let namePage = document.querySelector("title").innerText
-    console.log(namePage);
+function headerOn(){
+    let header = document.querySelector(".header");
+    header.style.transform = "translateY(0)";
+    header2Off();
+}
 
-    if(namePage == "Inicio" || namePage == "Home"){
-        number = "1";
-    } else if(namePage == "Para Compartir" || namePage == "To Share"){
-        number = "2";            
-    } else if(namePage == "Hamburguesas" || namePage == "Burgers"){
-        number = "3";
-    } else if(namePage == "Veggie"){
-        number = "4";
-    } else if(namePage == "Sanguches" || namePage == "Sandwishes"){
-        number = "5";
-    } else if(namePage == "Platos" || namePage == "Main courses"){
-        number = "6";
-    } else if(namePage == "Ensaladas" || namePage == "Salads"){
-        number = "7";
-    } else if(namePage == "Postres" || namePage == "Desserts"){
-        number = "8";
+function header2On(){
+    let header2 = document.querySelector(".header2");
+    header2.style.transform = "translateY(0)";
+}
+
+
+function myFunction(element) {
+    
+    // let li = document.querySelector(".li").innerText;
+    console.log(element.innerText);
+    let container = null;
+    if(element.innerText == "Inicio"){
+        container = document.getElementById("index");
+        container.scrollIntoView();        
+    } else if(element.innerText == "Para compartir"){
+        container = document.getElementById("toshare");
+        container.scrollIntoView();
+    } else if(element.innerText == "Hamburguesas"){
+        container = document.getElementById("burgers");
+        container.scrollIntoView();
+    } else if(element.innerText == "Veggie"){
+        container = document.getElementById("veggie");
+        container.scrollIntoView();
+    } else if(element.innerText == "Sanguches"){
+        container = document.getElementById("sanguches");
+        container.scrollIntoView();
+    } else if(element.innerText == "Platos"){
+        container = document.getElementById("plates");
+        container.scrollIntoView();
+    } else if(element.innerText == "Ensaladas"){
+        container = document.getElementById("salads");
+        container.scrollIntoView();
+    } else if(element.innerText == "Postres"){
+        container = document.getElementById("postres");
+        container.scrollIntoView();
     } 
-
-    if(namePage == "Coctel" || namePage == "Cocktail"){
-        number = "1";
-    } else if(namePage == "Cantina" || namePage == "Canteen"){
-        number = "2";
-    } else if(namePage == "Jarras y Sours" || namePage == "Jars and Sours"){
-        number = "3";
-    } else if(namePage == "Mojitos, Spritz y Fizz" || namePage == "Mojitos, Spritz and Fizz"){
-        number = "4";
-    } else if(namePage == "Mules y Coctelería Clásica" || namePage == "Mules and Classics Cocktails"){
-        number = "5";
-    } else if(namePage == "Shops y Cervezas" || namePage == "Shops and Beers"){
-        number = "6";
-    } else if(namePage == "Destilados" || namePage == "Spirits"){
-        number = "7";
-    } else if(namePage == "Vinos y Espumosos" || namePage == "Wines and Sparklings"){
-        number = "8";
-    }
-    console.log(number);
-
-    let li = document.querySelector(`#parent :nth-child(${number})`);
-    console.log(li);
-
-    li.style.cssText = 'background-color: black; border-radius: 5px;';
-
-    // children.childNodes(number).classList.add(".selected");
+    menuOff();
+    headerOff();
+    header2On();
 }
+
+
+// var check = document.querySelector(".check");
+// check.addEventListener('click', idioma);
+
+// function idioma() {
+//     let nameValue = "";
+//     let namePage = document.querySelector("title").innerText
+//     console.log(namePage);
+
+//     if(namePage == "Inicio" || namePage == "Home"){
+//         nameValue = "index";
+//     } else if(namePage == "Coctel" || namePage == "Cocktail"){
+//         nameValue = "index2";
+//     } else if(namePage == "Para Compartir" || namePage == "To Share"){
+//         nameValue = "toshare";
+//     } else if(namePage == "Cantina" || namePage == "Canteen"){
+//         nameValue = "cantina";             
+//     } else if(namePage == "Hamburguesas" || namePage == "Burgers"){
+//         nameValue = "burger";
+//     } else if(namePage == "Jarras y Sours" || namePage == "Jars and Sours"){
+//         nameValue = "jarnsour";             
+//     } else if(namePage == "Veggie"){
+//         nameValue = "veggie";
+//     } else if(namePage == "Mojitos, Spritz y Fizz" || namePage == "Mojitos, Spritz and Fizz"){
+//         nameValue = "mojitonfizz";
+//     } else if(namePage == "Sanguches" || namePage == "Sandwishes"){
+//         nameValue = "sanguches";
+//     } else if(namePage == "Mules y Coctelería Clásica" || namePage == "Mules and Classics Cocktails"){
+//         nameValue = "mulenclassic";
+//     } else if(namePage == "Platos" || namePage == "Main courses"){
+//         nameValue = "plates";
+//     } else if(namePage == "Shops y Cervezas" || namePage == "Shops and Beers"){
+//         nameValue = "shopnbeer";
+//     } else if(namePage == "Ensaladas" || namePage == "Salads"){
+//         nameValue = "salads";
+//     } else if(namePage == "Destilados" || namePage == "Spirits"){
+//         nameValue = "destiled";
+//     } else if(namePage == "Postres" || namePage == "Desserts"){
+//         nameValue = "postres";
+//     } else if(namePage == "Vinos y Espumosos" || namePage == "Wines and Sparklings"){
+//         nameValue = "wine";
+//     }
+
+
+//     let id = check.checked;
+//     if(id == true){
+//         // location.href = "en/toshare.html"
+//         location.href = `en/${nameValue}.html`
+//     } else {
+//         location.href = `../${nameValue}.html`
+//     }
+// }
+
+// var checkm = document.querySelector(".checkm");
+// checkm.addEventListener('click', cambiarmenu);
+
+// function cambiarmenu() {
+//     let id = checkm.checked;
+//     if(id == true){
+//         // location.href = "en/toshare.html"
+//         location.href = `index2.html`
+//     } else {
+//         location.href = `index.html`
+//     }
+// }
+
+
+// // Funcion para marcar seccion en la cual te encuentras
+// window.onload=option_selected();  
+
+// function option_selected() {
+//     let number = "";
+//     let namePage = document.querySelector("title").innerText
+//     console.log(namePage);
+
+//     if(namePage == "Inicio" || namePage == "Home"){
+//         number = "1";
+//     } else if(namePage == "Para Compartir" || namePage == "To Share"){
+//         number = "2";            
+//     } else if(namePage == "Hamburguesas" || namePage == "Burgers"){
+//         number = "3";
+//     } else if(namePage == "Veggie"){
+//         number = "4";
+//     } else if(namePage == "Sanguches" || namePage == "Sandwishes"){
+//         number = "5";
+//     } else if(namePage == "Platos" || namePage == "Main courses"){
+//         number = "6";
+//     } else if(namePage == "Ensaladas" || namePage == "Salads"){
+//         number = "7";
+//     } else if(namePage == "Postres" || namePage == "Desserts"){
+//         number = "8";
+//     } 
+
+//     if(namePage == "Coctel" || namePage == "Cocktail"){
+//         number = "1";
+//     } else if(namePage == "Cantina" || namePage == "Canteen"){
+//         number = "2";
+//     } else if(namePage == "Jarras y Sours" || namePage == "Jars and Sours"){
+//         number = "3";
+//     } else if(namePage == "Mojitos, Spritz y Fizz" || namePage == "Mojitos, Spritz and Fizz"){
+//         number = "4";
+//     } else if(namePage == "Mules y Coctelería Clásica" || namePage == "Mules and Classics Cocktails"){
+//         number = "5";
+//     } else if(namePage == "Shops y Cervezas" || namePage == "Shops and Beers"){
+//         number = "6";
+//     } else if(namePage == "Destilados" || namePage == "Spirits"){
+//         number = "7";
+//     } else if(namePage == "Vinos y Espumosos" || namePage == "Wines and Sparklings"){
+//         number = "8";
+//     }
+//     console.log(number);
+
+//     let li = document.querySelector(`#parent :nth-child(${number})`);
+//     console.log(li);
+
+//     li.style.cssText = 'background-color: black; border-radius: 5px;';
+
+//     // children.childNodes(number).classList.add(".selected");
+// }

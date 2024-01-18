@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" onscroll="headerOn()">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,7 +32,11 @@
             <div class="menu_icon" type="button"><img src="assets/icons/menu_icon.png" alt="menu icon" onclick="menuOn()"></div>
         </div>
     </header>
-    <main>        
+    <main>
+        <div class="header2">
+            <a href="index.html" target="_self"><img src="assets/img/logo_white.png" alt="logo white png"></a>
+            <div class="menu_icon" type="button"><img src="assets/icons/menu_icon.png" alt="menu icon" onclick="menuOn()"></div>
+        </div>        
         <div id="index" class="container">
             <div class="section_1">
                 <!-- Seccion 1 -->
@@ -43,7 +47,7 @@
                 <span></span>
             </div> -->
         </div>
-        <div id="toshare" class="container">
+        <div id="toshare" class="container" onclick="headerOn()">
             <div class="page_header">
                 <div class="page_title">
                     <h4>Para</h4>
@@ -349,7 +353,7 @@
             </div>
             </div>
         </div>
-        <div id="burgers" class="container">
+        <div id="burgers" class="container" onclick="headerOn()">
             <!-- Seccion Burger - Header -->
             <div class="page_header">
                 <img src="assets/img/logo_golden.png" alt="logo golden png" class="s3_top_logo">
@@ -628,7 +632,7 @@
                 <img src="assets/icons/resource_golden_corner_2_br.png" alt="top rigth golden corner 2 png">
             </div>
         </div>
-        <div id="veggie" class="container">
+        <div id="veggie" class="container" onclick="headerOn()">
             <div class="page_header">
                 <img src="assets/img/logo_veggie.png" alt="logo golden png">
                 <div class="page_title">
@@ -728,7 +732,7 @@
                     <p>Puedes pedir cualquier hamburguesa de la carta en formato 100% vegetariana</p>
             </div>            
         </div>
-        <div id="sanguches" class="container">
+        <div id="sanguches" class="container" onclick="headerOn()">
             <div class="topcorners">
                 <img src="assets/icons/resource_golden_corner_tl.png" alt="top left golden corner 2 png">
                 <img src="assets/icons/resource_golden_corner_tr.png" alt="top rigth golden corner 2 png">
@@ -967,7 +971,7 @@
                 </div>
             </div>                  
         </div>
-        <div id="plates" class="container">
+        <div id="plates" class="container" onclick="headerOn()">
             <div class="topcorners">
                 <img src="assets/icons/resource_golden_corner_tl.png" alt="top left golden corner 2 png" class="gcorner_top">
                 <img src="assets/icons/resource_golden_corner_tr.png" alt="top rigth golden corner 2 png" class="gcorner_top">           
@@ -1112,7 +1116,7 @@
                 </div>
             </div>
         </div>
-        <div id="salads" class="container">
+        <div id="salads" class="container" onclick="headerOn()">
             <div class="page_header">
                 <img src="assets/img/logo_veggie.png" alt="logo golden png">
                 <div class="page_title">
@@ -1206,7 +1210,7 @@
                 </div>
             </div>
         </div>
-        <div id="postres" class="container">
+        <div id="postres" class="container" onclick="headerOn()">
             <div class="page_header">
                 <div class="page_title">
                     <h2>Exquisitos</h2>
@@ -1370,14 +1374,14 @@
             <span class="tragos">Tragos</span>
         </ul>
         <ul id="parent" class="categories">
-            <li><a href="index.html" target="_self">Inicio</a></li>
-            <li><a href="toshare.html" target="_self">Para compartir</a></li>
-            <li><a href="burger.html" target="_self">Hamburguesas</a></li>
-            <li><a href="veggie.html" target="_self">Veggie</a></li>
-            <li><a href="sanguches.html" target="_self">Sanguches</a></li>
-            <li><a href="plates.html" target="_self">Platos</a></li>
-            <li><a href="salads.html" target="_self">Ensaladas</a></li>
-            <li><a href="postres.html" target="_self">Postres</a></li>
+            <button class="btn" onclick="myFunction(this)">Inicio</button>
+            <button class="btn" onclick="myFunction(this)">Para compartir</button>
+            <button class="btn" onclick="myFunction(this)">Hamburguesas</button>
+            <button class="btn" onclick="myFunction(this)">Veggie</button>
+            <button class="btn" onclick="myFunction(this)">Sanguches</button>
+            <button class="btn" onclick="myFunction(this)">Platos</button>
+            <button class="btn" onclick="myFunction(this)">Ensaladas</button>
+            <button class="btn" onclick="myFunction(this)">Postres</button>
         </ul>        
         <div class="language">
             <span class="es">Esp</span>

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/plates.css">
     <link rel="stylesheet" href="css/salads.css">
     <link rel="stylesheet" href="css/postres.css">
+    <link rel="stylesheet" href="css/gadget.css">
     
     <!-- <link rel="stylesheet" href="css/screen_size.css"> -->
     <!-- My Fonts -->
@@ -1368,11 +1369,15 @@
     </footer>
     <nav class="menu">
         <div class="x" onclick="menuOff()" type="button"><img src="assets/icons/x_icon.png" alt="x_icon"></div>
-        <ul class="menu_kind">
-            <span class="comida">Comida</span>
-            <input type="checkbox"class="checkm">
-            <span class="tragos">Tragos</span>
-        </ul>
+        <div id="carta" class="c_head">
+            <div class="c_title">
+                <p>Menu:</p>
+            </div>
+        </div>   
+        <div class="checkbox-wrapper-34">
+            <input class='tgl tgl-ios' id='toggle-34' type='checkbox'>
+            <label class='tgl-btn' for='toggle-34'></label>
+        </div>
         <ul id="parent" class="categories">
             <button class="btn" onclick="myFunction(this)">Inicio</button>
             <button class="btn" onclick="myFunction(this)">Para compartir</button>
@@ -1382,11 +1387,15 @@
             <button class="btn" onclick="myFunction(this)">Platos</button>
             <button class="btn" onclick="myFunction(this)">Ensaladas</button>
             <button class="btn" onclick="myFunction(this)">Postres</button>
-        </ul>        
-        <div class="language">
-            <span class="es">Esp</span>
-            <input type="checkbox"class="check">
-            <span class="en">Eng</span>
+        </ul>
+        <div id="idioma" class="c_head">
+            <div class="c_title">
+                <p>Idioma:</p>
+            </div>
+        </div>        
+        <div class="checkbox-wrapper-34">
+            <input class='tgl tgl-ios' id='toggle-35' type='checkbox'>
+            <label class='tgl-btn2' for='toggle-35'></label>
         </div>
     </nav>
     <script src="js/script.js"></script>

@@ -21,7 +21,8 @@ body {
 .checkbox-wrapper-34 .tgl *,
 .checkbox-wrapper-34 .tgl *:after,
 .checkbox-wrapper-34 .tgl *:before,
-.checkbox-wrapper-34 .tgl + .tgl-btn {
+.checkbox-wrapper-34 .tgl + .tgl-btn,
+.checkbox-wrapper-34 .tgl + .tgl-btn2 {
   box-sizing: border-box;
 }
 
@@ -41,7 +42,8 @@ body {
 .checkbox-wrapper-34 .tgl *::selection,
 .checkbox-wrapper-34 .tgl *:after::selection,
 .checkbox-wrapper-34 .tgl *:before::selection,
-.checkbox-wrapper-34 .tgl + .tgl-btn::selection {
+.checkbox-wrapper-34 .tgl + .tgl-btn::selection,
+.checkbox-wrapper-34 .tgl + .tgl-btn2::selection {
   background: none;
 }
 
@@ -55,7 +57,7 @@ body {
   background: none;
 } */
 
-.checkbox-wrapper-34 .tgl + .tgl-btn {
+.checkbox-wrapper-34 .tgl + .tgl-btn, .checkbox-wrapper-34 .tgl + .tgl-btn2 {
   /*Definimos el estilo de la etiqueta segun la primera clase de nuestro checkbox*/
   outline: 0;
   display: block;
@@ -71,6 +73,8 @@ body {
   color: #fff;
 }
 .checkbox-wrapper-34 .tgl + .tgl-btn:after,
+.checkbox-wrapper-34 .tgl + .tgl-btn:before,
+.checkbox-wrapper-34 .tgl + .tgl-btn2:after,
 .checkbox-wrapper-34 .tgl + .tgl-btn:before { 
   /*Definimos el contenido para la etiqueta segun la primera clase de nuestro checkbox*/
   /*Esta clase define el texto que sera visto en las opciones*/
@@ -85,18 +89,20 @@ body {
   left: 0;
 } */
 
-.checkbox-wrapper-34 .tgl + .tgl-btn:before {  
+.checkbox-wrapper-34 .tgl + .tgl-btn:before,
+.checkbox-wrapper-34 .tgl + .tgl-btn2:before {  
   /*Cuando no se ha marcado, el contenido vacio se inserta sobre la etiqueta*/
   /* display: inline; */
   position: absolute;
   top: 32.5%;
 }
-.checkbox-wrapper-34 .tgl:checked + .tgl-btn:after {
+.checkbox-wrapper-34 .tgl:checked + .tgl-btn:after,
+.checkbox-wrapper-34 .tgl:checked + .tgl-btn2:after {
   /*Cuando se ha marcado el contenido vacio sera empujado al otro lado*/
   left: 56.5%;
 }
 
-.checkbox-wrapper-34 .tgl-ios + .tgl-btn {
+.checkbox-wrapper-34 .tgl-ios + .tgl-btn, .checkbox-wrapper-34 .tgl-ios + .tgl-btn2 {
   /*Definimos el estilo para la etiqueta segun la segunda clase de nuestro checkbox*/
   background: var(--g08);
   border-radius: 20rem;
@@ -104,16 +110,23 @@ body {
   /* transition: all 0.4s ease; */
   /* box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1); */
 }
-.checkbox-wrapper-34 .tgl-ios + .tgl-btn:after {
+.checkbox-wrapper-34 .tgl-ios + .tgl-btn:after, .checkbox-wrapper-34 .tgl-ios + .tgl-btn2:after {
   /*Definimos el contenido para la etiqueta segun la segunda clase*/
   border-radius: 2em;
   background: #fff;
   /* transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), padding 0.3s ease, margin 0.3s ease; */
   /* box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2); */
 }
+
 .checkbox-wrapper-34 .tgl-ios + .tgl-btn:before {
   content: "Comida";
   left: 50%;
+  color: var(--g04);
+  /* transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+}
+.checkbox-wrapper-34 .tgl-ios + .tgl-btn2:before {
+  content: "Español";
+  left: 46%;
   color: var(--g04);
   /* transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
 }
@@ -136,4 +149,14 @@ body {
   content: "Tragos";
   left: 8%;
   /* color: #fff; */
+}
+
+.checkbox-wrapper-34 .tgl-ios:checked + .tgl-btn2:before {
+  content: "Ingles";
+  left: 12%;
+  /* color: #fff; */
+}
+
+.tgl-btn2 {
+  margin-bottom: 30px;
 }

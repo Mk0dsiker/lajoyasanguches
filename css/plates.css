@@ -1,5 +1,5 @@
 /* css main container */
-.container {
+#plates.container {
     background-image: url("../assets/img/background_black2.png");
     background-size: cover;
 
@@ -26,9 +26,9 @@
 }
 
 /* css pagina:pagina */
-#platesp {
+/* #platesp {
     padding: 0 20px;
-}
+} */
 
 /* css footer:pagina */
 

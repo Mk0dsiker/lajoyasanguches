@@ -1,5 +1,5 @@
 /* css main container */
-.container {
+#salads.container {
     background-image: url("../assets/img/background_white.png");
     background-size: cover;
 
@@ -28,7 +28,7 @@
     background-size: cover;
 
     height: 140px;
-    padding: 0 20px;
+    /* padding: 0 20px; */
     justify-content: space-around;
 }
 #salads .pagef .c_head {

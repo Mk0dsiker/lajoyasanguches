@@ -215,6 +215,28 @@ function changeMenu2() {
         
 }
 
+var someElement = document.querySelector('#postres');
+
+window.onscroll = function(){
+    //TOP
+    if(someElement.getBoundingClientRect().top < 0){
+        // console.log("TRIGGER: top of div reached.");
+        
+        changetoYellow();
+        document.getElementById("toggle_carta").checked = false;
+        document.getElementById("toggle_carta2").checked = false;     
+
+    }
+    //BOTTOM
+    
+    if(someElement.getBoundingClientRect().bottom <= 100){
+        // console.log("TRIGGER: bottom of div reached.");
+
+        changetoGreen();
+        document.getElementById("toggle_carta").checked = true;
+        document.getElementById("toggle_carta2").checked = true;
+    }
+}
 
 // var check = document.querySelector(".check");
 // check.addEventListener('click', idioma);

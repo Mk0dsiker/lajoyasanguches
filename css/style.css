@@ -216,6 +216,16 @@ body {
     padding: 0 10px;
 }
 
+.divisor {
+    width: 100%;
+    border: 2px solid #feb000;
+}
+
+.divisor2 {
+    width: 100%;
+    border: 2px solid green;
+}
+
 /* css corners */
 
 .topcorners {

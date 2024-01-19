@@ -1,37 +1,17 @@
-/* css section 1 */
-.section_1, .section_2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    position: relative;
+#index_coctel .section3p img {
+    width: 375px;
 }
 
-.section_1 {
-    margin-top: 100px;
-}
-/* css section 2 */
-#section_2 .pagef {
-    background-image: url("../assets/img/cover.png");
-    background-size: cover;
-    position: absolute;    
-}
 
-#section_2 .pagef p {
-    letter-spacing: -0.8px;
-    line-height: 1.4;
-}
-
-/* css section 3 */
-
-#section_3 {
-    position: relative;
-}
 .section3p {
     display: flex;
     flex-direction: column;
 
     padding-top: 144px;
+}
+
+.section_3p img {
+    width: 375px;
 }
 
 #cover {
@@ -51,18 +31,4 @@
 }
 #cover img {
     width: 80px;
-}
-
-/* css section 4 */
-.section_4 {
-    background-image: url("../assets/img/background_t_section_4.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    height: 700px;
-}
-
-/* css divisores */
-.divisor {
-    border-bottom: 5px solid #ffbe00;
 }

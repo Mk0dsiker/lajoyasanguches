@@ -34,10 +34,10 @@
     margin-right: 20px;
 }
 
-/* #postresp{
-    padding: 20px;
-} */
-
 #postres .c_img img {
     width: 160px;
+}
+
+#postresp {
+    margin-bottom: 20px;
 }

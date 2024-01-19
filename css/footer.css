@@ -2,7 +2,7 @@
 
 .footer {
     background-color: black;
-    height: 100px;
+    height: 130px;
     border-top: 4px solid #ffeb00;
 
     padding: 30px 10px;
@@ -26,5 +26,5 @@
 
 .colf2 img {
     margin-top: 10px;
-    width: 50px;
+    width: 30px;
 }

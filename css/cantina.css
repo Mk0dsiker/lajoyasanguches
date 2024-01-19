@@ -6,7 +6,7 @@
 }
 
 #coctel .row {
-    justify-content: center;
+    justify-content: space-around;
 }
 
 #clandestino.card, #fresco.card, #panchito.card, #deleite.card, #cardonal.card {
@@ -25,13 +25,13 @@
 }
 
 #title .c_title h4 {
-    font-size: 28px;
+    font-size: 36px;
     text-align: left;
     color: #feb000;
 }
 
 #title .c_subt p {
-    font-size: 24px;
+    font-size: 25px;
     color: white;
     font-family: 'Andora';
 }

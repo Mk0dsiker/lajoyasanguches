@@ -4,6 +4,7 @@
   --g08: #333;
   --g04: #eee;
   align-self: center;
+  /* margin-right: 30px; */
 }
 
 .checkbox-wrapper-34 .tgl {
@@ -67,6 +68,7 @@
   text-transform: uppercase;
   color: #fff;
 }
+
 .checkbox-wrapper-34 .tgl + .tgl-btn:after,
 .checkbox-wrapper-34 .tgl + .tgl-btn:before,
 .checkbox-wrapper-34 .tgl + .tgl-btn2:after,
@@ -108,7 +110,7 @@
 .checkbox-wrapper-34 .tgl-ios + .tgl-btn:after, .checkbox-wrapper-34 .tgl-ios + .tgl-btn2:after {
   /*Definimos el contenido para la etiqueta segun la segunda clase*/
   border-radius: 2em;
-  background: #fff;
+  background: #feb000;
   /* transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), padding 0.3s ease, margin 0.3s ease; */
   /* box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2); */
 }
@@ -131,9 +133,9 @@
 /* .checkbox-wrapper-34 .tgl-ios + .tgl-btn:active:after {
   padding-right: 0.4em;
 } */
-/* .checkbox-wrapper-34 .tgl-ios:checked + .tgl-btn {
-  background: var(--blue);
-} */
+.checkbox-wrapper-34 .tgl-ios:checked + .tgl-btn:after {
+  background: #00724d;
+}
 /* .checkbox-wrapper-34 .tgl-ios:checked + .tgl-btn:active {
   box-shadow: inset 0 0 0 30px rgba(0, 0, 0, 0.1);
 } */

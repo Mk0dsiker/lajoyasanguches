@@ -1,13 +1,17 @@
+
 #index_coctel .section3p img {
     width: 375px;
 }
 
+#index_coctel .section_3 {
+    height: 660px;
+}
 
 .section3p {
     display: flex;
     flex-direction: column;
 
-    padding-top: 144px;
+    padding-top: 125px;
 }
 
 .section_3p img {

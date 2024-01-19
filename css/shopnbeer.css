@@ -1,7 +1,7 @@
 #shopnbeer.container {
     background-image: url("../assets/img/background_black2.png");
     background-size: cover;
-    background-color: grey;    
+    background-color: grey;
 }
 
 #shopnbeer .page_header {
@@ -10,7 +10,7 @@
     flex-direction: row;
     justify-content: space-around;
 
-    padding: 10px 10px 40px 10px;
+    padding: 10px 0 50px 0;
     box-sizing: border-box;
     
 }

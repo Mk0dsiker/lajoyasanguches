@@ -4,7 +4,6 @@
     background-size: cover;
     /* height: 800px; */
     background-color: grey;
-    margin-top: 100px;
 
     padding: 10px;
     box-sizing: border-box;
@@ -14,6 +13,10 @@
 #mojitonfizz .row {
     align-items: flex-start;
     /* justify-content: space-between; */
+}
+
+#spritz.row {
+    padding-bottom: 20px;
 }
 
 #mojito img {

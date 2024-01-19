@@ -9,6 +9,13 @@
     box-sizing: border-box;
 }
 
+/* <div class="divisor2">
+            </div> */
+
+html {
+    scroll-behavior: smooth;
+}
+
 /* css main */
 body {
     background-color: black;
@@ -17,7 +24,7 @@ body {
 /* css main container */
 .container {
     width: 375px;
-    /* margin-top: 100px; */
+    /* padding-top: 100px; */
     margin: 0 auto; 
 }
 

@@ -20,6 +20,11 @@
     <!-- hojas de estilo carta tragos -->
     <link rel="stylesheet" href="css/main2.css">
     <link rel="stylesheet" href="css/cantina.css">
+    <link rel="stylesheet" href="css/jarnsour.css">
+    <link rel="stylesheet" href="css/mojitonfizz.css">
+    <link rel="stylesheet" href="css/mulenclassic.css">
+    <link rel="stylesheet" href="css/shopnbeer.css">
+    <link rel="stylesheet" href="css/wine.css">
     
     <!-- <link rel="stylesheet" href="css/screen_size.css"> -->
     <!-- My Fonts -->
@@ -32,7 +37,11 @@
 <body>
     <header>
         <div class="header">
-            <a href="index.html" target="_self"><img src="assets/img/logo_white.png" alt="logo white png"></a>
+            <a class="logo_index" href="index.html" target="_self"><img src="assets/img/logo_white.png" alt="logo white png"></a>
+            <div class="checkbox-wrapper-34" id="toggle">
+                <input class='tgl tgl-ios' id='toggle_carta' type='checkbox' onchange="changeMenu()">
+                <label class='tgl-btn' for='toggle_carta'></label>
+            </div>
             <div class="menu_icon" type="button"><img src="assets/icons/menu_icon.png" alt="menu icon" onclick="menuOn()"></div>
         </div>
     </header>
@@ -44,13 +53,8 @@
         <div id="index" class="container" onclick="headerOn()">
             <div class="section_1">
                 <!-- Seccion 1 -->
-                <img src="assets/img/background_section_1b.png" alt="background section_1">
-                <div class="divisor">
-                </div>                 
+                <img src="assets/img/background_section_1b.png" alt="background section_1">               
             </div>
-            <!-- <div class="divisor">
-                <span></span>
-            </div> -->
         </div>
         <div id="toshare" class="container" onclick="headerOn()">
             <div class="page_header">
@@ -357,8 +361,6 @@
                 </div>
             </div>
             </div>
-            <div class="divisor">
-            </div> 
         </div>
         <div id="burgers" class="container" onclick="headerOn()">
             <!-- Seccion Burger - Header -->
@@ -638,8 +640,6 @@
                 <img src="assets/icons/resource_golden_corner_2_bl.png" alt="top left golden corner 2 png">
                 <img src="assets/icons/resource_golden_corner_2_br.png" alt="top rigth golden corner 2 png">
             </div>
-            <div class="divisor">
-            </div> 
         </div>
         <div id="veggie" class="container" onclick="headerOn()">
             <div class="page_header">
@@ -739,9 +739,7 @@
             </div>
             <div class="pagef">
                     <p>Puedes pedir cualquier hamburguesa de la carta en formato 100% vegetariana</p>
-            </div>
-            <div class="divisor">
-            </div>             
+            </div>            
         </div>
         <div id="sanguches" class="container" onclick="headerOn()">
             <div class="topcorners">
@@ -980,9 +978,7 @@
                 <div class="c_img">
                     <img src="assets/img/pan_de_la_casa.png" alt="pan de la casa png">
                 </div>
-            </div>
-            <div class="divisor">
-            </div>                   
+            </div>                  
         </div>
         <div id="plates" class="container" onclick="headerOn()">
             <div class="topcorners">
@@ -1128,8 +1124,6 @@
                     </div>
                 </div>
             </div>
-            <div class="divisor">
-            </div> 
         </div>
         <div id="salads" class="container" onclick="headerOn()">
             <div class="page_header">
@@ -1223,8 +1217,6 @@
                 <div class="c_img">
                     <img src="assets/img/sello_veggie.png" alt="sello veggie png">
                 </div>
-            </div>
-            <div class="divisor">
             </div>
         </div>
         <div id="postres" class="container" onclick="headerOn()">
@@ -1364,32 +1356,30 @@
                         </div>                    
                     </div>                
                 </div>
-            </div>            
-            <div class="divisor">
-            </div>            
+            </div>           
         </div>
-        <div id="index_coctel" class="container">
+        <div id="index_coctel" class="container" onclick="headerOn()">
             <div class="section_1">
                 <!-- Seccion 1 -->
                 <img src="assets/img/background_t_section_1.png" alt="background section_1">                
-            </div>
-            <div class="divisor">
-            </div>           
+            </div>          
             <div class="section_3">
                 <!-- Seccion 3 -->
-                <div class="section3p">
-                    <img src="assets/img/background_t_section_3.png" alt="background_t_section_3 png">
-                </div>
-                <div class="divisor2"></div>
                 <div id="cover">
                     <img src="assets/img/ala_izq.png" alt="ala_izq png">
                     <img src="assets/img/logo_redbull.png" alt="logo redbull png">
                     <img src="assets/img/logo_white_2.png" alt="logo white 2 png">
                     <img src="assets/img/ala_der.png" alt="ala_der png">
                 </div>
+                <div class="section3p">
+                    <img src="assets/img/background_t_section_3.png" alt="background_t_section_3 png">
+                </div>                
             </div>                      
         </div>
-        <div id="coctel" class="container">
+        <div id="coctel" class="container" onclick="headerOn()">
+            <div class="h_divisor">
+                <img src="assets/icons/h_divisor_pua_yellow.png" alt="horizontal divisor yellow png">
+            </div>
             <div class="row">
                 <div id="title" class="card">
                     <div class="c_head">
@@ -1539,10 +1529,1526 @@
                         </div>
                     </div>
                     <img class="c_img" src="assets/img/pasion_b.png">
-                </div>          
-            </div>                        
-            <div class="divisor2">
-            </div> 
+                </div>                     
+            </div>
+            <div class="h_divisor">
+                <img src="assets/icons/h_divisor_pua_yellow.png" alt="horizontal divisor yellow png">
+            </div>
+        </div>
+        <div id="jarnsour" class="container" onclick="headerOn()">
+            <div id="jar" class="row">
+                <div id="jar_header" class="card">
+                    <div class="c_title">
+                        <h4>Jarras</h4>
+                    </div>
+                    <div class="c_subt">
+                        <p>de la casa</p>
+                    </div>
+                    <div class="c_content">
+                        <p>1 Lt.</p>
+                    </div>
+                    <div class="c_price">
+                        <p>$12.900.-</p>
+                    </div>
+                </div>
+                <img src="assets/img/jarra_sangria.png" alt="jarra de sangria png">
+            </div>
+            <div id="jarcards" class="row">
+                <div id="sangria" class="card">
+                    <div class="c_title">
+                        <p>Sangria Joya</p>
+                    </div>
+                    <div class="c_content">
+                        <p>Vino tinto carmenere, Ron blanco Bayou, mix de frutas, Triple sec, syrup y shot de maracuyá.</p>
+                    </div>
+                </div>
+                <div class="v_divisor">
+                    <img src="assets/icons/v_divisor_yellow.png" alt="divisor vertical png">
+                </div>
+                <div id="summer" class="card">
+                    <div class="c_title">
+                        <p>Summer</p>
+                    </div>
+                    <div class="c_content">
+                        <p>Cinzano blanco, lima, jengibre, syrup, ginger ale, rodaja de pepino y limón, slice de jengibre y albahaca.</p>
+                    </div>
+                </div>
+                <div class="v_divisor">
+                    <img src="assets/icons/v_divisor_yellow.png" alt="divisor vertical png">
+                </div>
+                <div id="bogatuna" class="card">
+                    <div class="c_title">
+                        <p>Bogatuna</p>
+                    </div>
+                    <div class="c_content">
+                        <p>Vino chardonnay, pulpa de naranja con chirimoya y frutas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="h_divisor">
+                <img src="assets/icons/h_divisor_pua_yellow.png" alt="divisor horizontal png">
+            </div>
+            <div id="sour" class="row">
+                <div id="sour_header" class="card">
+                    <div id="sour_title" class="c_title">
+                        <p>Sours</p>
+                    </div>
+                    <div id="sour_subt" class="c_subt">
+                        <p>y sus variedades</p>
+                    </div>
+                    <div class="c_img">
+                        <img src="assets/img/sour.png" alt="sour png">
+                    </div>
+                </div>
+                <div id="sour_price" class="cardflxr">
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Joya Sour</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$4.900 / $6.900</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Pisco Republicado reposado, pulpa de maracuyá, ají verde y syrup</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Sour Tradicional</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$4.500 / $6.500</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Pisco Republicado triple destilado.</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Sour premium</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$8.900</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Pisco Waqar</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Sour peruano</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$4.900 / $6.900</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Pisco 100% Peruano Viñas de Oro.</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Amaretto sour</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$5.900 / $8.900</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Amaretto Disaronno</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Chardonnay sour</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$4.000 / $5.900</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Vino blanco chardonnay</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Whisky sour</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$4.500 / $6.000</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Whisky Grant's</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Gentleman sour</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$8.900</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Gentleman Jack</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h_divisor">
+                <img src="assets/icons/h_divisor_pua_yellow.png" alt="horizontal divisor yellow png">
+            </div>
+        </div>
+        <div id="mojitonfizz" class="container" onclick="headerOn()">
+            <div id="mojito" class="row">
+                <div class="card">
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Mojito Cubano</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$5.000</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Ron Bayou® 3 años.</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Mojito Sabores</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$5.500</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Ron Bayou® 3 años y pulpa de fruta sabor a elección.</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Mojito.cl</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$5.500</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Pisco Republicano® triple destilado</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Patagónico</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$5.900</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Licor Trakal</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Cervecero</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$4.900</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Ron Bayou® 3 años y cerveza Royal Guard®</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Mojito Jack</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$5.900</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Hecho con Jack Daniel's</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Espumante</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$5.500</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Espumante</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Jagger</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$5.500</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Jagger, lima, syrup,hojas de menta y soda.</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Redbull</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$5.500</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Ron Bayou® 3 años, Redbull, lima, syrup y hojas de menta.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="c_head">
+                        <div id="mojito_subt" class="c_subt">
+                            <p>Los</p>
+                        </div>
+                        <div id="mojito_title" class="c_title">
+                            <p>Mojitos</p>
+                        </div>                        
+                        <div class="c_img">
+                            <img src="assets/img/mojito_tradicional.png" alt="sour png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h_divisor">
+                <img src="assets/icons/h_divisor_pua_yellow.png" alt="divisor horizontal png">
+            </div>
+            <div id="spritz" class="row">
+                <div class="cardflxr">
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Aperol Spritz</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$5.000</p>
+                        </div>
+                    </div>                    
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Ramazzotti Spritz</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$5.500</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Ramazzotti Spritz</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$5.500</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Ramazzoti Violleto</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$5.500</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Hugo Spritz</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$5.500</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Licor de Sauco, espumante, hojas de menta, soda, hielo.</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Chambord Spritz</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$5.990</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Chambord®, espumante, soda, arándanos.</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Campari Spritz</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$5.500</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Disaronno Fizz</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$6.900</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Amaretto Disaronno, tónica, jugo de limón y rodaja de naranja.</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Honey Lemonade</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$5.900</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Jack Daniel's Honey, lima, syrup, soda, rodaja de limón y menta.</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Trikahue</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$5.500</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Pisco Republicano® reposado, araucano, lima, jengibre y ginger ale.</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Sangría Spritz</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$5.900</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Vino Carmenere, syrup de frutos rojos, Cinzano Rosso y espumante.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class=".c_head">
+                        <div id="spritz_title" class="c_title">
+                            <p>"Spritz"</p>
+                        </div>
+                        <div id="spritz_subt" class="c_subt">
+                            <p>and</p>
+                        </div>
+                        <div id="spritz_title2" class="c_title">
+                        <p>"Fizz"</p>
+                        </div>
+                    </div>
+                    <div class="c_img">
+                        <img src="assets/img/spritz_fizz.png" alt="spritz y fizz png">
+                    </div>
+                </div>
+            </div>
+            <div class="h_divisor">
+                <img src="assets/icons/h_divisor_pua_yellow.png" alt="horizontal divisor yellow png">
+            </div>
+        </div>
+        <div id="mulenclassic" class="container" onclick="headerOn()">
+            <div class="row">
+                <div id="mule" class="card">
+                    <div class="c_head">
+                        <div id="mule_subt" class="c_subt">
+                            <p>Los</p>
+                        </div>
+                        <div id="mule_title" class="c_title">
+                            <p>"Mules"</p>
+                        </div>
+                        
+                    </div>
+                    <div class="c_img">
+                        <img src="assets/img/mule.png" alt="whiskey a las rocas png">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="c_headflxr">
+                        <div id="gentle" class="c_title">
+                            <p>Moscow Mule</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$5.500</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Stolichnaya y Fentiman's ginger beer.</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Berlín Mule</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$6.000</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Jaggermaister y Fentiman's ginger beer.</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>London Mule</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$6.900</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Gin Hendrick's y Fentiman's ginger beer.</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Elqui Mule</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$6.900</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Republicano triple destilado y Fentiman's ginger beer.</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Tenesse Mule</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$6.900</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Jack Daniel's N°7 y Fentiman's ginger beer.</p>
+                        </div>
+                    </div>                        
+                </div>                    
+            </div>
+            <div class="h_divisor">
+                <img src="assets/icons/h_divisor_pua_yellow.png" alt="divisor horizontal png">
+            </div>
+            <div id="classic" class="row">
+                <div class="page_header">
+                    <div class="c_head">
+                        <div class="c_title">
+                            <h4>Coctelería</h4>
+                        </div>
+                        <div class="c_subt">
+                            <p>Clásica</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <div class="c_head">
+                            <div class="c_title">
+                                <p>Piña Colada</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$4.900</p>
+                            </div>
+                        </div>
+                        <div class="c_head">
+                            <div class="c_title">
+                                <p>Old fashion apple</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$4.500</p>
+                            </div>
+                        </div>
+                        <div class="c_head">
+                            <div class="c_title">
+                                <p>Tequila Margarita</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$4.500</p>
+                            </div>
+                        </div>
+                        <div class="c_head">
+                            <div class="c_title">
+                                <p>Ruso blanco / negro</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$4.500</p>
+                            </div>
+                        </div>
+                        <div class="c_head">
+                            <div class="c_title">
+                                <p>Manhattan</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$4.500</p>
+                            </div>
+                        </div>
+                        <div class="c_head">
+                            <div class="c_title">
+                                <p>Mai tai</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$4.500</p>
+                            </div>
+                        </div>
+                        <div class="c_head">
+                            <div class="c_title">
+                                <p>Carajillo</p>
+                            </div>
+                            <div class="c_content">
+                                <p>Licor 43, espreso y hielo.</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$4.500</p>
+                            </div>                                
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="c_head">
+                            <div class="c_title">
+                                <p>Old fashioned</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$4.500</p>
+                            </div>
+                        </div>
+                        <div class="c_head">
+                            <div class="c_title">
+                                <p>Negroni</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$5.500</p>
+                            </div>
+                        </div>
+                        <div class="c_head">
+                            <div class="c_title">
+                                <p>Martini dry</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$4.900</p>
+                            </div>
+                        </div>
+                        <div class="c_head">
+                            <div class="c_title">
+                                <p>Tom Collins</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$4.900</p>
+                            </div>
+                        </div>
+                        <div class="c_head">
+                            <div class="c_title">
+                                <p>Cosmopolitan</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$4.500</p>
+                            </div>
+                        </div>
+                        <div class="c_head">
+                            <div class="c_title">
+                                <p>Clavo oxidado</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$5.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h_divisor">
+                    <img src="assets/icons/h_divisor_pua_yellow.png" alt="divisor horizontal png">
+                </div>
+                <div id="shot" class="row">
+                    <div class="card">
+                        <div id="shot_header" class="c_head">
+                            <div class="c_title">
+                                <h4>Shots</h4>
+                            </div>
+                            <div class="c_subt">
+                                <p>Al seco</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="c_headflxr">
+                            <div class="c_title">
+                                <p>Tequila el Jimador reposado</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$3.500</p>
+                            </div>
+                        </div>
+                        <div class="c_headflxr">
+                            <div class="c_title">
+                                <p>Tequila el Jimador blanco</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$3.500</p>
+                            </div>
+                        </div>
+                        <div class="c_headflxr">
+                            <div class="c_title">
+                                <p>Tequila Herradura ultra</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$3.500</p>
+                            </div>
+                        </div>
+                        <div class="c_headflxr">
+                            <div class="c_title">
+                                <p>Jaggermaister Manifest</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$4.500</p>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="card">
+                        <div class="c_headflxr">
+                            <div class="c_title">
+                                <p>Olmeca chocolate</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$4.500</p>
+                            </div>
+                        </div>
+                        <div class="c_headflxr">
+                            <div class="c_title">
+                                <p>Mistral Nobel Apple</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$3.500</p>
+                            </div>
+                        </div>
+                        <div class="c_headflxr">
+                            <div class="c_title">
+                                <p>Jaggermaister</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$3.500</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h_divisor">
+                    <img src="assets/icons/h_divisor_pua_yellow.png" alt="divisor horizontal png">
+                </div>
+            </div>            
+        </div>
+        <div id="shopnbeer" class="container" onclick="headerOn()">
+            <div class="page_header">
+                <div class="page_title">
+                    <h4>Shops</h4>
+                </div>
+                <div class="c_img">
+                    <img src="assets/img/shop.png" alt="shop png">
+                </div>
+                <div id="shop" class="cardflxr">
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Royal Guard</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$4.200</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Valdivia Pale Lager</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$4.900</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Austral Calafate</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$4.900</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Kunstman Torobayo</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$4.900</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Michelada</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$800</p>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <div id="beerv" class="row">
+                <div class="card">
+                    <div class="c_head">
+                        <div class="c_title">
+                            <p>Anfiteatro</p>
+                        </div>
+                        <div class="c_subt">
+                            <p>Decano</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$5.500</p>
+                        </div>
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title">
+                            <p>Anfiteatro</p>
+                        </div>
+                        <div class="c_subt">
+                            <p>San Francisco</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$5.500</p>
+                        </div>
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title">
+                            <p>Anfiteatro</p>
+                        </div>
+                        <div class="c_subt">
+                            <p>Peral</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$5.500</p>
+                        </div>
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title">
+                            <p>Anfiteatro</p>
+                        </div>
+                        <div class="c_subt">
+                            <p>Artilleria</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$5.500</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="c_head">
+                        <div id="beerv_title" class="c_title">
+                            <p>Cervezas</p>
+                        </div>
+                        <div id="beerv_subt" class="c_subt">
+                            <p>de la V región</p>
+                        </div>                        
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title">
+                            <p>Rompe ola</p>
+                        </div>
+                        <div class="c_subt">
+                            <p>Amber ale 5.3°</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$4.500</p>
+                        </div>
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title">
+                            <p>Rompe ola</p>
+                        </div>
+                        <div class="c_subt">
+                            <p>American amber ale 5.5°</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$6.500</p>
+                        </div>
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title">
+                            <p>Rompe ola</p>
+                        </div>
+                        <div class="c_subt">
+                            <p>American pale ale 5.9°</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$6.500</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="c_head">
+                        <div class="c_title">
+                            <p>Mauco</p>
+                        </div>
+                        <div class="c_subt">
+                            <p>Russian imperial stout 8.0°</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$5.500</p>
+                        </div>
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title">
+                            <p>Mauco</p>
+                        </div>
+                        <div class="c_subt">
+                            <p>Scotch Ale 8.0°</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$5.500</p>
+                        </div>
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title">
+                            <p>Mauco</p>
+                        </div>
+                        <div class="c_subt">
+                            <p>Golden Ale 5.0°</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$5.500</p>
+                        </div>
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title">
+                            <p>Mauco</p>
+                        </div>
+                        <div class="c_subt">
+                            <p>Doble ipa 5.0°</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$5.500</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h_divisor">
+                <img src="assets/icons/h_divisor_pua_yellow.png" alt="divisor horizontal png">
+            </div>
+            <div id="imp" class="row">
+                <div class="cardflxr">
+                    <div class="c_headflxr">
+                        <div id="imp_title" class="c_title">
+                            <p>Cervezas</p>
+                        </div>
+                        <div id="imp_subt" class="c_subt">
+                            <p>Importadas</p>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            
+            <div id="imp2" class="row">
+                <div class="card">
+                    <div class="c_head">
+                        <div class="c_title">
+                            <p>Heineken</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$3.200</p>
+                        </div>
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title">
+                            <p>Peroni</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$3.200</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="c_head">
+                        <div class="c_title">
+                            <p>Estrella Galicia</p>
+                        </div>
+                        <div class="c_subt">
+                            <p>Premium lager</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$3.200</p>
+                        </div>
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title">
+                            <p>Erdinger</p>
+                        </div>
+                        <div class="c_subt">
+                            <p>500 cc</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$5.900</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="c_head">
+                        <div class="c_title">
+                            <p>Estrella Galicia</p>
+                        </div>
+                        <div class="c_subt">
+                            <p>Sin gluten</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$3.200</p>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <div class="h_divisor">
+                <img src="assets/icons/h_divisor_pua_yellow.png" alt="divisor horizontal png">
+            </div>
+            <div class="row">
+                <div id="nacional" class="cardflxr">
+                    <div class="c_headflxr">
+                        <div id="nacional_title" class="c_title">
+                            <p>Cervezas</p>
+                        </div>
+                        <div id="nacional_subt" class="c_subt">
+                            <p>Nacionales</p>
+                        </div>
+                    </div>
+                    <div id="nac" class="row">
+                        <div class="card">
+                            <div class="c_head">
+                                <div class="c_title">
+                                    <p>Royal guard</p>
+                                </div>
+                                <div class="c_subt">
+                                    <p>Golden lager</p>
+                                </div>
+                                <div class="c_price">
+                                    <p>$3.000</p>
+                                </div>
+                            </div>
+                            <div class="c_head">
+                                <div class="c_title">
+                                    <p>Kunstmann</p>
+                                </div>
+                                <div class="c_subt">
+                                    <p>Bock 5.3°</p>
+                                </div>
+                                <div class="c_price">
+                                    <p>$3.500</p>
+                                </div>
+                            </div>
+                            <div class="c_head">
+                                <div class="c_title">
+                                    <p>Kunstmann</p>
+                                </div>
+                                <div class="c_subt">
+                                    <p>Miel 4.8°</p>
+                                </div>
+                                <div class="c_price">
+                                    <p>$3.500</p>
+                                </div>
+                            </div>
+                            <div class="c_head">
+                                <div class="c_title">
+                                    <p>Mestra</p>
+                                </div>
+                                <div class="c_subt">
+                                    <p>Pilsen</p>
+                                </div>
+                                <div class="c_price">
+                                    <p>$3.500</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="c_head">
+                                <div class="c_title">
+                                    <p>Dolbeck</p>
+                                </div>
+                                <div class="c_subt">
+                                    <p>Maqui 4.8°</p>
+                                </div>
+                                <div class="c_price">
+                                    <p>$3.300</p>
+                                </div>
+                            </div>
+                            <div class="c_head">
+                                <div class="c_title">
+                                    <p>Dolbeck</p>
+                                </div>
+                                <div class="c_subt">
+                                    <p>Lager belga 4.5°</p>
+                                </div>
+                                <div class="c_price">
+                                    <p>$3.500</p>
+                                </div>
+                            </div>
+                            <div class="c_head">
+                                <div class="c_title">
+                                    <p>Guayacan</p>
+                                </div>
+                                <div class="c_subt">
+                                    <p>Hazy lager 4.7°</p>
+                                </div>
+                                <div class="c_price">
+                                    <p>$5.500</p>
+                                </div>
+                            </div>
+                            <div class="c_head">
+                                <div class="c_title">
+                                    <p>Guayacan</p>
+                                </div>
+                                <div class="c_subt">
+                                    <p>Hazy apa 4.9°</p>
+                                </div>
+                                <div class="c_price">
+                                    <p>$5.500</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="v_divisor">
+                    <img src="assets/icons/v_divisor_yellow.png" alt="divisor vertical png">
+                </div>
+                <div id="free" class="card">
+                    <div class="c_head">
+                        <div id="free_title" class="c_title">
+                            <p>Alcohol Free</p>
+                        </div>
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title">
+                            <p>Peroni</p>
+                        </div>
+                        <div class="c_subt">
+                            <p>0.0% Alcohol</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$3.200</p>
+                        </div>
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title">
+                            <p>Heineken</p>
+                        </div>
+                        <div class="c_subt">
+                            <p>0.0% Alcohol</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$3.200</p>
+                        </div>
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title">
+                            <p>Kunstmann</p>
+                        </div>
+                        <div class="c_subt">
+                            <p>0.0% Alcohol</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$3.200</p>
+                        </div>
+                    </div>
+                    <div class="c_head">
+                        <div id="estrella" class="c_title">
+                            <p>Estrella Galicia</p>
+                        </div>
+                        <div class="c_subt">
+                            <p>0.0% Alcohol</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$3.200</p>
+                        </div>
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title">
+                            <p>Mestra</p>
+                        </div>
+                        <div class="c_subt">
+                            <p>0.0% Alcohol</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$3.500</p>
+                        </div>
+                    </div>
+                </div>             
+            </div>
+            <!-- <div class="h_divisor">
+                <img src="assets/icons/h_divisor_pua_yellow.png" alt="horizontal divisor yellow png">
+            </div> -->
+        </div>
+        <div id="wine" class="container" onclick="headerOn()">
+            <div class="page_header">
+                <img src="assets/img/logo_white_2.png" alt="logo white png">
+            </div>
+            <div id="winenspark" class="row">
+                <div id="wine_title" class="c_head">
+                    <div class="c_title">
+                        <h4>Vinos <span>y</span> Espumantes</h4>
+                    </div>
+                </div>
+            </div>
+            <div id="winecard" class="row">
+                <div class="card">
+                    <div class="c_head">
+                        <div class="c_title2">
+                            <p>Vinos por copa</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Errazuriz Max</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$4.500</p>
+                        </div>
+                    </div>                    
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Riccadonna Chardonau Brut</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$4.000</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Copa Espumante</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$3.500</p>
+                        </div>
+                    </div>                      
+                    <div class="h_divisor">
+                        <img src="assets/icons/h_divisor.png" alt="divisor horizontal png">
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title2">
+                            <p>Chardonnay</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Undurraga T.H.</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$19.900</p>
+                        </div>
+                    </div>                    
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Caliterra tributo</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$15.900</p>
+                        </div>
+                    </div>                    
+                    <div class="h_divisor">
+                        <img src="assets/icons/h_divisor.png" alt="divisor horizontal png">
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title2">
+                            <p>Carmenere</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Arboleda</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$19.900</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Caliterra tributo</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$15.900</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Errazuriz Max</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$19.900</p>
+                        </div>
+                    </div>
+                    <div class="h_divisor">
+                        <img src="assets/icons/h_divisor.png" alt="divisor horizontal png">
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title2">
+                            <p>Merlot</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Undurraga Sibaris</p>
+                        </div>                        
+                        <div class="c_price">
+                            <p>$15.900</p>
+                        </div>
+                    </div>
+                    <div class="c_head">
+                        <div class="c_subt">
+                            <p>Gran reserva</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Riccadonna Chardonau Brut</p>
+                        </div>                       
+                        <div class="c_price">
+                            <p>$4.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="v_divisor">
+                    <img src="assets/icons/v_divisor.png" alt="divisor vertical png">
+                </div>
+                <div class="card">
+                    <div class="c_head">
+                        <div class="c_title2">
+                            <p>Late harvest</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Undurraga</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$12.900</p>
+                        </div>                        
+                    </div>
+                    <div class="h_divisor">
+                        <img src="assets/icons/h_divisor.png" alt="divisor horizontal png">
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title2">
+                            <p>Sauvignon Blanc</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Casa Marin Cartagena</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$15.900</p>
+                        </div>
+                    </div>
+                    <div class="h_divisor">
+                        <img src="assets/icons/h_divisor.png" alt="divisor horizontal png">
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title2">
+                            <p>Cabernet Sauvignon</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Santa Cruz Chaman</p>
+                        </div>                        
+                        <div class="c_price">
+                            <p>$19.900</p>
+                        </div>
+                    </div>
+                    <div class="c_head">
+                        <div class="c_subt">
+                            <p>Reserva</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Caliterra tributo</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$15.900</p>
+                        </div>
+                    </div>
+                    <div class="h_divisor">
+                        <img src="assets/icons/h_divisor.png" alt="divisor horizontal png">
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title2">
+                            <p>Espumantes</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Undurraga brut</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$12.900</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Riccadonna Chardonay Brut</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$17.900</p>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+            <div class="pagef">
+                <div class="c_img">
+                    <img src="assets/img/brindis.png" alt="brindis png">
+                </div>
+                <div class="card">
+                    <div class="c_img2">
+                        <img src="assets/img/logo_santa_cruz.png" alt="logo santa cruz png">
+                    </div>
+                    <div class="c_img2">
+                        <img src="assets/img/logo_casa_marin.png" alt="logo casa marin png">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="c_img3">
+                        <img src="assets/img/logo_undurraga.png" alt="logo undurraga png">
+                    </div>
+                    <div class="c_img2">
+                        <img src="assets/img/logo_errazuriz.png" alt="logo errazuriz png">
+                    </div>
+                </div>
+            </div>
+            <div id="premium" class="row">
+                <div class="topcorners">
+                    <img src="assets/icons/resource_golden_corner_tl.png" alt="top left golden corner 2 png">
+                    <img src="assets/icons/resource_golden_corner_tr.png" alt="top rigth golden corner 2 png">
+                </div>
+                <div class="row">
+                    <div class="c_head">
+                        <div id="premium_title" class="c_title">
+                            <h4>Vinos</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <div id="catp" class="c_head">                            
+                            <div class="c_title">
+                                <p>Categoría Premium</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <div class="c_head">
+                            <div class="c_title">
+                                <p>Casa Marin</p>
+                            </div>
+                            <div class="c_title">
+                                <p>Sauvignon Blanc Cipreces</p>
+                            </div>
+                            <div class="c_subt">
+                                <p>Lo Abarca, Valle de San Antonio</p>
+                            </div>
+                        </div>
+                        <div class="c_price">
+                            <p>$29.900</p>
+                        </div>
+                        <div class="c_head">
+                            <div class="c_title">
+                                <p>Casa Marin</p>
+                            </div>
+                            <div class="c_title">
+                                <p>Syrah Litoral</p>
+                            </div>
+                            <div class="c_subt">
+                                <p>Lo Abarca, Valle de San Antonio</p>
+                            </div>
+                        </div>
+                        <div class="c_price">
+                            <p>$29.900</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <div id="cati" class="c_head">                            
+                            <div class="c_title">
+                                <p>Categoría Icono</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <div class="c_head">
+                            <div class="c_title">
+                                <p>Arboleda</p>
+                            </div>
+                            <div class="c_title">
+                                <p>Brisa Blend</p>
+                            </div>
+                            <div class="c_subt">
+                                <p>Valle de Aconcagua</p>
+                            </div>
+                        </div>
+                        <div class="c_price">
+                            <p>$45.000</p>
+                        </div>
+                    </div>
+                </div>                
+                <div class="bottomcorners">
+                    <img src="assets/icons/resource_golden_corner_bl.png" alt="bottom left golden corner png">
+                    <img src="assets/icons/resource_golden_corner_br.png" alt="bottom rigth golden corner png">
+                </div>
+                <div id="bi" class="c_img">
+                    <img src="assets/img/brindis_izq.png" alt="brindis izq png">
+                </div>
+                <div id="bd" class="c_img">
+                    <img src="assets/img/brindis_der.png" alt="brindis der png">
+                </div> 
+            </div>
         </div>
     </main>
     <footer>
@@ -1567,11 +3073,11 @@
                 <p>Menu:</p>
             </div>
         </div>   
-        <div class="checkbox-wrapper-34">
-            <input class='tgl tgl-ios' id='toggle-34' type='checkbox'>
-            <label class='tgl-btn' for='toggle-34'></label>
+        <div class="checkbox-wrapper-34" id="toggle2">
+            <input class='tgl tgl-ios' id='toggle_carta2' type='checkbox' onchange="changeMenu2()">
+            <label class='tgl-btn' for='toggle_carta2'></label>
         </div>
-        <ul id="parent" class="categories">
+        <div id="parent" class="categories">
             <button class="btn" onclick="myFunction(this)">Inicio</button>
             <button class="btn" onclick="myFunction(this)">Para compartir</button>
             <button class="btn" onclick="myFunction(this)">Hamburguesas</button>
@@ -1580,7 +3086,7 @@
             <button class="btn" onclick="myFunction(this)">Platos</button>
             <button class="btn" onclick="myFunction(this)">Ensaladas</button>
             <button class="btn" onclick="myFunction(this)">Postres</button>
-        </ul>
+        </div>
         <div id="idioma" class="c_head">
             <div class="c_title">
                 <p>Idioma:</p>

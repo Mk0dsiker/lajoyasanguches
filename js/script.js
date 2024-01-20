@@ -7,21 +7,35 @@ function menuOn() {
     
     //Seleccionamos el header y quitamos el el checkbox
     //de comida y tragos cuando abre menu lateral.
+    let title = document.querySelector("title").innerText;
+    console.log(title);
     let toggle = document.querySelector("#toggle_carta");
     let id = toggle.checked;
-    if(id == true){
-        let header = document.querySelector(".header");
-        header.innerHTML = `
-        <a class="logo_index" href="index.html" target="_self"><img src="assets/img/logo_white_green.png" alt="logo white png"></a>
-        <div class="menu_icon" type="button"><img src="assets/icons/menu_icon_green.png" alt="menu icon" onclick="menuOn()"></div>`
+    if(title == "La Joya Sanguches") {
+            if (id == true) {
+            let header = document.querySelector(".header");
+            header.innerHTML = `
+            <a class="logo_index" href="index.html" target="_self"><img src="assets/img/logo_white_green.png" alt="logo white png"></a>
+            <div class="menu_icon" type="button"><img src="assets/icons/menu_icon_green.png" alt="menu icon" onclick="menuOn()"></div>`
+            } else {
+            let header = document.querySelector(".header");
+            header.innerHTML = `
+            <a class="logo_index" href="index.html" target="_self"><img src="assets/img/logo_white.png" alt="logo white png"></a>
+            <div class="menu_icon" type="button"><img src="assets/icons/menu_icon.png" alt="menu icon" onclick="menuOn()"></div>`
+            }
     } else {
-        let header = document.querySelector(".header");
-        header.innerHTML = `
-        <a class="logo_index" href="index.html" target="_self"><img src="assets/img/logo_white.png" alt="logo white png"></a>
-        <div class="menu_icon" type="button"><img src="assets/icons/menu_icon.png" alt="menu icon" onclick="menuOn()"></div>`
-        }
-
-    
+        if (id == true) {
+            let header = document.querySelector(".header");
+            header.innerHTML = `
+            <a class="logo_index" href="index.html" target="_self"><img src="../assets/img/logo_white_green.png" alt="logo white png"></a>
+            <div class="menu_icon" type="button"><img src="../assets/icons/menu_icon_green.png" alt="menu icon" onclick="menuOn()"></div>`
+            } else {
+            let header = document.querySelector(".header");
+            header.innerHTML = `
+            <a class="logo_index" href="index.html" target="_self"><img src="../assets/img/logo_white.png" alt="logo white png"></a>
+            <div class="menu_icon" type="button"><img src="../assets/icons/menu_icon.png" alt="menu icon" onclick="menuOn()"></div>`
+            }
+    }
 }
 
 function menuOff() {
@@ -31,18 +45,21 @@ function menuOff() {
 
     //Seleccionamos el header y añadimos el el checkbox
     // de comida y tragos cuando cierra menu lateral.
+    let title = document.querySelector("title").innerText;
+    console.log(title);
     let toggle2 = document.querySelector("#toggle_carta2");
     let id = toggle2.checked;
-    if(id == true){
-    let header = document.querySelector(".header");
-    header.innerHTML = `
-    <a class="logo_index" href="index.html" target="_self"><img src="assets/img/logo_white_green.png" alt="logo white png"></a>
-    <div class="checkbox-wrapper-34" id="toggle">
-                <input class='tgl tgl-ios' id='toggle_carta' type='checkbox' onchange="changeMenu()" checked>
+    if(title == "La Joya Sanguches") {
+        if (id == true) {
+        let header = document.querySelector(".header");
+        header.innerHTML = `
+        <a class="logo_index" href="index.html" target="_self"><img src="assets/img/logo_white_green.png" alt="logo white png"></a>
+        <div class="checkbox-wrapper-34" id="toggle">
+                <input class='tgl tgl-ios' id='toggle_carta' type='checkbox' onchange="changeMenu()">
                 <label class='tgl-btn' for='toggle_carta'></label>
             </div>
-    <div class="menu_icon" type="button"><img src="assets/icons/menu_icon_green.png" alt="menu icon" onclick="menuOn()"></div>`
-    } else {
+        <div class="menu_icon" type="button"><img src="assets/icons/menu_icon_green.png" alt="menu icon" onclick="menuOn()"></div>`
+        } else {
         let header = document.querySelector(".header");
         header.innerHTML = `
         <a class="logo_index" href="index.html" target="_self"><img src="assets/img/logo_white.png" alt="logo white png"></a>
@@ -51,7 +68,28 @@ function menuOff() {
                 <label class='tgl-btn' for='toggle_carta'></label>
             </div>
         <div class="menu_icon" type="button"><img src="assets/icons/menu_icon.png" alt="menu icon" onclick="menuOn()"></div>`
-    }  
+        }
+} else {
+    if (id == true) {
+        let header = document.querySelector(".header");
+        header.innerHTML = `
+        <a class="logo_index" href="index.html" target="_self"><img src="assets/img/logo_white_green.png" alt="logo white png"></a>
+        <div class="checkbox-wrapper-34" id="toggle">
+                <input class='tgl tgl-ios' id='toggle_carta' type='checkbox' onchange="changeMenu()">
+                <label class='tgl-btn' for='toggle_carta'></label>
+            </div>
+        <div class="menu_icon" type="button"><img src="assets/icons/menu_icon_green.png" alt="menu icon" onclick="menuOn()"></div>`
+        } else {
+        let header = document.querySelector(".header");
+        header.innerHTML = `
+        <a class="logo_index" href="index.html" target="_self"><img src="../assets/img/logo_white.png" alt="logo white png"></a>
+        <div class="checkbox-wrapper-34" id="toggle">
+                <input class='tgl tgl-ios' id='toggle_carta' type='checkbox' onchange="changeMenu()">
+                <label class='tgl-btn' for='toggle_carta'></label>
+            </div>
+        <div class="menu_icon" type="button"><img src="../assets/icons/menu_icon.png" alt="menu icon" onclick="menuOn()"></div>`
+        }
+}
 }
 
 

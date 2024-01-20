@@ -40,7 +40,12 @@
 /* css fila */
 #patrimonial.row {
     justify-content: flex-start;
-    margin-left: 10px;
+    padding-left: 10px;
+}
+
+#pacifico.row {
+    justify-content: flex-start;
+    padding-left: 10px;
 }
 
 /* css tarjetas */
@@ -99,13 +104,18 @@
 }
 
 #pacifico .c_img img {
-    width: 220px;
+    width: 260px;
+}
+
+#pacifico .c_img {
+    position: absolute;
+    right: 0px;  
+    
 }
 
 #patrimonial .c_img {
     position: absolute;
-    right: 10px;
-    
+    right: 0px;  
     
 }
 

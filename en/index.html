@@ -1,17 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" onscroll="headerOn()">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>La Joya Sanguches</title>
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
-
+    <!-- Estilos de cada seccion -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/toshare.css">
+    <link rel="stylesheet" href="../css/burger.css">
+    <link rel="stylesheet" href="../css/veggie.css">
+    <link rel="stylesheet" href="../css/sanguches.css">
+    <link rel="stylesheet" href="../css/plates.css">
+    <link rel="stylesheet" href="../css/salads.css">
+    <link rel="stylesheet" href="../css/postres.css">
     <link rel="stylesheet" href="../css/gadget.css">
+    <!-- hojas de estilo carta tragos -->
+    <link rel="stylesheet" href="../css/main2.css">
+    <link rel="stylesheet" href="../css/cantina.css">
+    <link rel="stylesheet" href="../css/jarnsour.css">
+    <link rel="stylesheet" href="../css/mojitonfizz.css">
+    <link rel="stylesheet" href="../css/mulenclassic.css">
+    <link rel="stylesheet" href="../css/shopnbeer.css">
+    <link rel="stylesheet" href="../css/wine.css">
     
-    <!-- <link rel="stylesheet" href="../css/screen_size.css"> -->
+    <!-- <link rel="stylesheet" href="css/screen_size.css"> -->
     <!-- My Fonts -->
     <link rel="stylesheet" href="../css/font_rule.css">
     <!-- Fonts -->
@@ -22,7 +37,11 @@
 <body>
     <header>
         <div class="header">
-            <a href="index.html" target="_self"><img src="../assets/img/logo_white.png" alt="logo white png"></a>
+            <a class="logo_index" href="index.html" target="_self"><img src="../assets/img/logo_white.png" alt="logo white png"></a>
+            <div class="checkbox-wrapper-34" id="toggle">
+                <input class='tgl tgl-ios' id='toggle_carta' type='checkbox' onchange="changeMenu()">
+                <label class='tgl-btn' for='toggle_carta'></label>
+            </div>
             <div class="menu_icon" type="button"><img src="../assets/icons/menu_icon.png" alt="menu icon" onclick="menuOn()"></div>
         </div>
     </header>
@@ -30,56 +49,2987 @@
         <div id="index" class="container">
             <div class="section_1">
                 <!-- Seccion 1 -->
-                <img src="../assets/img/background_section_1b.png" alt="background section_1">
+                <img src="../assets/img/background_section_1b.png" alt="background section_1">               
+            </div>
+        </div>
+        <div id="toshare" class="container">
+            <div class="page_header">
+                <div class="page_title">
+                    <h4>To</h4>
+                    <h2>Share</h2>
+                </div>
+                <img src="../assets/img/logo_black.png" alt="logo black png">
+            </div>
+            <div id="tosharep">
+            <div class="row">
+                <div id="papasjoya" class="card">
+                    <div class="c_head">
+                        <div class="c_title">
+                            <h4>Papas "Joya"</h4>
+                        </div>
+                        <div class="c_subt">
+                            <!-- empty -->
+                        </div>
+                    </div>
+                    <div class="c_body">
+                        <div class="c_content">
+                            <p>Potato wedges seasoned with salt and paprika with garlic lactonase and BBQ sauce.</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$5.900.-</p>
+                        </div>
+                    </div>
+                    <div class="c_img">
+                        <img src="../assets/img/share_papas_joya.png" alt="papas joya png">
+                    </div>
+                    
+                </div>
+                <div class="v_divisor">
+                    <img src="../assets/icons/v_divisor.png" alt="divisor png">
+                </div>
+                <div id="papasgringas" class="card">
+                    <div class="c_img">
+                        <img src="../assets/img/share_papas_gringas.png" alt="papas gringas png">
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title">
+                            <h4>Papas gringas</h4>
+                        </div>
+                        <div class="c_subt">
+                        
+                        </div>
+                    </div>
+                    <div class="c_body">
+                        <div class="c_content">
+                            <p>Potato wedges covered in cheddar cheese, green onions and smoked bacon crisps.</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$7.900.-</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="h_divisor">
+                <img src="../assets/icons/h_divisor.png" alt="divisor">
+            </div>
+            <div id="papasveggie" class="row">
+                <div class="card">
+                    <div class="c_head">
+                        <div class="c_subt">
+                            <p>Papas</p>
+                        </div>
+                        <div class="c_title">
+                            <h4>Veggie</h4>
+                        </div>
+                    </div>
+                    <div class="c_body">
+                        <div class="c_content">
+                            <p>Potato wedges, caramelized onions, Stir Fry vegetables, crunchy tofu bits and avocado mayonnaise.</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$7.900.-</p>
+                        </div>                        
+                    </div>                                     
+                </div>
+                <div class="c_img">
+                    <img src="../assets/img/share_papas_veggies.png" alt="papas veggie png">
+                </div> 
+            </div>
+            <div class="h_divisor">
+                <img src="../assets/icons/h_divisor.png" alt="divisor">
+            </div>
+            <div class="row">
+                <div id="aroscebolla" class="card">
+                    <div class="c_head">
+                        <div class="c_subt">
+                            <p>Aros de</p>
+                        </div>
+                        <div class="c_title">
+                            <h4>Cebolla</h4>
+                        </div>
+                        
+                    </div>
+                    <div class="c_body">
+                        <div class="c_content">
+                            <p>Homemade onion rings breaded with panko and a serving of BBQ sauce.</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$5.900.-</p>
+                        </div>
+                    </div>
+                    <div class="c_img">
+                        <img src="../assets/img/share_aros_cebolla.png" alt="papas joya png">
+                    </div>
+                    
+                </div>
+                <div class="v_divisor">
+                    <img src="../assets/icons/v_divisor.png" alt="divisor png">
+                </div>
+                <div id="victoria" class="card">
+                    
+                    <div class="c_head">
+                        <div class="c_subt">
+                            <p>La</p>
+                        </div>
+                        <div class="c_title">
+                            <h4>Victoria</h4>
+                        </div>
+                        
+                    </div>
+                    <div class="c_body">
+                        <div class="c_content">
+                            <p>Iberian ham mozzarella finger sticks panko breaded,  with a dip of chipotle sauce.</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$8.900.-</p>
+                        </div>
+                    </div>
+                    <div class="c_img">
+                        <img src="../assets/img/share_la_victoria.png" alt="la victoria png">
+                    </div>
+                </div>
+            </div>
+            <div class="h_divisor">
+                <img src="../assets/icons/h_divisor.png" alt="divisor">
+            </div>
+            <div class="row">
+                <div id="caleta" class="card">
+                    <div class="c_head">
+                        <div class="c_title">
+                            <h4>La Caleta</h4>
+                        </div>
+                        <div class="c_subt">
+                            <p>From the sea to your palate</p>
+                        </div>
+                    </div>
+                    <div class="c_body">
+                        <div class="c_content">
+                            <p>Tempura style fried fish mixed in stout beer  with tartar sauce dip.</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$8.900.-</p>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="c_img">
+                    <img src="../assets/img/share_la_caleta.png" alt="la caleta png">
+                </div>
+            </div>
+            <div class="h_divisor">
+                <img src="../assets/icons/h_divisor.png" alt="divisor">
+            </div>
+            <div class="row">
+                <div id="fring" class="card">
+                    <div class="c_head">
+                        <div class="c_title">
+                            <h4>Mr. Fring</h4>
+                        </div>
+                        <div class="c_subt">
+                            <!-- empty -->
+                        </div>
+                    </div>
+                    <div class="c_body">
+                        <div class="c_content">
+                            <p>Crispy chicken tenders with a serving of roasted tomato sauce.</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$6.900.-</p>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="c_img">
+                    <img src="../assets/img/share_mr_fring.png" alt="la caleta png">
+                </div>
+            </div>
+            <div class="h_divisor">
+                <img src="../assets/icons/h_divisor.png" alt="divisor">
+            </div>
+            <div class="row">
+                <div id="trilogia" class="card">
+                    <div class="c_head">
+                        <div class="c_title">
+                            <h4>Gran trio</h4>
+                        </div>
+                        </div>
+                    <div class="c_body" >
+                        <div class="c_content">
+                            <p>
+                                Variety of smoked mini burgers: Blue cheese with garlic mushrooms; Cheddar
+                                cheese and caramelized onions; Gruyere cheese and bell pepper chutney</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$11.900.-</p>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="c_img">
+                    <img src="../assets/img/share_gran_trio.png" alt="gran trio png">
+                </div>
+            </div>
+            <div class="h_divisor">
+                <img src="../assets/icons/h_divisor.png" alt="divisor">
+            </div>
+            <div class="row">
+                <div id="pacifico" class="card">
+                    <div class="c_head">
+                        <div class="c_subt">
+                            <p>La Joya del</p>
+                        </div>
+                        <div class="c_title">
+                            <h4>Pacifico</h4>
+                        </div>
+                        
+                    </div>
+                    <div class="c_body">
+                        <div class="c_content">
+                            <p>
+                                Medium rare sirloin, garlic shrimps with French fries, grilled octopus with a touch of smoked paprika and squid ink black sour cream, tempura style fried fish with ginger limonette and tzatziki sauce.
+                            </p>
+                        </div>
+                        <div class="c_price">
+                            <p>$23.900.-</p>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="c_img">
+                    <img src="../assets/img/share_joya_del_pacifico.png" alt="joya del pacifico png">
+                </div>
+            </div>
+            <div class="h_divisor">
+                <img src="../assets/icons/h_divisor.png" alt="divisor">
+            </div>
+            <div id="patrimonial" class="row">
+                <div class="card">
+                    <div class="c_head">
+                        <img src="../assets/img/patrimonial_tittle.png" alt="patrimonial tittle png">
+                    </div>
+                    <div class="c_body">
+                        <div class="c_content">
+                            <p>
+                                Grilled beef tongue with caramelized onions, carved angus sirloin with chimichurri, grilled garlic bacon shrimps, baked bread with a three cheese blend, southern sopaipillas and signature sauce.
+                            </p>
+                        </div>
+                        <div class="c_price">
+                            <p>$23.900.-</p>
+                        </div>
+                    </div>                                      
+                </div>
+                <div class="c_img">
+                    <img src="../assets/img/share_patrimonial.png" alt="patrimonial png">
+                </div>  
+            </div>
+            <div class="h_divisor">
+                <img src="../assets/icons/h_divisor.png" alt="divisor">
+            </div>
+            <div class="row">
+                <div id="chorrillana" class="card">
+                    <div class="c_head">
+                        <div class="c_subt">
+                            <p>Chorrillana</p>
+                        </div>
+                        <div class="c_title">
+                            <h4>Baron</h4>
+                        </div>
+                        
+                    </div>
+                    <div class="c_body">
+                        <div class="c_content">
+                            <p>
+                                Our take of this Valparaiso classic: A bed of “Papas Joya”, pulled beef, caramelized onions, craft “longaniza” sausage, fried eggs and signature sauce.
+                                
+                            </p>
+                        </div>
+                        <div class="c_price">
+                            <p>$17.900.-</p>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="c_img">
+                    <img src="../assets/img/share_chorrillana_baron.png" alt="la caleta png">
+                </div>
+            </div>
+            </div>
+        </div>
+        <div id="burgers" class="container">
+            <!-- Seccion Burger - Header -->
+            <div class="page_header">
+                <img src="../assets/img/logo_golden.png" alt="logo golden png" class="s3_top_logo">
+                <div class="page_title">
+                    <h2>Burgers</h2>
+                </div>
+                <div class="page_subt">
+                    <p>100% Angus meat</p>
+                    <p>Oak smoke</p>
+                </div>
+            </div>
+            <!-- Pagina de hamburguesas 1,  -->
+            <div id="ahumadas"> 
+                <div class="row">
+                    <div class="card">
+                        <div class="c_img">
+                            <img src="../assets/img/burger_joyita.png" alt="la joyita png">
+                        </div>
+                        <div class="c_head">
+                            <div class="c_title">
+                                <h4>"La Joyita"</h4>
+                            </div>
+                            <div class="c_subt">
+                                <p>Home made bread</p>
+                            </div>
+                        </div>
+                        <div class="c_body">
+                            <div class="c_content">
+                                <p>Smoked Angus Burger , sweet potato string fries, double cheese (mozzarella, cheddar) filet roast beef, crispy onions, poached egg and a serving of gravy.</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$12.900.-</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="v_divisor">
+                        <img src="../assets/icons/v_divisor_yellow.png" alt="divisor yellow png">
+                    </div>
+                    <div class="card">
+                        <div class="c_img">
+                            <img src="../assets/img/burger_pituca.png" alt="pituca png">
+                        </div>
+                        <div class="c_head">
+                            <div class="c_title">
+                                <h4>"Pituca"</h4>
+                            </div>
+                            <div class="c_subt">
+                                <p>Home made bread</p>
+                            </div>
+                        </div>
+                        <div class="c_body">
+                            <div class="c_content">
+                                <p>Smoked Angus Burger, camembert cheese, green hot pepper and passion fruit jam, panko breaded avocado wedges, hydroponic lettuce and mayonnaise.</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$10.900.-</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h_divisor">
+                    <img src="../assets/icons/h_divisor_yellow.png" alt="horizontal divisor yellow png">
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <div class="c_img">
+                            <img src="../assets/img/burger_picardia.png" alt="picardia png">
+                        </div>
+                        <div class="c_head">
+                            <div class="c_title">
+                                <h4>"Picardia"</h4>
+                            </div>
+                            <div class="c_subt">
+                                <p>Home made bread</p>
+                            </div>
+                        </div>
+                        <div class="c_body">
+                            <div class="c_content">
+                                <p>Smoked Angus Burger, mozzarella cheese, hydroponic lettuce, grilled bacon shrimps and thousand island hot sauce.</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$10.900.-</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="v_divisor">
+                        <img src="../assets/icons/v_divisor_yellow.png" alt="divisor yellow png">
+                    </div>
+                    <div class="card">
+                        <div class="c_img">
+                            <img src="../assets/img/burger_gaucha.png" alt="gaucha png">
+                        </div>
+                        <div class="c_head">
+                            <div class="c_title">
+                                <h4>"La Gaucha"</h4>
+                            </div>
+                            <div class="c_subt">
+                                <p>Home made bread</p>
+                            </div>
+                        </div>
+                        <div class="c_body">
+                            <div class="c_content">
+                                <p>Smoked Angus Burger, grilled provolone, caramelized onions and mayonnaise with chimichurri.</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$10.900.-</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sello_logo">
+                    <img src="../assets/img/sello_ahumada_white.png" alt="sello ahumada png">
+                </div>
+            </div>
+            <div class="topcorners">
+                <img src="../assets/icons/resource_golden_corner_2_tl.png" alt="top left golden corner 2 png">
+                <img src="../assets/icons/resource_golden_corner_2_tr.png" alt="top rigth golden corner 2 png">
+            </div>
+            <div id="normalb">
+                <div class="row">
+                    <div class="card">
+                        <div class="c_head">
+                            <div class="c_title">
+                                <h4>Macanuda</h4>
+                            </div>
+                            <div class="c_subt">
+                                <p>Home made bread</p>
+                            </div>
+                        </div>
+                        <div class="c_body">
+                            <div class="c_content">
+                                <p>Double 180gr angus burger, triple cheddar cheese, bacon, panko breaded onion rings, garlic lactonase and BBQ sauce</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$12.900.-</p>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="c_img">
+                        <img src="../assets/img/burger_macanuda.png" alt="macanuda png">
+                    </div>
+                </div>
+                <div class="h_divisor">
+                    <img src="../assets/icons/h_divisor_pua_yellow.png" alt="divisor">
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <div class="c_head">
+                            <div class="c_title">
+                                <h4>Aprietadita</h4>
+                            </div>
+                            <div class="c_subt">
+                                <p>Home made bread</p>
+                            </div>
+                        </div>
+                        <div class="c_body">
+                            <div class="c_content">
+                                <p>Blend of homemade blood sausage and beef, caramelized onion, “chancho en piedra”, string fries and homemade mayonnaise.</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$7.900.-</p>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="c_img">
+                        <img src="../assets/img/burger_aprietadita.png" alt="aprietadita png">
+                    </div>
+                </div>
+                <div class="h_divisor">
+                    <img src="../assets/icons/h_divisor_pua_yellow.png" alt="divisor">
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <div class="c_head">
+                            <div class="c_title">
+                                <h4>Chica del 79</h4>
+                            </div>
+                            <div class="c_subt">
+                                <p>Home made bread</p>
+                            </div>
+                        </div>
+                        <div class="c_body">
+                            <div class="c_content">
+                                <p>Angus burger stuffed with camembert cheese, smoked pulled pork with BBQ sauce, grilled bell peppers, hydroponic lettuce, garlic lactonase.</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$10.900.-</p>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="c_img">
+                        <img src="../assets/img/burger_chica_79.png" alt="chica del 79 png">
+                    </div>
+                </div>
+                <div class="h_divisor">
+                    <img src="../assets/icons/h_divisor_pua_yellow.png" alt="divisor">
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <div class="c_head">
+                            <div class="c_title">
+                                <h4>Playera</h4>
+                            </div>
+                            <div class="c_subt">
+                                <p>Home made bread</p>
+                            </div>
+                        </div>
+                        <div class="c_body">
+                            <div class="c_content">
+                                <p>Beef burger, mozzarella cheese, guacamole, garlic shrimps and garlic lactonase.</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$8.900.-</p>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="c_img">
+                        <img src="../assets/img/burger_playera.png" alt="playera png">
+                    </div>
+                </div>
+                <div class="h_divisor">
+                    <img src="../assets/icons/h_divisor_pua_yellow.png" alt="divisor">
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <div class="c_head">
+                            <div class="c_title">
+                                <h4>Baronesa</h4>
+                            </div>
+                            <div class="c_subt">
+                                <p>Home made bread</p>
+                            </div>
+                        </div>
+                        <div class="c_body">
+                            <div class="c_content">
+                                <p>Beef burger, cheddar cheese, caramelized onions, sliced pickles, tomato slices and hydroponic lettuce. </p>
+                            </div>
+                            <div class="c_price">
+                                <p>$8.900.-</p>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="c_img">
+                        <img src="../assets/img/burger_chica_79.png" alt="chica del 79 png">
+                    </div>
+                </div>
+                <div class="h_divisor">
+                    <img src="../assets/icons/h_divisor_pua_yellow.png" alt="divisor">
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <div class="c_head">
+                            <div class="c_title">
+                                <h4>Rubia<span>del</span>Puerto</h4>
+                            </div>
+                            <div class="c_subt">
+                                <p>Home made bread</p>
+                            </div>
+                        </div>
+                        <div class="c_body">
+                            <div class="c_content">
+                                <p>Angus burger, blue cheese, caramelized onions, baked apples and homemade mushroom mayonnaise.</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$8.900.-</p>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="c_img">
+                        <img src="../assets/img/burger_rubia_del_puerto.png" alt="playera png">
+                    </div>
+                </div>
+            </div>
+            <div class="bottomcorners">
+                <img src="../assets/icons/resource_golden_corner_2_bl.png" alt="top left golden corner 2 png">
+                <img src="../assets/icons/resource_golden_corner_2_br.png" alt="top rigth golden corner 2 png">
+            </div>
+        </div>
+        <div id="veggie" class="container">
+            <div class="page_header">
+                <img src="../assets/img/logo_veggie.png" alt="logo golden png">
+                <div class="page_title">
+                    <h2>Burgers</h2>
+                </div>
+                <div class="page_subt">
+                    <p>Veggie</p>
+                </div>                     
+            </div>        
+            <div id="veggiep">            
+                <div class="row">
+                    <div class="card">
+                        <div class="c_img">
+                            <img src="../assets/img/burger_sharp.png" alt="la sharp png">
+                        </div>
+                        <div class="c_head">
+                            <div class="c_title">
+                                <h4>"La Sharp"</h4>
+                            </div>
+                            <div class="c_subt">
+                                <p>Home made bread</p>
+                            </div>
+                        </div>
+                        <div class="c_body">
+                            <div class="c_content">
+                                <p>Black bean burger, goat cheese, caramelized onions, chickpea humus, julienne apples and arugula.</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$7.900.-</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="v_divisor">
+                        <img src="../assets/icons/v_divisor_pua_green.png" alt="divisor green png">
+                    </div>
+                    <div class="card">
+                        <div class="c_img">
+                            <img src="../assets/img/burger_carvallo.png" alt="carvallo png">
+                        </div>
+                        <div class="c_head">
+                            <div class="c_title">
+                                <h4>Carvallo</h4>
+                            </div>
+                            <div class="c_subt">
+                                <p>Home made bread</p>
+                            </div>
+                        </div>
+                        <div class="c_body">
+                            <div class="c_content">
+                                <p>Pumpkin croquette stuffed with mozzarella cheese and breaded in corn flakes, stir-fried veggies ,tzatziki sauce and arugula</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$7.900.-</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h_divisor">
+                    <img src="../assets/icons/h_divisor_separate_green.png" alt="horizontal divisor separate green png">
+                </div>
+                <div id="caturrita" class="row">
+                    <div class="card">
+                        <div class="c_head">
+                            <div class="c_title">
+                                <h4>"Caturrita"</h4>
+                            </div>
+                            <div class="c_subt">
+                                <p>Home made bread</p>
+                            </div>
+                        </div>
+                        <div class="c_body">
+                            <div class="c_content">
+                                <p>Broad bean croquette, vegan mozzarella, arugula, kimchi (korean sourcrout) and vegan avocado mayonnaise.
+                                </p>
+                            </div>
+                            <div class="c_price">
+                                <p>$8.900.-</p>
+                            </div>
+                        </div>                    
+                    </div>
+                    <div class="c_img">
+                        <img src="../assets/img/burger_caturrita.png" alt="caturrita png">
+                    </div>
+                </div>
+                <div class="sello_logo">
+                    <img src="../assets/img/sello_veggie.png" alt="sello veggie png">
+                </div>
+            </div>
+            <div class="pagef">
+                    <p>"You can ask for any burger on the menu 100% veggie."</p>
+            </div>
+        </div>
+        <div id="sanguches" class="container">
+            <div class="topcorners">
+                <img src="../assets/icons/resource_golden_corner_tl.png" alt="top left golden corner 2 png">
+                <img src="../assets/icons/resource_golden_corner_tr.png" alt="top rigth golden corner 2 png">
+            </div>
+            <div class="page_header">
+                <img src="../assets/img/logo_golden.png" alt="logo golden png" class="s3_top_logo">
+                <div class="page_title">
+                    <h2>Sandwishs</h2>
+                </div>                    
+            </div>
+            <div id="sanguchesp">
+                <div id="lengua" class="row">
+                    <div class="card">
+                        <div class="c_head">
+                            <div class="c_title">
+                                <h4>Lengua Madre</h4>
+                            </div>
+                            <div class="c_subt">
+                                <p>Ciabatta</p>
+                            </div>
+                        </div>
+                        <div class="c_body">
+                            <div class="c_content">
+                                <p>Grilled beef tongue , caramelized onions, baked bell peppers, parmesan cheese, artichoke cores and homemade mayonnaise.</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$8.900.-</p>
+                            </div>
+                        </div>                    
+                    </div>
+                    <div class="c_img">
+                        <img src="../assets/img/sanguche_lengua_madre.png" alt="lengua png">
+                    </div>
+                </div>
+                <div class="h_divisor">
+                    <img src="../assets/icons/h_divisor_pua_yellow.png" alt="divisor">
+                </div>
+                <div id="lucho" class="row">
+                    <div class="card">
+                        <div class="c_head">
+                            <div class="c_title">
+                                <h4>Lucho Barrios</h4>
+                            </div>
+                            <div class="c_subt">
+                                <p>Home made bread</p>
+                            </div>
+                        </div>
+                        <div class="c_body">
+                            <div class="c_content">
+                                <p>Angus sirloin, three cheese blend: mozzarella, cheddar, camembert.</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$9.900.-</p>
+                            </div>
+                        </div>                    
+                    </div>
+                    <div class="c_img">
+                        <img src="../assets/img/sanguche_lucho_barrios.png" alt="lucho barrios png">
+                    </div>
+                </div>
+                <div class="h_divisor">
+                    <img src="../assets/icons/h_divisor_pua_yellow.png" alt="divisor">
+                </div>
+                <div id="donberna" class="row">
+                    <div class="card">
+                        <div class="c_head">                
+                            <div class="c_subt">
+                                <!-- Empty -->
+                            </div>
+                            <div class="c_title">
+                                <h4>Chacarero "Don Berna"</h4>
+                            </div>
+                            <div class="c_subt">
+                                <p>Home made bread</p>
+                            </div>
+
+                        </div>
+                        <div class="c_body">
+                            <div class="c_content">
+                                <p>Angus sirloin, fresh green beans, tomato slices, pickled green hot peppers, and homemade mayonnaise.</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$8.900.-</p>
+                            </div>
+                        </div>                    
+                    </div>
+                    <div class="c_img">
+                        <img src="../assets/img/sanguche_don_berna.png" alt="don berna png">
+                    </div>
+                </div>
+                <div class="h_divisor">
+                    <img src="../assets/icons/h_divisor_pua_yellow.png" alt="divisor">
+                </div>
+                
+                <div id="mechada" class="row">
+                    <div class="card">
+                        <div class="c_head">
+                            <div class="c_title">
+                                <h4>Mechada Italiana</h4>
+                            </div>
+                            <div class="c_subt">
+                                <p>Ciabatta</p>
+                            </div>
+                        </div>
+                        <div class="c_body">
+                            <div class="c_content">
+                                <p>Shredded beef, slices of fresh tomatoes, avocado and homemade mayonnaise.</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$8.900.-</p>
+                            </div>
+                        </div>                    
+                    </div>
+                    <div class="c_img">
+                        <img src="../assets/img/sanguche_mechada_italiana.png" alt="mechada italiana png">
+                    </div>
+                </div>
+                <div class="h_divisor">
+                    <img src="../assets/icons/h_divisor_pua_yellow.png" alt="divisor">
+                </div>
+                <div id="chascona" class="row">
+                    <div class="card">
+                        <div class="c_head">
+                            <div class="c_title">
+                                <h4>"Chascona"</h4>
+                            </div>
+                            <div class="c_subt">
+                                <p>Home made bread</p>
+                            </div>
+                        </div>
+                        <div class="c_body">
+                            <div class="c_content">
+                                <p>Pulled american chicken thigh croquette breaded in corn flakes, cheddar cheese, baked tomatoes, string fries, fried egg and garlic lactonase.</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$8.500.-</p>
+                            </div>
+                        </div>                    
+                    </div>
+                    <div class="c_img">
+                        <img src="../assets/img/sanguche_chascona.png" alt="chascona png">
+                    </div>
+                </div>
+                <div class="h_divisor">
+                    <img src="../assets/icons/h_divisor_pua_yellow.png" alt="divisor">
+                </div>
+                <div id="chispeza" class="row">
+                    <div class="card">
+                        <div class="c_head">
+                            <div class="c_title">
+                                <h4>"Chispeza"</h4>
+                            </div>
+                            <div class="c_subt">
+                                <p>Home made bread</p>
+                            </div>
+                        </div>
+                        <div class="c_body">
+                            <div class="c_content">
+                                <p>Crispy chicken breast, double cheddar cheese, caramelized bell pepper, coleslaw, pickles, garlic lactonase.</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$8.500.-</p>
+                            </div>
+                        </div>                    
+                    </div>
+                    <div class="c_img">
+                        <img src="../assets/img/sanguche_chispeza.png" alt="chispeza png">
+                    </div>
+                </div>
+                <div class="h_divisor">
+                    <img src="../assets/icons/h_divisor_pua_yellow.png" alt="divisor">
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <div class="c_head">                
+                            <div class="c_subt">
+                                <p>Caserita del</p>
+                            </div>
+                            <div class="c_title">
+                                <h4>"Cardonal"</h4>
+                            </div>
+                            <div class="c_subt">
+                                <p>Ciabatta</p>
+                            </div>
+
+                        </div>
+                        <div class="c_body">
+                            <div class="c_content">
+                                <p>Tempura style fried fish mixed in stout beer, pickled red onions, fanned avocado, cilantro mayonnaise tartar sauce.</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$8.900.-</p>
+                            </div>
+                        </div>                    
+                    </div>
+                    <div class="c_img">
+                        <img src="../assets/img/sanguche_caserita_cardonal.png" alt="caserita del cardonal png">
+                    </div>
+                </div>
+                <div class="h_divisor">
+                    <img src="../assets/icons/h_divisor_pua_yellow.png" alt="divisor">
+                </div>
+                
+                <div id="sinverguenza" class="row">
+                    <div class="card">
+                        <div class="c_head">
+                            <div class="c_title">
+                                <h4>"Sin Verguenza"</h4>
+                            </div>
+                            <div class="c_subt">
+                                <p>Ciabatta</p>
+                            </div>
+                        </div>
+                        <div class="c_body">
+                            <div class="c_content">
+                                <p>Grilled salmon fillet, backed zucchinis, cream cheese, capers, basil pesto mayonnaise and hydroponic lettuce.</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$9.900.-</p>
+                            </div>
+                        </div>                    
+                    </div>
+                    <div class="c_img">
+                        <img src="../assets/img/sanguche_sin_verguenza.png" alt="sin verguenza png">
+                    </div>
+                </div> 
+            </div>    
+            <div class="bottomcorners">
+                <img src="../assets/icons/resource_golden_corner_bl.png" alt="bottom left golden corner png">
+                <img src="../assets/icons/resource_golden_corner_br.png" alt="bottom rigth golden corner png">
+            </div> 
+            <div class="pagef">
+                <p>Our bread is handcrafted following a unique recipe, which has been passed down from generation to generation.</p>
+                <div class="c_img">
+                    <img src="../assets/img/pan_de_la_casa.png" alt="pan de la casa png">
+                </div>
+            </div>                  
+        </div>
+        <div id="plates" class="container">
+            <div class="topcorners">
+                <img src="../assets/icons/resource_golden_corner_tl.png" alt="top left golden corner 2 png" class="gcorner_top">
+                <img src="../assets/icons/resource_golden_corner_tr.png" alt="top rigth golden corner 2 png" class="gcorner_top">           
+            </div>
+            <div class="page_header">
+                <img src="../assets/img/logo_golden.png" alt="logo golden png" class="s3_top_logo">
+                <div class="page_title">
+                    <h4>Main courses</h4>
+                </div>                    
+            </div>
+            <div id="platesp">            
+                <div class="row">
+                    <div class="card">
+                        <div class="c_img">
+                            <img src="../assets/img/plates_lomo_pobre.png" alt="lomo a lo pobre png">
+                        </div>
+                        <div class="c_head">
+                            <div class="c_title">
+                                <h4>Lomo</h4>
+                            </div>
+                            <div class="c_subt">
+                                <p>a lo pobre</p>
+                            </div>
+                        </div>
+                        <div class="c_body">
+                            <div class="c_content">
+                                <p>A Valparaiso classic : angus Beef (200 gr), Rustic paprika potatoes, caramelized onions, and fried eggs.</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$11.900.-</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="v_divisor">
+                        <img src="../assets/icons/v_divisor_yellow.png" alt="divisor yellow png">
+                    </div>
+                    <div class="card">
+                        <div class="c_img">
+                            <img src="../assets/img/plates_costillar_bbq.png" alt="costillar bbq png">
+                        </div>
+                        <div class="c_head">
+                            <div class="c_title">
+                                <h4>Costillar</h4>
+                            </div>
+                            <div class="c_subt">
+                                <p>Barbecue</p>
+                            </div>
+                        </div>
+                        <div class="c_body">
+                            <div class="c_content">
+                                <p>Pork ribs dipped in barbecue sauce, with French fries and coleslaw.</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$10.900.-</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h_divisor">
+                    <img src="../assets/icons/h_divisor_yellow.png" alt="horizontal divisor yellow png">
+                </div>
+                <div id="marineria" class="row">
+                    <div class="card">
+                        <div class="c_head">
+                            <div class="c_title">
+                                <h4>La Marineria</h4>
+                            </div>
+                            
+                        </div>
+                        <div class="c_body">
+                            <div class="c_content">
+                                <p>Salmon ceviche marinated in “leche de tigre” with green onions and bell peppers with a serving of quinoa, panko breaded avocado wedges, nori, red onions and toast.</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$11.900.-</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c_img">
+                        <img src="../assets/img/plates_marineria.png" alt="la marineria png">
+                    </div>
+                </div>
+                <div class="h_divisor">
+                    <img src="../assets/icons/h_divisor_yellow.png" alt="divisor">
+                </div>
+                <div id="crueldad" class="row">
+                    <div class="card">
+                        <div class="c_head">
+                            <div class="c_title">
+                                <h4>Crueldad</h4>
+                            </div>                    
+                        </div>
+                        <div class="c_body">
+                            <div class="c_content">
+                                <p>Authentic beef tartare served with quail egg yolk, dill pickles, mustard, pickled red onions brunoise, coriander leaf, home made citric mayonnaise and toast.</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$8.900.-</p>
+                            </div>
+                        </div>                    
+                    </div>
+                    <div class="c_img">
+                        <img src="../assets/img/plates_crueldad.png" alt="crueldad png">
+                    </div>
+                </div>            
+            </div>
+            <div class="bottomcorners">
+                <img src="../assets/icons/resource_golden_corner_bl.png" alt="bottom left golden corner png">
+                <img src="../assets/icons/resource_golden_corner_br.png" alt="bottom rigth golden corner png">
+            </div>
+            <div class="pagef">
+                <div class="mp_head">
+                    <h4>Main courses to</h4>
+                    <h2>"The little ones"</h2>
+                </div>
+                <div class="mp_body">
+                    <div class="mp_a">
+                        <div class="mp_heada">
+                            <h2>"Carnecita"</h2>
+                        </div>
+                        <div class="mp_content">
+                            <p>Burger with cheddar cheese and French fries.</p>
+                        </div>
+                        <div class="mp_price">
+                            <p>$6.900.-</p>
+                        </div>
+                    </div>
+                    <div class="mp_divisor">
+                        <img src="../assets/icons/v_divisor_yellow.png" alt="divisor png">
+                    </div>
+                    <div class="mp_b">
+                        <div class="mp_heada">
+                            <h2>"Crispys"</h2>
+                        </div>
+                        <div class="mp_content">
+                            <p>Crispy chicken tenders with American seasoning,cheddar cheese sauce and French fries.</p>
+                        </div>
+                        <div class="mp_price">
+                            <p>$6.900.-</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="salads" class="container">
+            <div class="page_header">
+                <img src="../assets/img/logo_veggie.png" alt="logo golden png">
+                <div class="page_title">
+                    <h4>Salads</h4>
+                </div>                                       
+            </div> 
+            
+            <div id="atun" class="row">
+                <div class="card">
+                    <div class="c_head">
+                        <div class="c_title">
+                            <h4>Atún Caprichoso</h4>
+                        </div>
+                        
+                    </div>
+                    <div class="c_body">
+                        <div class="c_content">
+                            <p>Tuna bits covered with sesame seeds, seared in a soy sauce marinade, watercress, pickled red onion rings, cherry tomatoes, quail eggs, asparagus and a mango & almond dressing.</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$8.900.-</p>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="c_img">
+                    <img src="../assets/img/salads_atun_caprichoso.png" alt="atun caprichoso png">
+                </div>
+            </div>
+            <div class="h_divisor">
+                <img src="../assets/icons/h_divisor_pua_green.png" alt="horizontal divisor green png">
+            </div>
+            <div class="row">
+                <div class="card">
+                    <div class="c_head">
+                        <div class="c_title">
+                            <h4>Mosaico</h4>
+                        </div>
+                        
+                    </div>
+                    <div class="c_body">
+                        <div class="c_content">
+                            <p>Cured Salmon bits with beetroots, with a subtle bed of hidroponic lettuce and a creamy mix of corn, cherry tomatoes, avocado cubes, chives and sour cream.</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$8.900.-</p>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="c_img">
+                    <img src="../assets/img/salads_mosaico.png" alt="mosaico png">
+                </div>
+            </div>
+            <div class="h_divisor">
+                <img src="../assets/icons/h_divisor_pua_green.png" alt="horizontal divisor green png">
+            </div>
+            <div class="row">
+                <div class="card">
+                    <div class="c_head">                
+                        
+                        <div class="c_title">
+                            <h4>Antojadisima</h4>
+                        </div>
+                        
+                    </div>
+                    <div class="c_body">
+                        <div class="c_content">
+                            <p>Hydroponic lettuce, Crispy chicken tenders with American seasoning, avocado, oregano croutons, cous cous, crunchy bell peppers and yogurt & brie cheese dressing.</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$7.900.-</p>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="c_img">
+                    <img src="../assets/img/salads_antojadisima.png" alt="antojadisima png">
+                </div>
+            </div>
+            <div class="pagef">
+                <div class="c_head">
+                    <div class="c_title">
+                        <h4>Veggie note:</h4>
+                    </div>                    
+                </div>
+                <div class="c_body">
+                    <div class="c_content">
+                        <p>You can change the protein for falafel.</p>
+                </div>                    
+                </div>
+                <div class="c_img">
+                    <img src="../assets/img/sello_veggie.png" alt="sello veggie png">
+                </div>
+            </div>
+        </div>
+        <div id="postres" class="container">
+            <div class="page_header">
+                <div class="page_title">
+                    <h2>Tasty</h2>
+                    <h4>Desserts</h4>
+                </div>
+                <img src="../assets/img/logo_black.png" alt="logo black png">
+            </div>
+            
+            <div id="postresp">
+            <div class="row">
+                <div class="card">
+                    <div class="c_head">
+                        <div class="c_title">
+                            <h4>Passion Fruit</h4>
+                        </div>
+                        <div class="c_subt">
+                            <p>cheescake</p>
+                        </div>
+                    </div>
+                    <div class="c_body">
+                        <div class="c_content">
+                            <p>Fresh and creamy passion fruit cheesecake.</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$4.500.-</p>
+                        </div>
+                    </div>
+                    <div class="c_img">
+                        <img src="../assets/img/postre_cheescake_maracuya.png" alt="cheescake de maracuya png">
+                    </div>
+                    
+                </div>
+                <div class="v_divisor">
+                    <img src="../assets/icons/v_divisor.png" alt="divisor png">
+                </div>
+                <div class="card">
+                    <div class="c_img">
+                        <img src="../assets/img/postre_creme_brulle.png" alt="creme brulle png">
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title">
+                            <h4>Lavender and blueberries</h4>
+                        </div>
+                        <div class="c_subt">
+                            <p>Creme brulee</p>
+                        </div>
+                    </div>
+                    <div class="c_body">
+                        <div class="c_content">
+                            <p>Traditional French cream with crunchy caramel crust.</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$4.500.-</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="h_divisor">
+                <img src="../assets/icons/h_divisor.png" alt="divisor">
+            </div>
+            <div class="row">
+                <div class="card">
+                    <div class="c_head">
+                        <div class="c_title">
+                            <h4>Brownie</h4>
+                        </div>
+                        <div class="c_subt">
+                            <p>with Ice cream</p>
+                        </div>
+                        <div class="c_body">
+                            <div class="c_content">
+                                <p>60% cocoa chocolate brownie with walnuts, served warm with a scoop of vanilla ice cream.</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$4.500.-</p>
+                            </div>
+                        </div>
+                    </div>                   
+                </div>
+                <div class="c_img">
+                    <img src="../assets/img/postre_brownie_con_helado.png" alt="brownie con helado png">
+                </div>
+            </div>
+            <div class="h_divisor">
+                <img src="../assets/icons/h_divisor.png" alt="divisor">
+            </div>
+            <div class="row">
+                <div class="card">
+                    <div class="c_head">
+                        <div class="c_title">
+                            <h4>Chocotorta</h4>
+                        </div>
+                        <div class="c_subt">
+                    
+                        </div>
+                    </div>
+                    <div class="c_body">
+                        <div class="c_content">
+                            <p>Cold chocolate cookie cake, marinated in black coffee and Amarula liquor, with a homemade creamy “dulce de leche”.</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$4.500.-</p>
+                        </div>
+                    </div>
+                    <div class="c_img">
+                        <img src="../assets/img/postre_chocotorta.png" alt="chocotorta png">
+                    </div>
+                    
+                </div>
+                <div class="v_divisor">
+                    <img src="../assets/icons/v_divisor.png" alt="divisor png">
+                </div>
+                <div class="card">
+                    <div class="c_img">
+                        <img src="../assets/img/postre_tres_leches.png" alt="torta tres leches png">
+                    </div>
+                    <div class="c_head">
+                        <div class="c_subt">
+                            <p>Torta</p>
+                        </div>
+                        <div class="c_title">
+                            <h4>tres leches</h4>
+                        </div>
+                        
+                    </div>
+                    <div class="c_body">
+                        <div class="c_content">
+                            <p>Vanilla cake dipped in a three milks blend stuffed with custard and "dulce de leche".</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$4.500.-</p>
+                        </div>
+                    </div>                    
+                </div>                
+            </div>
+            </div>
+        </div>
+        <div id="index_coctel" class="container">
+            <div class="section_1">
+                <!-- Seccion 1 -->
+                <img src="../assets/img/background_t_section_1.png" alt="background section_1">
                 
             </div>
             <div class="divisor">
                 <span></span>
-            </div>
-            <div id="section_2" class="section_2">
-                <!-- Seccion 2 -->
-                <img src="../assets/img/background_section_2.png" alt="background section_2">
-
-                <div class="pagef">
-                    <p>"There are burgers for all types of situations, with friends, beer or a date, choose the burger that best suits the moment."</p>
-                </div>
-            </div>
-            <div class="divisor">
-                <span></span>
-            </div>
+            </div>           
             <div id="section_3" class="section_3">
                 <!-- Seccion 3 -->
-                <div class="page_header">
-                    <img src="../assets/img/logo_golden.png" alt="logo golden png" class="s3_top_logo">
-                    <div class="page_title">
-                        <h2>"La Joyita"</h2>
-                    </div>
-                    <div class="page_subt">
-                        <p>French oak smoked Angus burger, string sweet potato, mozzarella and cheddar cheese, with roast beef filet, crispy onion, poached egg, homemade mayonnaise and gravy sauce.</p>
-                    </div>
-                    <img src="../assets/img/burger_joyita.png" alt="la joyita burger png" class="s3_top_img">
-                    <img src="../assets/icons/ingredientes.png" alt="ingredientes png" class="s3_ingredientes">
+                <div id="cover">
+                    <img src="../assets/img/ala_izq.png" alt="ala_izq png">
+                    <img src="../assets/img/logo_redbull.png" alt="logo redbull png">
+                    <img src="../assets/img/logo_white_2.png" alt="logo white 2 png">
+                    <img src="../assets/img/ala_der.png" alt="ala_der png">
                 </div>
-                <div class="pagef">
-                    <div class="sello_logo">
-                        <img src="../assets/img/sello_ahumada.png" alt="sello ahumada png">
-                    </div>
-                </div>
-            </div>
-            <div class="divisor">
-                <span></span>
-            </div>
-            <div class="section_4">
-                <!-- Seccion 4 -->
+                <div class="section3p">
+                    <img src="../assets/img/background_t_section_3.png" alt="background_t_section_3 png">
+                </div>                
             </div>
         </div>
+        <div id="coctel" class="container">
+            <div class="row">
+                <div id="title" class="card">
+                    <div class="c_head">
+                        <div class="c_title">
+                            <h4>Cocktails</h4>
+                        </div>
+                        <div class="c_subt">
+                            <p>Canteen Joya</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="clandestino" class="card">
+                    <img class="c_img" src="../assets/img/clandestino.png">
+                    <div class="c_body">
+                        <div class="c_title">
+                            <h4>Clandestino</h4>
+                        </div>
+                        <div class="c_content">
+                            <p>Blueberries and strawberry pulp, lime juice, syrup, basil leaves and sparkling wines.</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$5.900</p>
+                        </div>
+                    </div>                       
+                </div>
+            </div>
+            <div class="h_divisor">
+                <img src="../assets/icons/h_divisor_yellow.png" alt="horizontal divisor yellow png">
+            </div>
+            <div class="row">
+                <div id="fresco" class="card">
+                    <div class="c_body">
+                        <div class="c_title">
+                            <h4>Fresco Chileno</h4>
+                        </div>
+                        <div class="c_content">
+                            <p>Triple distilled Republicano Pisco, basil, cucumber, ginger syrup, lime and soda.</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$5.900</p>
+                        </div>
+                    </div>
+                    <img class="c_img" src="../assets/img/fresco_chileno.png">
+                </div>
+                <div class="v_divisor">
+                    <img src="../assets/icons/v_divisor_yellow.png" alt="divisor yellow png">
+                </div>
+                <div id="panchito" class="card">
+                    <div class="c_body">
+                        <div class="c_title">
+                            <h4>"Panchito"</h4>
+                        </div>
+                        <div class="c_content">
+                            <p>Beefeater Gin, triple sec, passion fruit shot, grapefruit juice, syrup, dehydrated coriander seed and a touch of albumin.</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$6.500</p>
+                        </div>
+                    </div>
+                    <img class="c_img" src="../assets/img/panchito.png">
+                    </div>      
+            </div>
+            <div class="h_divisor">
+                <img src="../assets/icons/h_divisor_yellow.png" alt="horizontal divisor yellow png">
+            </div>
+            <div class="row">
+                <div id="deleite" class="card">
+                    <img class="c_img" src="../assets/img/deleite_patagon.png">
+                    <div class="c_body">
+                        <div class="c_title">
+                            <h4>Deleite Patagon</h4>
+                        </div>
+                        <div class="c_content">
+                            <p>Tra-kal, triple sec, lime, Calafate syrup, mixed red fruits and soda.</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$6.500</p>
+                        </div>
+                    </div>                
+                </div>
+                <div class="v_divisor">
+                    <img src="../assets/icons/v_divisor_yellow.png" alt="divisor yellow png">
+                </div>
+                <div id="cardonal" class="card">
+                    <img class="c_img" src="../assets/img/cardonal.png">     
+                    <div class="c_body">
+                        <div class="c_title">
+                            <h4>Cardonal</h4>
+                        </div>
+                        <div class="c_content">
+                            <p>Aged Republicano Pisco, passion fruit pulp, cucumber slices, lime, syrup and shot of beer.</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$5.900</p>
+                        </div>
+                    </div>                
+                </div>      
+            </div>
+            <div class="h_divisor">
+                <img src="../assets/icons/h_divisor_yellow.png" alt="horizontal divisor yellow png">
+            </div>
+            <div class="row">
+                <div id="imperial" class="card">
+                    <div class="c_body">
+                        <div class="c_title">
+                            <h4>Imperial</h4>
+                        </div>
+                        <div class="c_content">
+                            <p>Stolichnaya Vodka, passion fruit pulp, vanilla syrup, lime, Cinzano dry and ginger ale.</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$6.500</p>
+                        </div>
+                    </div>
+                    <img class="c_img" src="../assets/img/imperial.png">
+                </div>
+                <div class="v_divisor">
+                    <img src="../assets/icons/v_divisor_yellow.png" alt="divisor yellow png">
+                </div>
+                <div id="morir" class="card">
+                    <img class="c_img" src="../assets/img/morir_con_honor.png">
+                    <div class="c_body">
+                        <div class="c_title">
+                            <h4>Morir con honor</h4>
+                        </div>
+                        <div class="c_content">
+                            <p>Grant's Whiskey, Borghetti, Jack Fire, espresso and orange slice.</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$6.500</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="v_divisor">
+                    <img src="../assets/icons/v_divisor_yellow.png" alt="divisor yellow png">
+                </div>
+                <div id="pasion" class="card">
+                    <div class="c_body">
+                        <div class="c_title">
+                            <h4>Pasión</h4>
+                        </div>
+                        <div class="c_content">
+                            <p>Ramazzoti, Gin Beefeater Pink, lime, albumen and brown sugar.</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$6.500</p>
+                        </div>
+                    </div>
+                    <img class="c_img" src="../assets/img/pasion_b.png">
+                </div>          
+            </div>
+        </div>
+        <div id="jarnsour" class="container">
+            <div id="jar" class="row">
+                <div id="jar_header" class="card">
+                    <div class="c_title">
+                        <h4>Jars</h4>
+                    </div>
+                    <div class="c_subt">
+                        <p>from the house</p>
+                    </div>
+                    <div class="c_content">
+                        <p>1 Lt.</p>
+                    </div>
+                    <div class="c_price">
+                        <p>$12.900.-</p>
+                    </div>
+                </div>
+                <img src="../assets/img/jarra_sangria.png" alt="jarra de sangria png">
+            </div>
+            <div id="jarcards" class="row">
+                <div id="sangria" class="card">
+                    <div class="c_title">
+                        <p>Sangria Joya</p>
+                    </div>
+                    <div class="c_content">
+                        <p>Carmenere red wine, Bayou white rum, fruit mix, Triple sec, syrup and passion fruit shot.</p>
+                    </div>
+                </div>
+                <div class="v_divisor">
+                    <img src="../assets/icons/v_divisor_yellow.png" alt="divisor vertical png">
+                </div>
+                <div id="summer" class="card">
+                    <div class="c_title">
+                        <p>Summer</p>
+                    </div>
+                    <div class="c_content">
+                        <p>Cinzano bianco, lime, ginger slice, cucumber and lemon, syrup, basil and ginger ale.</p>
+                    </div>
+                </div>
+                <div class="v_divisor">
+                    <img src="../assets/icons/v_divisor_yellow.png" alt="divisor vertical png">
+                </div>
+                <div id="bogatuna" class="card">
+                    <div class="c_title">
+                        <p>Bogatuna</p>
+                    </div>
+                    <div class="c_content">
+                        <p>Chardonnay wine, orange pulp with cherimoya and fruits.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="h_divisor">
+                <img src="../assets/icons/h_divisor_pua_yellow.png" alt="divisor horizontal png">
+            </div>
+            <div id="sour" class="row">
+                <div id="sour_header" class="card">
+                    <div id="sour_title" class="c_title">
+                        <p>Sours</p>
+                    </div>
+                    <div id="sour_subt" class="c_subt">
+                        <p>and varietis</p>
+                    </div>
+                    <div class="c_img">
+                        <img src="../assets/img/sour.png" alt="sour png">
+                    </div>
+                </div>
+                <div id="sour_price" class="cardflxr">
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Joya Sour</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$4.900 / $6.900</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Rested Pisco Republicano, passion fruit pulp, green chili and syrup.</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Tradicional Sour</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$4.500 / $6.500</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Triple distilled Pisco Republicano.</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Premium sour</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$8.900</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Pisco Waqar</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Peruvian sour</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$4.900 / $6.900</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>100% Peruvian Pisco Viñas de Oro.</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Amaretto sour</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$5.900 / $8.900</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Amaretto Disaronno.</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Chardonnay sour</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$4.000 / $5.900</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Chardonnay wine.</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Whisky sour</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$4.500 / $6.000</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Whisky Grant's</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Gentleman sour</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$8.900</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Gentleman Jack.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mojitonfizz" class="container">
+            <div id="mojito" class="row">
+                <div class="card">
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Cuban Mojito</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$5.000</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Bayou® rum 3 years.</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Flavors Mojito</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$5.500</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Bayou® Rum 3 years and fruit pulp flavor of your choice.</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Mojito.cl</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$5.500</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Triple distilled Pisco Republicano®.</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Patagónico</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$5.900</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Trakal liquer.</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Brewer</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$4.900</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Bayou® Rum 3 years and Royal Guard® beer</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Mojito Jack</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$5.900</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Made with Jack Daniel's</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Sparkling</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$5.500</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Made with sparkling wine</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Jagger</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$5.500</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Jagger, lime, syrup, mint leaves and soda.</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Redbull</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$5.500</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Bayou® Rum 3 years, Redbull, lime, syrup and mint leaves.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="c_head">
+                        <div id="mojito_subt" class="c_subt">
+                            <p>The</p>
+                        </div>
+                        <div id="mojito_title" class="c_title">
+                            <p>Mojitos</p>
+                        </div>                        
+                        <div class="c_img">
+                            <img src="../assets/img/mojito_tradicional.png" alt="sour png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h_divisor">
+                <img src="../assets/icons/h_divisor_pua_yellow.png" alt="divisor horizontal png">
+            </div>
+            <div id="spritz" class="row">
+                <div class="cardflxr">
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Aperol Spritz</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$5.000</p>
+                        </div>
+                    </div>                    
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Ramazzotti Spritz</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$5.500</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Ramazzotti Spritz</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$5.500</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Ramazzoti Violleto</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$5.500</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Hugo Spritz</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$5.500</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Elderberry liqueur, sparkling wine, mint leaves, soda, ice.</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Chambord Spritz</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$5.990</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Chambord®, sparkling wine, soda, cranberries.</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Campari Spritz</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$5.500</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Disaronno Fizz</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$6.900</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Amaretto Disaronno, tonic, lemon juice and orange slice.</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Honey Lemonade</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$5.900</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Jack Daniel's Honey, lime, syrup, soda, lemon slice and mint.</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Trikahue</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$5.500</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Rested Pisco Republicano®, Araucano, lime, ginger and ginger ale.</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Sangría Spritz</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$5.900</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Carmenere wine, red fruit syrup, Cinzano Rosso and sparkling wine.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class=".c_head">
+                        <div id="spritz_title" class="c_title">
+                            <p>"Spritz"</p>
+                        </div>
+                        <div id="spritz_subt" class="c_subt">
+                            <p>and</p>
+                        </div>
+                        <div id="spritz_title2" class="c_title">
+                        <p>"Fizz"</p>
+                        </div>
+                    </div>
+                    <div class="c_img">
+                        <img src="../assets/img/spritz_fizz.png" alt="spritz y fizz png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mulenclassic" class="container">
+            <div class="row">
+                <div id="mule" class="card">
+                    <div class="c_head">
+                        <div id="mule_subt" class="c_subt">
+                            <p>The</p>
+                        </div>
+                        <div id="mule_title" class="c_title">
+                            <p>"Mules"</p>
+                        </div>
+                        
+                    </div>
+                    <div class="c_img">
+                        <img src="../assets/img/mule.png" alt="whiskey a las rocas png">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="c_headflxr">
+                        <div id="gentle" class="c_title">
+                            <p>Moscow Mule</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$5.500</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Stolichnaya and Fentiman's ginger beer.</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Berlín Mule</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$6.000</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Jaggermaister and Fentiman's ginger beer.</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>London Mule</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$6.900</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Gin Hendrick's and Fentiman's ginger beer.</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Elqui Mule</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$6.900</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Republicano triple destilled and Fentiman's ginger beer.</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Tenesse Mule</p>
+                        </div>
+                        <div class="c_priceflxr">
+                            <p>$6.900</p>
+                        </div>
+                    </div>
+                    <div class="c_bodyflxr">
+                        <div class="c_contflxr">
+                            <p>Jack Daniel's N°7 and Fentiman's ginger beer.</p>
+                        </div>
+                    </div>                        
+                </div>                    
+            </div>
+            <div class="h_divisor">
+                <img src="../assets/icons/h_divisor_pua_yellow.png" alt="divisor horizontal png">
+            </div>
+            <div id="classic" class="row">
+                <div class="page_header">
+                    <div class="c_head">
+                        <div class="c_title">
+                            <h4>Classics</h4>
+                        </div>
+                        <div class="c_subt">
+                            <p>Cocktails</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <div class="c_head">
+                            <div class="c_title">
+                                <p>Pina Colada</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$4.900</p>
+                            </div>
+                        </div>
+                        <div class="c_head">
+                            <div class="c_title">
+                                <p>Old fashion apple</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$4.500</p>
+                            </div>
+                        </div>
+                        <div class="c_head">
+                            <div class="c_title">
+                                <p>Tequila Margarita</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$4.500</p>
+                            </div>
+                        </div>
+                        <div class="c_head">
+                            <div class="c_title">
+                                <p>White or Black Russian</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$4.500</p>
+                            </div>
+                        </div>
+                        <div class="c_head">
+                            <div class="c_title">
+                                <p>Manhattan</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$4.500</p>
+                            </div>
+                        </div>
+                        <div class="c_head">
+                            <div class="c_title">
+                                <p>Mai tai</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$4.500</p>
+                            </div>
+                        </div>
+                        <div class="c_head">
+                            <div class="c_title">
+                                <p>Carajillo</p>
+                            </div>
+                            <div class="c_content">
+                                <p>Licor 43, express and ice.</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$4.500</p>
+                            </div>                                
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="c_head">
+                            <div class="c_title">
+                                <p>Old fashioned</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$4.500</p>
+                            </div>
+                        </div>
+                        <div class="c_head">
+                            <div class="c_title">
+                                <p>Negroni</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$5.500</p>
+                            </div>
+                        </div>
+                        <div class="c_head">
+                            <div class="c_title">
+                                <p>Martini dry</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$4.900</p>
+                            </div>
+                        </div>
+                        <div class="c_head">
+                            <div class="c_title">
+                                <p>Tom Collins</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$4.900</p>
+                            </div>
+                        </div>
+                        <div class="c_head">
+                            <div class="c_title">
+                                <p>Cosmopolitan</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$4.500</p>
+                            </div>
+                        </div>
+                        <div class="c_head">
+                            <div class="c_title">
+                                <p>Rusty Nail</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$5.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h_divisor">
+                    <img src="../assets/icons/h_divisor_pua_yellow.png" alt="divisor horizontal png">
+                </div>
+                <div id="shot" class="row">
+                    <div class="card">
+                        <div id="shot_header" class="c_head">
+                            <div class="c_title">
+                                <h4>Shots</h4>
+                            </div>
+                            <div class="c_subt">
+                                <p>Just do it</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="c_headflxr">
+                            <div class="c_title">
+                                <p>Rested El Jimador Tequila</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$3.500</p>
+                            </div>
+                        </div>
+                        <div class="c_headflxr">
+                            <div class="c_title">
+                                <p>White El Jimador tequila</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$3.500</p>
+                            </div>
+                        </div>
+                        <div class="c_headflxr">
+                            <div class="c_title">
+                                <p>Herradura Ultra Tequila</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$3.500</p>
+                            </div>
+                        </div>
+                        <div class="c_headflxr">
+                            <div class="c_title">
+                                <p>Jaggermaister Manifest</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$4.500</p>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="card">
+                        <div class="c_headflxr">
+                            <div class="c_title">
+                                <p>Olmeca chocolate</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$4.500</p>
+                            </div>
+                        </div>
+                        <div class="c_headflxr">
+                            <div class="c_title">
+                                <p>Mistral Nobel Apple</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$3.500</p>
+                            </div>
+                        </div>
+                        <div class="c_headflxr">
+                            <div class="c_title">
+                                <p>Jaggermaister</p>
+                            </div>
+                            <div class="c_price">
+                                <p>$3.500</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h_divisor">
+                    <img src="../assets/icons/h_divisor_pua_yellow.png" alt="divisor horizontal png">
+                </div>
+            </div>
+        </div>
+        <div id="shopnbeer" class="container">
+            <div class="page_header">
+                <div class="page_title">
+                    <h4>Shops</h4>
+                </div>
+                <div class="c_img">
+                    <img src="../assets/img/shop.png" alt="shop png">
+                </div>
+                <div id="shop" class="cardflxr">
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Royal Guard</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$4.200</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Valdivia Pale Lager</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$4.900</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Austral Calafate</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$4.900</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Kunstman Torobayo</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$4.900</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Michelada</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$800</p>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <div id="beerv" class="row">
+                <div class="card">
+                    <div class="c_head">
+                        <div class="c_title">
+                            <p>Anfiteatro</p>
+                        </div>
+                        <div class="c_subt">
+                            <p>Decano</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$5.500</p>
+                        </div>
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title">
+                            <p>Anfiteatro</p>
+                        </div>
+                        <div class="c_subt">
+                            <p>San Francisco</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$5.500</p>
+                        </div>
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title">
+                            <p>Anfiteatro</p>
+                        </div>
+                        <div class="c_subt">
+                            <p>Peral</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$5.500</p>
+                        </div>
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title">
+                            <p>Anfiteatro</p>
+                        </div>
+                        <div class="c_subt">
+                            <p>Artilleria</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$5.500</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="c_head">
+                        <div id="beerv_title" class="c_title">
+                            <p>Beers</p>
+                        </div>
+                        <div id="beerv_subt" class="c_subt">
+                            <p>from the V region</p>
+                        </div>                        
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title">
+                            <p>Rompe ola</p>
+                        </div>
+                        <div class="c_subt">
+                            <p>Amber ale 5.3°</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$4.500</p>
+                        </div>
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title">
+                            <p>Rompe ola</p>
+                        </div>
+                        <div class="c_subt">
+                            <p>American amber ale 5.5°</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$6.500</p>
+                        </div>
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title">
+                            <p>Rompe ola</p>
+                        </div>
+                        <div class="c_subt">
+                            <p>American pale ale 5.9°</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$6.500</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="c_head">
+                        <div class="c_title">
+                            <p>Mauco</p>
+                        </div>
+                        <div class="c_subt">
+                            <p>Russian imperial stout 8.0°</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$5.500</p>
+                        </div>
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title">
+                            <p>Mauco</p>
+                        </div>
+                        <div class="c_subt">
+                            <p>Scotch Ale 8.0°</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$5.500</p>
+                        </div>
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title">
+                            <p>Mauco</p>
+                        </div>
+                        <div class="c_subt">
+                            <p>Golden Ale 5.0°</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$5.500</p>
+                        </div>
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title">
+                            <p>Mauco</p>
+                        </div>
+                        <div class="c_subt">
+                            <p>Doble ipa 5.0°</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$5.500</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h_divisor">
+                <img src="../assets/icons/h_divisor_pua_yellow.png" alt="divisor horizontal png">
+            </div>
+            <div id="imp" class="row">
+                <div class="cardflxr">
+                    <div class="c_headflxr">                        
+                        <div id="imp_subt" class="c_subt">
+                            <p>Imported</p>
+                        </div>
+                        <div id="imp_title" class="c_title">
+                            <p>Beers</p>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            
+            <div id="imp2" class="row">
+                <div class="card">
+                    <div class="c_head">
+                        <div class="c_title">
+                            <p>Heineken</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$3.200</p>
+                        </div>
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title">
+                            <p>Peroni</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$3.200</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="c_head">
+                        <div class="c_title">
+                            <p>Estrella Galicia</p>
+                        </div>
+                        <div class="c_subt">
+                            <p>Premium lager</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$3.200</p>
+                        </div>
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title">
+                            <p>Erdinger</p>
+                        </div>
+                        <div class="c_subt">
+                            <p>500 cc</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$5.900</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="c_head">
+                        <div class="c_title">
+                            <p>Estrella Galicia</p>
+                        </div>
+                        <div class="c_subt">
+                            <p>Sin gluten</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$3.200</p>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <div class="h_divisor">
+                <img src="../assets/icons/h_divisor_pua_yellow.png" alt="divisor horizontal png">
+            </div>
+            <div class="row">
+                <div id="nacional" class="cardflxr">
+                    <div class="c_headflxr">
+                        <div id="nacional_subt" class="c_subt">
+                            <p>National</p>
+                        </div>
+                        <div id="nacional_title" class="c_title">
+                            <p>Beers</p>
+                        </div>                        
+                    </div>
+                    <div id="nac" class="row">
+                        <div class="card">
+                            <div class="c_head">
+                                <div class="c_title">
+                                    <p>Royal guard</p>
+                                </div>
+                                <div class="c_subt">
+                                    <p>Golden lager</p>
+                                </div>
+                                <div class="c_price">
+                                    <p>$3.000</p>
+                                </div>
+                            </div>
+                            <div class="c_head">
+                                <div class="c_title">
+                                    <p>Kunstmann</p>
+                                </div>
+                                <div class="c_subt">
+                                    <p>Bock 5.3°</p>
+                                </div>
+                                <div class="c_price">
+                                    <p>$3.500</p>
+                                </div>
+                            </div>
+                            <div class="c_head">
+                                <div class="c_title">
+                                    <p>Kunstmann</p>
+                                </div>
+                                <div class="c_subt">
+                                    <p>Miel 4.8°</p>
+                                </div>
+                                <div class="c_price">
+                                    <p>$3.500</p>
+                                </div>
+                            </div>
+                            <div class="c_head">
+                                <div class="c_title">
+                                    <p>Mestra</p>
+                                </div>
+                                <div class="c_subt">
+                                    <p>Pilsen</p>
+                                </div>
+                                <div class="c_price">
+                                    <p>$3.500</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="c_head">
+                                <div class="c_title">
+                                    <p>Dolbeck</p>
+                                </div>
+                                <div class="c_subt">
+                                    <p>Maqui 4.8°</p>
+                                </div>
+                                <div class="c_price">
+                                    <p>$3.300</p>
+                                </div>
+                            </div>
+                            <div class="c_head">
+                                <div class="c_title">
+                                    <p>Dolbeck</p>
+                                </div>
+                                <div class="c_subt">
+                                    <p>Lager belga 4.5°</p>
+                                </div>
+                                <div class="c_price">
+                                    <p>$3.500</p>
+                                </div>
+                            </div>
+                            <div class="c_head">
+                                <div class="c_title">
+                                    <p>Guayacan</p>
+                                </div>
+                                <div class="c_subt">
+                                    <p>Hazy lager 4.7°</p>
+                                </div>
+                                <div class="c_price">
+                                    <p>$5.500</p>
+                                </div>
+                            </div>
+                            <div class="c_head">
+                                <div class="c_title">
+                                    <p>Guayacan</p>
+                                </div>
+                                <div class="c_subt">
+                                    <p>Hazy apa 4.9°</p>
+                                </div>
+                                <div class="c_price">
+                                    <p>$5.500</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="v_divisor">
+                    <img src="../assets/icons/v_divisor_yellow.png" alt="divisor vertical png">
+                </div>
+                <div id="free" class="card">
+                    <div class="c_head">
+                        <div id="free_title" class="c_title">
+                            <p>Alcohol Free</p>
+                        </div>
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title">
+                            <p>Peroni</p>
+                        </div>
+                        <div class="c_subt">
+                            <p>0.0% Alcohol</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$3.200</p>
+                        </div>
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title">
+                            <p>Heineken</p>
+                        </div>
+                        <div class="c_subt">
+                            <p>0.0% Alcohol</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$3.200</p>
+                        </div>
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title">
+                            <p>Kunstmann</p>
+                        </div>
+                        <div class="c_subt">
+                            <p>0.0% Alcohol</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$3.200</p>
+                        </div>
+                    </div>
+                    <div class="c_head">
+                        <div id="estrella" class="c_title">
+                            <p>Estrella Galicia</p>
+                        </div>
+                        <div class="c_subt">
+                            <p>0.0% Alcohol</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$3.200</p>
+                        </div>
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title">
+                            <p>Mestra</p>
+                        </div>
+                        <div class="c_subt">
+                            <p>0.0% Alcohol</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$3.500</p>
+                        </div>
+                    </div>
+                </div>             
+            </div>
+        </div>
+        <div id="wine" class="container">
+            <div class="page_header">
+                <img src="../assets/img/logo_white_2.png" alt="logo white png">
+            </div>
+            <div id="winenspark" class="row">
+                <div id="wine_title" class="c_head">
+                    <div class="c_title">
+                        <h4>Wines <span>and</span> Sparklings</h4>
+                    </div>
+                </div>
+            </div>
+            <div id="winecard" class="row">
+                <div class="card">
+                    <div class="c_head">
+                        <div class="c_title2">
+                            <p>Wine by glass</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Errazuriz Max</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$4.500</p>
+                        </div>
+                    </div>                    
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Riccadonna Chardonau Brut</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$4.000</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Glass of sparkling wine</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$3.500</p>
+                        </div>
+                    </div>                      
+                    <div class="h_divisor">
+                        <img src="../assets/icons/h_divisor.png" alt="divisor horizontal png">
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title2">
+                            <p>Chardonnay</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Undurraga T.H.</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$19.900</p>
+                        </div>
+                    </div>                    
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Caliterra tributo</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$15.900</p>
+                        </div>
+                    </div>                    
+                    <div class="h_divisor">
+                        <img src="../assets/icons/h_divisor.png" alt="divisor horizontal png">
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title2">
+                            <p>Carmenere</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Arboleda</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$19.900</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Caliterra tributo</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$15.900</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Errazuriz Max</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$19.900</p>
+                        </div>
+                    </div>
+                    <div class="h_divisor">
+                        <img src="../assets/icons/h_divisor.png" alt="divisor horizontal png">
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title2">
+                            <p>Merlot</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Undurraga Sibaris</p>
+                        </div>                        
+                        <div class="c_price">
+                            <p>$15.900</p>
+                        </div>
+                    </div>
+                    <div class="c_head">
+                        <div class="c_subt">
+                            <p>Gran reserva</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Riccadonna Chardonau Brut</p>
+                        </div>                       
+                        <div class="c_price">
+                            <p>$4.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="v_divisor">
+                    <img src="../assets/icons/v_divisor.png" alt="divisor vertical png">
+                </div>
+                <div class="card">
+                    <div class="c_head">
+                        <div class="c_title2">
+                            <p>Late harvest</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Undurraga</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$12.900</p>
+                        </div>                        
+                    </div>
+                    <div class="h_divisor">
+                        <img src="../assets/icons/h_divisor.png" alt="divisor horizontal png">
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title2">
+                            <p>Sauvignon Blanc</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Casa Marin Cartagena</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$15.900</p>
+                        </div>
+                    </div>
+                    <div class="h_divisor">
+                        <img src="../assets/icons/h_divisor.png" alt="divisor horizontal png">
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title2">
+                            <p>Cabernet Sauvignon</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Santa Cruz Chaman</p>
+                        </div>                        
+                        <div class="c_price">
+                            <p>$19.900</p>
+                        </div>
+                    </div>
+                    <div class="c_head">
+                        <div class="c_subt">
+                            <p>Reserva</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Caliterra tributo</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$15.900</p>
+                        </div>
+                    </div>
+                    <div class="h_divisor">
+                        <img src="../assets/icons/h_divisor.png" alt="divisor horizontal png">
+                    </div>
+                    <div class="c_head">
+                        <div class="c_title2">
+                            <p>Sparkling wines</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Undurraga brut</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$12.900</p>
+                        </div>
+                    </div>
+                    <div class="c_headflxr">
+                        <div class="c_title">
+                            <p>Riccadonna Chardonay Brut</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$17.900</p>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+            <div class="pagef">
+                <div class="c_img">
+                    <img src="../assets/img/brindis.png" alt="brindis png">
+                </div>
+                <div class="card">
+                    <div class="c_img2">
+                        <img src="../assets/img/logo_santa_cruz.png" alt="logo santa cruz png">
+                    </div>
+                    <div class="c_img2">
+                        <img src="../assets/img/logo_casa_marin.png" alt="logo casa marin png">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="c_img3">
+                        <img src="../assets/img/logo_undurraga.png" alt="logo undurraga png">
+                    </div>
+                    <div class="c_img2">
+                        <img src="../assets/img/logo_errazuriz.png" alt="logo errazuriz png">
+                    </div>
+                </div>
+            </div>
+            <div id="premium" class="row">
+                <div class="topcorners">
+                    <img src="../assets/icons/resource_golden_corner_tl.png" alt="top left golden corner 2 png">
+                    <img src="../assets/icons/resource_golden_corner_tr.png" alt="top rigth golden corner 2 png">
+                </div>
+                <div class="row">
+                    <div class="c_head">
+                        <div id="premium_title" class="c_title">
+                            <h4>Wines</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <div id="catp" class="c_head">                            
+                            <div class="c_title">
+                                <p>Premium Category</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <div class="c_head">
+                            <div class="c_title">
+                                <p>Casa Marin</p>
+                            </div>
+                            <div class="c_title">
+                                <p>Sauvignon Blanc Cipreces</p>
+                            </div>
+                            <div class="c_subt">
+                                <p>Lo Abarca, San Antonio valley</p>
+                            </div>
+                        </div>
+                        <div class="c_price">
+                            <p>$29.900</p>
+                        </div>
+                        <div class="c_head">
+                            <div class="c_title">
+                                <p>Casa Marin</p>
+                            </div>
+                            <div class="c_title">
+                                <p>Syrah Litoral</p>
+                            </div>
+                            <div class="c_subt">
+                                <p>Lo Abarca, San Antonio valley</p>
+                            </div>
+                        </div>
+                        <div class="c_price">
+                            <p>$29.900</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <div id="cati" class="c_head">                            
+                            <div class="c_title">
+                                <p>Icon Category</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <div class="c_head">
+                            <div class="c_title">
+                                <p>Arboleda</p>
+                            </div>
+                            <div class="c_title">
+                                <p>Brisa Blend</p>
+                            </div>
+                            <div class="c_subt">
+                                <p>Aconcagua valley</p>
+                            </div>
+                        </div>
+                        <div class="c_price">
+                            <p>$45.000</p>
+                        </div>
+                    </div>
+                </div>                
+                <div class="bottomcorners">
+                    <img src="../assets/icons/resource_golden_corner_bl.png" alt="bottom left golden corner png">
+                    <img src="../assets/icons/resource_golden_corner_br.png" alt="bottom rigth golden corner png">
+                </div>
+                <div id="bi" class="c_img">
+                    <img src="../assets/img/brindis_izq.png" alt="brindis izq png">
+                </div>
+                <div id="bd" class="c_img">
+                    <img src="../assets/img/brindis_der.png" alt="brindis der png">
+                </div> 
+            </div>
+        </div> 
     </main>
     <footer>
         <div class="footer">
             <div class="rowf">
                 <div class="colf2">
-                    <p>Follow us on Social Media:</p>
-                    <a href="https://www.instagram.com/lajoyasanguches/?hl=es" target="_self"><img src="../assets/icons/instagram_icon.png" alt="instagram icono"></a>
+                    <p>Siguenos en Redes Sociales:</p>
+                    <a href="https://www.instagram.com/lajoyasanguches/?hl=es" target="_self"><img src="../assets/icons/insta_icon.png" alt="instagram icono"></a>
                 </div>
                 
                 <div class="colf">
@@ -91,26 +3041,34 @@
     </footer>
     <nav class="menu">
         <div class="x" onclick="menuOff()" type="button"><img src="../assets/icons/x_icon.png" alt="x_icon"></div>
-        <div class="checkbox-wrapper-34">
-            <input class='tgl tgl-ios' id='toggle-34' type='checkbox'>
-            <label class='tgl-btn' for='toggle-34'></label>
+        <div id="carta" class="c_head">
+            <div class="c_title">
+                <p>Menu:</p>
+            </div>
+        </div>   
+        <div class="checkbox-wrapper-34" id="toggle2">
+            <input class='tgl tgl-ios' id='toggle_carta2' type='checkbox' onchange="changeMenu2()">
+            <label class='tgl-btn' for='toggle_carta2'></label>
         </div>
-        <ul id="parent" class="categories">
-            <li><a href="index.html" target="_self">Home</a></li>
-            <li><a href="toshare.html" target="_self">To Share</a></li>
-            <li><a href="burger.html" target="_self">Burgers</a></li>
-            <li><a href="veggie.html" target="_self">Veggie</a></li>
-            <li><a href="sanguches.html" target="_self">Sandwish</a></li>
-            <li><a href="plates.html" target="_self">Main courses</a></li>
-            <li><a href="salads.html" target="_self">Salads</a></li>
-            <li><a href="postres.html" target="_self">Desserts</a></li>
-        </ul>
-        <div class="language">
-            <span class="es">Spa</span>
-            <input type="checkbox"class="check" checked>
-            <span class="en">Eng</span>
+        <div id="parent" class="categories">
+            <button class="btn" onclick="myFunction(this)">Inicio</button>
+            <button class="btn" onclick="myFunction(this)">Para compartir</button>
+            <button class="btn" onclick="myFunction(this)">Hamburguesas</button>
+            <button class="btn" onclick="myFunction(this)">Veggie</button>
+            <button class="btn" onclick="myFunction(this)">Sanguches</button>
+            <button class="btn" onclick="myFunction(this)">Platos</button>
+            <button class="btn" onclick="myFunction(this)">Ensaladas</button>
+            <button class="btn" onclick="myFunction(this)">Postres</button>
+        </div>
+        <div id="idioma" class="c_head">
+            <div class="c_title">
+                <p>Idioma:</p>
+            </div>
+        </div>        
+        <div class="checkbox-wrapper-34">
+            <input class='tgl tgl-ios' id='toggle-35' type='checkbox'>
+            <label class='tgl-btn2' for='toggle-35'></label>
         </div>
     </nav>
     <script src="../js/script.js"></script>
 </body>
-</html>

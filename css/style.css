@@ -21,7 +21,7 @@ body {
 /* css main container */
 .container {
     width: 375px;
-    /* padding-top: 100px; */
+    margin-top: 150px;
     margin: 0 auto; 
 }
 

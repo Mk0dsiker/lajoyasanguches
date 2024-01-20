@@ -1,82 +1,77 @@
+
 function menuOn() {
-    var menu = document.querySelector(".menu");
+    // Funcion que activa el menu lateral
+    let menu = document.querySelector(".menu");
     menu.style.transform = "none";
-    document.querySelector('body').classList.add('menu-on');  
-
-    let header = document.querySelector(".header");
-
-    let id = toggle_carta.checked;
-    if (id ==true){    
+    document.querySelector('body').classList.add('menu-on');
+    
+    //Seleccionamos el header y quitamos el el checkbox
+    //de comida y tragos cuando abre menu lateral.
+    let toggle = document.querySelector("#toggle_carta");
+    let id = toggle.checked;
+    if(id == true){
+        let header = document.querySelector(".header");
         header.innerHTML = `
         <a class="logo_index" href="index.html" target="_self"><img src="assets/img/logo_white_green.png" alt="logo white png"></a>
-        <div class="menu_icon" type="button"><img src="assets/icons/menu_icon_green.png" alt="menu icon" onclick="menuOn()"></div>`;
+        <div class="menu_icon" type="button"><img src="assets/icons/menu_icon_green.png" alt="menu icon" onclick="menuOn()"></div>`
     } else {
+        let header = document.querySelector(".header");
         header.innerHTML = `
-    <a class="logo_index" href="index.html" target="_self"><img src="assets/img/logo_white.png" alt="logo white png"></a>
-    <div class="menu_icon" type="button"><img src="assets/icons/menu_icon.png" alt="menu icon" onclick="menuOn()"></div>`;
-    }
+        <a class="logo_index" href="index.html" target="_self"><img src="assets/img/logo_white.png" alt="logo white png"></a>
+        <div class="menu_icon" type="button"><img src="assets/icons/menu_icon.png" alt="menu icon" onclick="menuOn()"></div>`
+        }
+
+    
 }
 
 function menuOff() {
-    var menu = document.querySelector(".menu");
+    let menu = document.querySelector(".menu");
     menu.style.transform = "translateX(100%)";
     document.querySelector('body').classList.remove('menu-on');
 
+    //Seleccionamos el header y añadimos el el checkbox
+    // de comida y tragos cuando cierra menu lateral.
+    let toggle2 = document.querySelector("#toggle_carta2");
+    let id = toggle2.checked;
+    if(id == true){
     let header = document.querySelector(".header");
     header.innerHTML = `
-    <a class="logo_index" href="index.html" target="_self"><img src="assets/img/logo_white.png" alt="logo white png"></a>
-    <div class="checkbox-wrapper-34">
-        <input class='tgl tgl-ios' id='toggle_carta' type='checkbox' onchange="changeMenu()">
-        <label class='tgl-btn' for='toggle_carta'></label>
-    </div>
-    <div class="menu_icon" type="button"><img src="assets/icons/menu_icon.png" alt="menu icon" onclick="menuOn()"></div>`
-    
-    let id = toggle_carta2.checked;
-        if(id == true) {
+    <a class="logo_index" href="index.html" target="_self"><img src="assets/img/logo_white_green.png" alt="logo white png"></a>
+    <div class="checkbox-wrapper-34" id="toggle">
+                <input class='tgl tgl-ios' id='toggle_carta' type='checkbox' onchange="changeMenu()" checked>
+                <label class='tgl-btn' for='toggle_carta'></label>
+            </div>
+    <div class="menu_icon" type="button"><img src="assets/icons/menu_icon_green.png" alt="menu icon" onclick="menuOn()"></div>`
+    } else {
+        let header = document.querySelector(".header");
         header.innerHTML = `
-        <a class="logo_index" href="index.html" target="_self"><img src="assets/img/logo_white_green.png" alt="logo white png"></a>
-        <div class="checkbox-wrapper-34">
-            <input class='tgl tgl-ios' id='toggle_carta' type='checkbox' onchange="changeMenu()" checked>
-            <label class='tgl-btn' for='toggle_carta'></label>
-        </div>
-        <div class="menu_icon" type="button"><img src="assets/icons/menu_icon_green.png" alt="menu icon" onclick="menuOn()"></div>`
-    }
-    
+        <a class="logo_index" href="index.html" target="_self"><img src="assets/img/logo_white.png" alt="logo white png"></a>
+        <div class="checkbox-wrapper-34" id="toggle">
+                <input class='tgl tgl-ios' id='toggle_carta' type='checkbox' onchange="changeMenu()">
+                <label class='tgl-btn' for='toggle_carta'></label>
+            </div>
+        <div class="menu_icon" type="button"><img src="assets/icons/menu_icon.png" alt="menu icon" onclick="menuOn()"></div>`
+    }  
 }
 
-function headerOn(){
-    let header = document.querySelector(".header");
-    header.style.transform = "translateY(0)";     
 
-    header2Off();
-}
-
-function header2On(){
-    let header2 = document.querySelector(".header2");
-    header2.style.transform = "translateY(0)";
-}
-
-function headerOff(){
-    let header = document.querySelector(".header");
-    header.style.transform = "translateY(-100%)";
-}
-
-function header2Off(){
-    let header2 = document.querySelector(".header2");
-    header2.style.transform = "translateY(-100%)";
-}
-
-window.onload = header2Off();
-
-
+// Sistema de navegacion por scrollintoView
 function myFunction(element) {
     
-    // let li = document.querySelector(".li").innerText;
+    
     console.log(element.innerText);
-    let container = null;
     if(element.innerText == "Inicio"){
-        container = document.getElementById("index");
-        container.scrollIntoView();       
+        let toggle2 = document.querySelector("#toggle_carta2");
+        console.log(toggle2);
+        let id = toggle2.checked;
+        if (id == true) {
+        let container = document.getElementById("index_coctel");
+        container.scrollIntoView(); 
+        } else {
+            container = document.getElementById("index");
+            container.scrollIntoView(); 
+        }        
+
     } else if(element.innerText == "Para compartir"){
         container = document.getElementById("toshare");
         container.scrollIntoView();
@@ -117,19 +112,17 @@ function myFunction(element) {
         container = document.getElementById("wine");
         container.scrollIntoView();    
     }
-    menuOff();
-    headerOff();
-    header2On();
 }
 
-function changetoGreen() {
-    let menu = document.querySelector(".menu");
-    console.log(menu);
-    menu.style.backgroundColor = "green";
 
+// Funcion que cambia a los colores cuando carta tragos es seleccionada.
+function changetoDrink() {
+
+    let menu = document.querySelector(".menu");
+    menu.style.backgroundColor = "#00724d";
 
     let categories = document.querySelector(".categories");
-    console.log(categories);
+    // console.log(categories);
     categories.innerHTML = `
     <button class="btn" onclick="myFunction(this)">Inicio</button>
     <button class="btn" onclick="myFunction(this)">Cantina Joya</button>
@@ -139,9 +132,8 @@ function changetoGreen() {
     <button class="btn" onclick="myFunction(this)">Shops/Cervezas</button>
     <button class="btn" onclick="myFunction(this)">Vinos</button>`;
 
-
     let header = document.querySelector(".header");
-    header.style.borderBottom = "4px solid green"
+    header.style.borderBottom = "4px solid #00724d"
     let icon_menu = document.querySelector(".menu_icon");
     icon_menu.innerHTML = `<img src="assets/icons/menu_icon_green.png" alt="menu icon" onclick="menuOn()">`
     let logo_index = document.querySelector(".logo_index");
@@ -149,13 +141,13 @@ function changetoGreen() {
     
 }
 
-function changetoYellow() {
+function changetoFood() {
+
     let menu = document.querySelector(".menu");
-    console.log(menu);
     menu.style.backgroundColor = "#feb000";
 
     let categories = document.querySelector(".categories");
-    console.log(categories);
+    // console.log(categories);
     categories.innerHTML = `
     <button class="btn" onclick="myFunction(this)">Inicio</button>
     <button class="btn" onclick="myFunction(this)">Para compartir</button>
@@ -176,129 +168,54 @@ function changetoYellow() {
 }
 
 function changeMenu() {
-    let id = toggle_carta.checked;
+    let toggle = document.querySelector("#toggle_carta");
+    let id = toggle.checked;
         if(id == true) {
             let carta = document.getElementById("index_coctel");
             carta.scrollIntoView();
-            changetoGreen();
-
-            let toggle2 = document.querySelector("#toggle2");
-            toggle2.innerHTML = `<input class='tgl tgl-ios' id='toggle_carta2' type='checkbox' onchange="changeMenu2()" checked>
-            <label class='tgl-btn' for='toggle_carta2'></label>`
+            changetoDrink();
+            document.querySelector("#toggle_carta2").checked = true;            
         } else {
             let carta = document.getElementById("index");
             carta.scrollIntoView();
-            changetoYellow();
-
-            let toggle2 = document.querySelector("#toggle2");
-            toggle2.innerHTML = `<input class='tgl tgl-ios' id='toggle_carta2' type='checkbox' onchange="changeMenu2()">
-            <label class='tgl-btn' for='toggle_carta2'></label>`
+            changetoFood();
+            document.querySelector("#toggle_carta2").checked = false; 
         }
 }
 
 function changeMenu2() {
-    let id = toggle_carta2.checked;
+    let toggle2 = document.querySelector("#toggle_carta2");
+    let id = toggle2.checked;
         if(id == true) {
             let carta = document.getElementById("index_coctel");
             carta.scrollIntoView();
-            changetoGreen();
+            changetoDrink();
         } else {
             let carta = document.getElementById("index");
             carta.scrollIntoView();
-            changetoYellow();
-
-            let toggle = document.querySelector("#toggle2");
-        toggle.innerHTML = `<input class='tgl tgl-ios' id='toggle_carta2' type='checkbox' onchange="changeMenu2()">
-        <label class='tgl-btn' for='toggle_carta2'></label>`
-        }
-
-        
+            changetoFood();
+        }        
 }
 
 var someElement = document.querySelector('#postres');
 
-window.onscroll = function(){
+window.onscroll = function() {
     //TOP
-    if(someElement.getBoundingClientRect().top < 0){
+    if(someElement.getBoundingClientRect().top <= 0){
         // console.log("TRIGGER: top of div reached.");
         
-        changetoYellow();
+        changetoFood();
         document.getElementById("toggle_carta").checked = false;
         document.getElementById("toggle_carta2").checked = false;     
 
     }
     //BOTTOM
     
-    if(someElement.getBoundingClientRect().bottom <= 100){
+    if(someElement.getBoundingClientRect().bottom <= 0){
         // console.log("TRIGGER: bottom of div reached.");
 
-        changetoGreen();
+        changetoDrink();
         document.getElementById("toggle_carta").checked = true;
         document.getElementById("toggle_carta2").checked = true;
     }
 }
-
-// var check = document.querySelector(".check");
-// check.addEventListener('click', idioma);
-
-// function idioma() {
-//     let nameValue = "";
-//     let namePage = document.querySelector("title").innerText
-//     console.log(namePage);
-
-//     if(namePage == "Inicio" || namePage == "Home"){
-//         nameValue = "index";
-//     } else if(namePage == "Coctel" || namePage == "Cocktail"){
-//         nameValue = "index2";
-//     } else if(namePage == "Para Compartir" || namePage == "To Share"){
-//         nameValue = "toshare";
-//     } else if(namePage == "Cantina" || namePage == "Canteen"){
-//         nameValue = "cantina";             
-//     } else if(namePage == "Hamburguesas" || namePage == "Burgers"){
-//         nameValue = "burger";
-//     } else if(namePage == "Jarras y Sours" || namePage == "Jars and Sours"){
-//         nameValue = "jarnsour";             
-//     } else if(namePage == "Veggie"){
-//         nameValue = "veggie";
-//     } else if(namePage == "Mojitos, Spritz y Fizz" || namePage == "Mojitos, Spritz and Fizz"){
-//         nameValue = "mojitonfizz";
-//     } else if(namePage == "Sanguches" || namePage == "Sandwishes"){
-//         nameValue = "sanguches";
-//     } else if(namePage == "Mules y Coctelería Clásica" || namePage == "Mules and Classics Cocktails"){
-//         nameValue = "mulenclassic";
-//     } else if(namePage == "Platos" || namePage == "Main courses"){
-//         nameValue = "plates";
-//     } else if(namePage == "Shops y Cervezas" || namePage == "Shops and Beers"){
-//         nameValue = "shopnbeer";
-//     } else if(namePage == "Ensaladas" || namePage == "Salads"){
-//         nameValue = "salads";
-//     } else if(namePage == "Destilados" || namePage == "Spirits"){
-//         nameValue = "destiled";
-//     } else if(namePage == "Postres" || namePage == "Desserts"){
-//         nameValue = "postres";
-//     } else if(namePage == "Vinos y Espumosos" || namePage == "Wines and Sparklings"){
-//         nameValue = "wine";
-//     }
-
-
-//     let id = check.checked;
-//     if(id == true){
-//         // location.href = "en/toshare.html"
-//         location.href = `en/${nameValue}.html`
-//     } else {
-//         location.href = `../${nameValue}.html`
-//     }
-// }
-
-// var checkm = document.querySelector(".checkm");
-// checkm.addEventListener('click', cambiarmenu);
-
-// function cambiarmenu() {
-//     let id = checkm.checked;
-//     if(id == true){
-//         // location.href = "en/toshare.html"
-//         location.href = `index2.html`
-//     } else {
-//         location.href = `index.html`
-//     }
-// }

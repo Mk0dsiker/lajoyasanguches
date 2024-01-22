@@ -56,7 +56,10 @@ function myFunction(element) {
         }   
     } else if(element.innerText == "Para compartir"){
         container = document.getElementById("toshare");
-        container.scrollIntoView();        
+        container.scrollIntoView();
+        let btn = document.querySelector("#parent").children[1];
+        console.log(btn);
+        btn.classList.add("btn-clickon");        
     } else if(element.innerText == "To Share"){
         container = document.getElementById("toshare");
         container.scrollIntoView();
@@ -293,6 +296,7 @@ function changeLanguage() {
     }
 }
 
+//Funcion que cambia el menu al hacer scroll entre cartas
 window.addEventListener("scroll", function(){
     let target = document.getElementById("index_coctel");
     // console.log(target);

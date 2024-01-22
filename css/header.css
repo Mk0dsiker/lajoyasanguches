@@ -109,7 +109,7 @@
     transition: all 100ms ease-in;
 }
 
-.btn:hover {
+.btn-clickon {
     background: #333;
     border-radius: 15px;
     transform: scale(128%);

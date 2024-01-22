@@ -12,6 +12,7 @@ function menuOn() {
     document.getElementById("toggle").style.display = "none";
 }
 
+//Funcion que quita el menu lateral
 function menuOff() {
     //Seleccionamos el menu y modificamos su posicion transladandolo en el eje x un 100% removiendolo de la pantalla
     let menu = document.querySelector(".menu");
@@ -23,8 +24,6 @@ function menuOff() {
     //Añadimos el boton del checkbox al header nuevamente.
     document.getElementById("toggle").style.display ="block";
 }
-
-
 
 // Sistema de navegacion por scrollintoView
 function myFunction(element) {
@@ -134,7 +133,6 @@ function myFunction(element) {
         container.scrollIntoView();    
     }
 }
-
 
 // Funcion que cambia a los colores y contenido del menu de navegacion cuando carta tragos es seleccionada.
 function changetoDrink() {
@@ -273,7 +271,6 @@ function changeMenu2() {
         }
 }
 
-
 //Funcion que cambia idioma
 function changeLanguage() {
 
@@ -286,3 +283,4 @@ function changeLanguage() {
         location.href = "../index.html"
     }
 }
+

@@ -1,5 +1,7 @@
 
-
+.section_1 {
+    padding-top: 80px;
+}
 /* css section 1 */
 .section_1, .section_2 {
     display: flex;

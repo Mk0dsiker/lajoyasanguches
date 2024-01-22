@@ -28,12 +28,11 @@ function menuOff() {
 
 // Sistema de navegacion por scrollintoView
 function myFunction(element) {
-    
-    
+        
     console.log(element.innerText);
+
     if(element.innerText == "Inicio"){
         let toggle2 = document.querySelector("#toggle_carta2");
-        console.log(toggle2);
         let id = toggle2.checked;
         if (id == true) {
         let container = document.getElementById("index_coctel");
@@ -43,10 +42,26 @@ function myFunction(element) {
             container.scrollIntoView(); 
         }        
 
+    } else if(element.innerText == "Home"){
+        let toggle2 = document.querySelector("#toggle_carta2");
+        let id = toggle2.checked;
+        if (id == true) {
+            let container = document.getElementById("index_coctel");
+            container.scrollIntoView(); 
+            } else {
+            container = document.getElementById("index");
+            container.scrollIntoView(); 
+        }   
     } else if(element.innerText == "Para compartir"){
+        container = document.getElementById("toshare");
+        container.scrollIntoView();        
+    } else if(element.innerText == "To Share"){
         container = document.getElementById("toshare");
         container.scrollIntoView();
     } else if(element.innerText == "Hamburguesas"){
+        container = document.getElementById("burgers");
+        container.scrollIntoView();
+    } else if(element.innerText == "Burgers"){
         container = document.getElementById("burgers");
         container.scrollIntoView();
     } else if(element.innerText == "Veggie"){
@@ -55,19 +70,39 @@ function myFunction(element) {
     } else if(element.innerText == "Sanguches"){
         container = document.getElementById("sanguches");
         container.scrollIntoView();
+    } else if(element.innerText == "Sandwish"){
+        container = document.getElementById("sanguches");
+        container.scrollIntoView();
     } else if(element.innerText == "Platos"){
+        container = document.getElementById("plates");
+        container.scrollIntoView();
+    } else if(element.innerText == "Main courses"){
         container = document.getElementById("plates");
         container.scrollIntoView();
     } else if(element.innerText == "Ensaladas"){
         container = document.getElementById("salads");
         container.scrollIntoView();
+    } else if(element.innerText == "Salads"){
+        container = document.getElementById("salads");
+        container.scrollIntoView();
     } else if(element.innerText == "Postres"){
         container = document.getElementById("postres");
         container.scrollIntoView();
+    } else if(element.innerText == "Desserts"){
+        container = document.getElementById("postres");
+        container.scrollIntoView();
+
+
     } else if(element.innerText == "Cantina Joya"){
         container = document.getElementById("coctel");
         container.scrollIntoView();
+    } else if(element.innerText == "Joya Canteen"){
+        container = document.getElementById("coctel");
+        container.scrollIntoView();
     } else if(element.innerText == "Jarras/Sours"){
+        container = document.getElementById("jarnsour");
+        container.scrollIntoView();
+    } else if(element.innerText == "Jars/Sours"){
         container = document.getElementById("jarnsour");
         container.scrollIntoView();
     } else if(element.innerText == "Mojito/Spritz"){
@@ -76,10 +111,25 @@ function myFunction(element) {
     } else if(element.innerText == "Mules/Clasicos"){
         container = document.getElementById("mulenclassic");
         container.scrollIntoView();
+    } else if(element.innerText == "Mules/Classics"){
+        container = document.getElementById("mulenclassic");
+        container.scrollIntoView();
     } else if(element.innerText == "Shops/Cervezas"){
         container = document.getElementById("shopnbeer");
         container.scrollIntoView();
+    } else if(element.innerText == "Shops/Beer"){
+        container = document.getElementById("shopnbeer");
+        container.scrollIntoView();
+    } else if(element.innerText == "Destilados"){
+        container = document.getElementById("destiled");
+        container.scrollIntoView();
+    } else if(element.innerText == "Spirits"){
+        container = document.getElementById("destiled");
+        container.scrollIntoView();
     } else if(element.innerText == "Vinos"){
+        container = document.getElementById("wine");
+        container.scrollIntoView();    
+    } else if(element.innerText == "Wines"){
         container = document.getElementById("wine");
         container.scrollIntoView();    
     }
@@ -103,6 +153,7 @@ function changetoDrink() {
     <button class="btn" onclick="myFunction(this)">Mojito/Spritz</button>
     <button class="btn" onclick="myFunction(this)">Mules/Clasicos</button>
     <button class="btn" onclick="myFunction(this)">Shops/Cervezas</button>
+    <button class="btn" onclick="myFunction(this)">Destilados</button>
     <button class="btn" onclick="myFunction(this)">Vinos</button>`;
     
     //Cambiamos el color del border bottom de nuestro header y las img logo y menu icon a verde
@@ -119,6 +170,7 @@ function changetoDrink() {
         <button class="btn" onclick="myFunction(this)">Mojito/Spritz</button>
         <button class="btn" onclick="myFunction(this)">Mules/Classics</button>
         <button class="btn" onclick="myFunction(this)">Shops/Beer</button>
+        <button class="btn" onclick="myFunction(this)">Spirits</button>
         <button class="btn" onclick="myFunction(this)">Wines</button>`;
         
         //Cambiamos el color del border bottom de nuestro header y las img logo y menu icon a verde

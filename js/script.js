@@ -1,96 +1,29 @@
 
+// Funcion que activa el menu lateral
 function menuOn() {
-    // Funcion que activa el menu lateral
+    //Seleccionamos el menu y modificamos su posicion removiendo la transformacion, apareciendo en pantalla.
     let menu = document.querySelector(".menu");
     menu.style.transform = "none";
+
+    //Añadimos la clase menu-on al body que limita con overflow la visibilidad por scroll de la carta.
     document.querySelector('body').classList.add('menu-on');
-    
-    //Seleccionamos el header y quitamos el el checkbox
-    //de comida y tragos cuando abre menu lateral.
-    let title = document.querySelector("title").innerText;
-    console.log(title);
-    let toggle = document.querySelector("#toggle_carta");
-    let id = toggle.checked;
-    if(title == "La Joya Sanguches") {
-            if (id == true) {
-            let header = document.querySelector(".header");
-            header.innerHTML = `
-            <a class="logo_index" href="index.html" target="_self"><img src="assets/img/logo_white_green.png" alt="logo white png"></a>
-            <div class="menu_icon" type="button"><img src="assets/icons/menu_icon_green.png" alt="menu icon" onclick="menuOn()"></div>`
-            } else {
-            let header = document.querySelector(".header");
-            header.innerHTML = `
-            <a class="logo_index" href="index.html" target="_self"><img src="assets/img/logo_white.png" alt="logo white png"></a>
-            <div class="menu_icon" type="button"><img src="assets/icons/menu_icon.png" alt="menu icon" onclick="menuOn()"></div>`
-            }
-    } else {
-        if (id == true) {
-            let header = document.querySelector(".header");
-            header.innerHTML = `
-            <a class="logo_index" href="index.html" target="_self"><img src="../assets/img/logo_white_green.png" alt="logo white png"></a>
-            <div class="menu_icon" type="button"><img src="../assets/icons/menu_icon_green.png" alt="menu icon" onclick="menuOn()"></div>`
-            } else {
-            let header = document.querySelector(".header");
-            header.innerHTML = `
-            <a class="logo_index" href="index.html" target="_self"><img src="../assets/img/logo_white.png" alt="logo white png"></a>
-            <div class="menu_icon" type="button"><img src="../assets/icons/menu_icon.png" alt="menu icon" onclick="menuOn()"></div>`
-            }
-    }
+
+    //Ocultamos el checkbox del header cuando se abre el menu lateral.
+    document.getElementById("toggle").style.display = "none";
 }
 
 function menuOff() {
+    //Seleccionamos el menu y modificamos su posicion transladandolo en el eje x un 100% removiendolo de la pantalla
     let menu = document.querySelector(".menu");
     menu.style.transform = "translateX(100%)";
+
+    //Removemos la clase menu-on del body habilitando el scroll de la pagina
     document.querySelector('body').classList.remove('menu-on');
 
-    //Seleccionamos el header y añadimos el el checkbox
-    // de comida y tragos cuando cierra menu lateral.
-    let title = document.querySelector("title").innerText;
-    console.log(title);
-    let toggle2 = document.querySelector("#toggle_carta2");
-    let id = toggle2.checked;
-    if(title == "La Joya Sanguches") {
-        if (id == true) {
-        let header = document.querySelector(".header");
-        header.innerHTML = `
-        <a class="logo_index" href="index.html" target="_self"><img src="assets/img/logo_white_green.png" alt="logo white png"></a>
-        <div class="checkbox-wrapper-34" id="toggle">
-                <input class='tgl tgl-ios' id='toggle_carta' type='checkbox' onchange="changeMenu()">
-                <label class='tgl-btn' for='toggle_carta'></label>
-            </div>
-        <div class="menu_icon" type="button"><img src="assets/icons/menu_icon_green.png" alt="menu icon" onclick="menuOn()"></div>`
-        } else {
-        let header = document.querySelector(".header");
-        header.innerHTML = `
-        <a class="logo_index" href="index.html" target="_self"><img src="assets/img/logo_white.png" alt="logo white png"></a>
-        <div class="checkbox-wrapper-34" id="toggle">
-                <input class='tgl tgl-ios' id='toggle_carta' type='checkbox' onchange="changeMenu()">
-                <label class='tgl-btn' for='toggle_carta'></label>
-            </div>
-        <div class="menu_icon" type="button"><img src="assets/icons/menu_icon.png" alt="menu icon" onclick="menuOn()"></div>`
-        }
-} else {
-    if (id == true) {
-        let header = document.querySelector(".header");
-        header.innerHTML = `
-        <a class="logo_index" href="index.html" target="_self"><img src="assets/img/logo_white_green.png" alt="logo white png"></a>
-        <div class="checkbox-wrapper-34" id="toggle">
-                <input class='tgl tgl-ios' id='toggle_carta' type='checkbox' onchange="changeMenu()">
-                <label class='tgl-btn' for='toggle_carta'></label>
-            </div>
-        <div class="menu_icon" type="button"><img src="assets/icons/menu_icon_green.png" alt="menu icon" onclick="menuOn()"></div>`
-        } else {
-        let header = document.querySelector(".header");
-        header.innerHTML = `
-        <a class="logo_index" href="index.html" target="_self"><img src="../assets/img/logo_white.png" alt="logo white png"></a>
-        <div class="checkbox-wrapper-34" id="toggle">
-                <input class='tgl tgl-ios' id='toggle_carta' type='checkbox' onchange="changeMenu()">
-                <label class='tgl-btn' for='toggle_carta'></label>
-            </div>
-        <div class="menu_icon" type="button"><img src="../assets/icons/menu_icon.png" alt="menu icon" onclick="menuOn()"></div>`
-        }
+    //Añadimos el boton del checkbox al header nuevamente.
+    document.getElementById("toggle").style.display ="block";
 }
-}
+
 
 
 // Sistema de navegacion por scrollintoView
@@ -153,7 +86,7 @@ function myFunction(element) {
 }
 
 
-// Funcion que cambia a los colores cuando carta tragos es seleccionada.
+// Funcion que cambia a los colores y contenido del menu de navegacion cuando carta tragos es seleccionada.
 function changetoDrink() {
 
     let menu = document.querySelector(".menu");
@@ -169,16 +102,14 @@ function changetoDrink() {
     <button class="btn" onclick="myFunction(this)">Mules/Clasicos</button>
     <button class="btn" onclick="myFunction(this)">Shops/Cervezas</button>
     <button class="btn" onclick="myFunction(this)">Vinos</button>`;
-
-    let header = document.querySelector(".header");
-    header.style.borderBottom = "4px solid #00724d"
-    let icon_menu = document.querySelector(".menu_icon");
-    icon_menu.innerHTML = `<img src="assets/icons/menu_icon_green.png" alt="menu icon" onclick="menuOn()">`
-    let logo_index = document.querySelector(".logo_index");
-    logo_index.innerHTML = `<img src="assets/img/logo_white_green.png" alt="logo white png">`;
     
+    //Cambiamos el color del border bottom de nuestro header y las img logo y menu icon a verde
+    document.querySelector(".header").style.borderBottom = "4px solid #00724d";
+    document.querySelector(".logo_index").firstChild.src = "assets/img/logo_white_green.png"
+    document.querySelector(".menu_icon").firstChild.src = "assets/icons/menu_icon_green.png"    
 }
 
+// Funcion que cambia a los colores y contenido del menu de navegacion cuando carta comida es seleccionada.
 function changetoFood() {
 
     let menu = document.querySelector(".menu");
@@ -196,64 +127,72 @@ function changetoFood() {
     <button class="btn" onclick="myFunction(this)">Ensaladas</button>
     <button class="btn" onclick="myFunction(this)">Postres</button>`;
 
-
-    let header = document.querySelector(".header");
-    header.style.borderBottom = "4px solid #feb000"
-    let icon_menu = document.querySelector(".menu_icon");
-    icon_menu.innerHTML = `<img src="assets/icons/menu_icon.png" alt="menu icon" onclick="menuOn()">`
-    let logo_index = document.querySelector(".logo_index");
-    logo_index.innerHTML = `<img src="assets/img/logo_white.png" alt="logo white png">`;
+    //Cambiamos el color del border bottom de nuestro header y las img logo y menu icon a amarillo.
+    document.querySelector(".header").style.borderBottom = "4px solid #feb000";
+    document.querySelector(".logo_index").firstChild.src = "assets/img/logo_white.png"
+    document.querySelector(".menu_icon").firstChild.src = "assets/icons/menu_icon.png"
 }
 
+//Funcion del checkbox en el header.
 function changeMenu() {
+    //Guardamos nuestro checkbox en una variable
     let toggle = document.querySelector("#toggle_carta");
+    //Guardamos su estado en id
     let id = toggle.checked;
         if(id == true) {
-            let carta = document.getElementById("index_coctel");
-            carta.scrollIntoView();
+            //Cambia el estado del checkbox del menu lateral
+            document.querySelector("#toggle_carta2").checked = true;
+            //Llama a la funcion que cambia color y contenido a tragos
             changetoDrink();
-            document.querySelector("#toggle_carta2").checked = true;            
+            //Hace scroll a la seccion de cocteleria.
+            document.getElementById("index_coctel").scrollIntoView();
+                        
+            //De lo contrario          
         } else {
-            let carta = document.getElementById("index");
-            carta.scrollIntoView();
-            changetoFood();
+            //Cambia el estado del checkbox del menu lateral.
             document.querySelector("#toggle_carta2").checked = false; 
+            //Llama a la funcion que cambia color y contenido a comidas
+            changetoFood();
+            //Hace scroll a la seccion de comida
+            document.getElementById("index").scrollIntoView();
         }
 }
 
+//Funcion del checkbox del menu lateral
 function changeMenu2() {
+    //Guardamos nuestro checkbox en una variable
     let toggle2 = document.querySelector("#toggle_carta2");
+    //Guardamos su estado en id
     let id = toggle2.checked;
         if(id == true) {
-            let carta = document.getElementById("index_coctel");
-            carta.scrollIntoView();
+            //Cambia el estado del checkbox del header
+            document.querySelector("#toggle_carta").checked = true;
+            //Llama a la funcion que cambia color y contenido a tragos
             changetoDrink();
+            //Hace scroll a la seccion de cocteleria.
+            document.getElementById("index_coctel").scrollIntoView();
+                        
+            //De lo contrario          
         } else {
-            let carta = document.getElementById("index");
-            carta.scrollIntoView();
+            //Cambia el estado del checkbox del header.
+            document.querySelector("#toggle_carta").checked = false; 
+            //Llama a la funcion que cambia color y contenido a comidas
             changetoFood();
-        }        
+            //Hace scroll a la seccion de comida
+            document.getElementById("index").scrollIntoView();
+        }
 }
 
-var someElement = document.querySelector('#postres');
 
-window.onscroll = function() {
-    //TOP
-    if(someElement.getBoundingClientRect().top <= 0){
-        // console.log("TRIGGER: top of div reached.");
-        
-        changetoFood();
-        document.getElementById("toggle_carta").checked = false;
-        document.getElementById("toggle_carta2").checked = false;     
+//Funcion que cambia idioma
+function changeLanguage() {
 
-    }
-    //BOTTOM
-    
-    if(someElement.getBoundingClientRect().bottom <= 0){
-        // console.log("TRIGGER: bottom of div reached.");
+    let togglei = document.querySelector("#toggle_idioma");
+    let id = togglei.checked;
 
-        changetoDrink();
-        document.getElementById("toggle_carta").checked = true;
-        document.getElementById("toggle_carta2").checked = true;
+    if(id == true){
+            location.href = "en/index.html"
+    } else {
+        location.href = "../index.html"
     }
 }

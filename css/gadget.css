@@ -18,7 +18,8 @@
 .checkbox-wrapper-34 .tgl *:after,
 .checkbox-wrapper-34 .tgl *:before,
 .checkbox-wrapper-34 .tgl + .tgl-btn,
-.checkbox-wrapper-34 .tgl + .tgl-btn2 {
+.checkbox-wrapper-34 .tgl + .tgl-btn2,
+.checkbox-wrapper-34 .tgl + .tgl-btni {
   box-sizing: border-box;
   
 }
@@ -40,7 +41,8 @@
 .checkbox-wrapper-34 .tgl *:after::selection,
 .checkbox-wrapper-34 .tgl *:before::selection,
 .checkbox-wrapper-34 .tgl + .tgl-btn::selection,
-.checkbox-wrapper-34 .tgl + .tgl-btn2::selection {
+.checkbox-wrapper-34 .tgl + .tgl-btn2::selection,
+.checkbox-wrapper-34 .tgl + .tgl-btni::selection {
   background: none;
 }
 
@@ -54,7 +56,7 @@
   background: none;
 } */
 
-.checkbox-wrapper-34 .tgl + .tgl-btn, .checkbox-wrapper-34 .tgl + .tgl-btn2 {
+.checkbox-wrapper-34 .tgl + .tgl-btn, .checkbox-wrapper-34 .tgl + .tgl-btn2, .checkbox-wrapper-34 .tgl + .tgl-btni {
   /*Definimos el estilo de la etiqueta segun la primera clase de nuestro checkbox*/
   outline: 0;
   display: block;
@@ -73,7 +75,9 @@
 .checkbox-wrapper-34 .tgl + .tgl-btn:after,
 .checkbox-wrapper-34 .tgl + .tgl-btn:before,
 .checkbox-wrapper-34 .tgl + .tgl-btn2:after,
-.checkbox-wrapper-34 .tgl + .tgl-btn:before { 
+.checkbox-wrapper-34 .tgl + .tgl-btn2:before,
+.checkbox-wrapper-34 .tgl + .tgl-btni:after,
+.checkbox-wrapper-34 .tgl + .tgl-btni:before { 
   /*Definimos el contenido para la etiqueta segun la primera clase de nuestro checkbox*/
   /*Esta clase define el texto que sera visto en las opciones*/
   position: relative;
@@ -88,19 +92,21 @@
 } */
 
 .checkbox-wrapper-34 .tgl + .tgl-btn:before,
-.checkbox-wrapper-34 .tgl + .tgl-btn2:before {  
+.checkbox-wrapper-34 .tgl + .tgl-btn2:before,
+.checkbox-wrapper-34 .tgl + .tgl-btni:before {  
   /*Cuando no se ha marcado, el contenido vacio se inserta sobre la etiqueta*/
   /* display: inline; */
   position: absolute;
   top: 32.5%;
 }
 .checkbox-wrapper-34 .tgl:checked + .tgl-btn:after,
-.checkbox-wrapper-34 .tgl:checked + .tgl-btn2:after {
+.checkbox-wrapper-34 .tgl:checked + .tgl-btn2:after,
+.checkbox-wrapper-34 .tgl:checked + .tgl-btni:after {
   /*Cuando se ha marcado el contenido vacio sera empujado al otro lado*/
   left: 56.5%;
 }
 
-.checkbox-wrapper-34 .tgl-ios + .tgl-btn, .checkbox-wrapper-34 .tgl-ios + .tgl-btn2 {
+.checkbox-wrapper-34 .tgl-ios + .tgl-btn, .checkbox-wrapper-34 .tgl-ios + .tgl-btn2, .checkbox-wrapper-34 .tgl-ios + .tgl-btni {
   /*Definimos el estilo para la etiqueta segun la segunda clase de nuestro checkbox*/
   background: var(--g08);
   border-radius: 20rem;
@@ -116,18 +122,38 @@
   /* box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2); */
 }
 
+.checkbox-wrapper-34 .tgl-ios + .tgl-btni:after {
+  border-radius: 2em;
+  background: #eee;
+}
+
 .checkbox-wrapper-34 .tgl-ios + .tgl-btn:before {
   content: "Comida";
   left: 50%;
   color: var(--g04);
   /* transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
 }
-.checkbox-wrapper-34 .tgl-ios + .tgl-btn2:before {
+.checkbox-wrapper-34 .tgl-ios + .tgl-btni:before {
   content: "Español";
   left: 46%;
   color: var(--g04);
   /* transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
 }
+
+.checkbox-wrapper-34 .tgl-ios + .eng:before {
+  content: "Spanish";
+  left: 46%;
+  color: var(--g04);
+  /* transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+}
+
+.checkbox-wrapper-34 .tgl-ios + .eng2:before {
+  content: "Food";
+  left: 56%;
+  color: var(--g04);
+  /* transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+}
+
 /* .checkbox-wrapper-34 .tgl-ios + .tgl-btn:active {
   box-shadow: inset 0 0 0 30px rgba(0, 0, 0, 0.1);
 } */
@@ -150,10 +176,24 @@
   /* color: #fff; */
 }
 
-.checkbox-wrapper-34 .tgl-ios:checked + .tgl-btn2:before {
+.checkbox-wrapper-34 .tgl-ios:checked + .tgl-btni:before {
   content: "Ingles";
   left: 12%;
   /* color: #fff; */
+}
+
+.checkbox-wrapper-34 .tgl-ios:checked + .eng:before {
+  content: "English";
+  left: 8%;
+  color: var(--g04);
+  /* transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+}
+
+.checkbox-wrapper-34 .tgl-ios:checked + .eng2:before {
+  content: "Drinks";
+  left: 12%;
+  color: var(--g04);
+  /* transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
 }
 
 .tgl-btn2 {

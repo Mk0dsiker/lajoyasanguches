@@ -18,13 +18,14 @@
     top: 0;
     z-index: 998;
 
-    transition: all 200ms ease-in;
+    /* transition: all 200ms ease-in; */
 }
 
 
 .header img {
     width: 80px;
 }
+
 
 .menu_icon img {
     width: 20px;

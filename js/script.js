@@ -92,6 +92,8 @@ function changetoDrink() {
     let menu = document.querySelector(".menu");
     menu.style.backgroundColor = "#00724d";
 
+    let title = document.querySelector("title").innerText;
+    if(title == "La Joya Sanguches"){
     let categories = document.querySelector(".categories");
     // console.log(categories);
     categories.innerHTML = `
@@ -106,7 +108,24 @@ function changetoDrink() {
     //Cambiamos el color del border bottom de nuestro header y las img logo y menu icon a verde
     document.querySelector(".header").style.borderBottom = "4px solid #00724d";
     document.querySelector(".logo_index").firstChild.src = "assets/img/logo_white_green.png"
-    document.querySelector(".menu_icon").firstChild.src = "assets/icons/menu_icon_green.png"    
+    document.querySelector(".menu_icon").firstChild.src = "assets/icons/menu_icon_green.png"   
+    } else {
+        let categories = document.querySelector(".categories");
+        // console.log(categories);
+        categories.innerHTML = `
+        <button class="btn" onclick="myFunction(this)">Home</button>
+        <button class="btn" onclick="myFunction(this)">Joya Canteen</button>
+        <button class="btn" onclick="myFunction(this)">Jars/Sours</button>
+        <button class="btn" onclick="myFunction(this)">Mojito/Spritz</button>
+        <button class="btn" onclick="myFunction(this)">Mules/Classics</button>
+        <button class="btn" onclick="myFunction(this)">Shops/Beer</button>
+        <button class="btn" onclick="myFunction(this)">Wines</button>`;
+        
+        //Cambiamos el color del border bottom de nuestro header y las img logo y menu icon a verde
+        document.querySelector(".header").style.borderBottom = "4px solid #00724d";
+        document.querySelector(".logo_index").firstChild.src = "../assets/img/logo_white_green.png"
+        document.querySelector(".menu_icon").firstChild.src = "../assets/icons/menu_icon_green.png" 
+    } 
 }
 
 // Funcion que cambia a los colores y contenido del menu de navegacion cuando carta comida es seleccionada.
@@ -117,20 +136,39 @@ function changetoFood() {
 
     let categories = document.querySelector(".categories");
     // console.log(categories);
-    categories.innerHTML = `
-    <button class="btn" onclick="myFunction(this)">Inicio</button>
-    <button class="btn" onclick="myFunction(this)">Para compartir</button>
-    <button class="btn" onclick="myFunction(this)">Hamburguesas</button>
-    <button class="btn" onclick="myFunction(this)">Veggie</button>
-    <button class="btn" onclick="myFunction(this)">Sanguches</button>
-    <button class="btn" onclick="myFunction(this)">Platos</button>
-    <button class="btn" onclick="myFunction(this)">Ensaladas</button>
-    <button class="btn" onclick="myFunction(this)">Postres</button>`;
 
-    //Cambiamos el color del border bottom de nuestro header y las img logo y menu icon a amarillo.
-    document.querySelector(".header").style.borderBottom = "4px solid #feb000";
-    document.querySelector(".logo_index").firstChild.src = "assets/img/logo_white.png"
-    document.querySelector(".menu_icon").firstChild.src = "assets/icons/menu_icon.png"
+    let title = document.querySelector("title").innerText;
+    if(title == "La Joya Sanguches"){
+        categories.innerHTML = `
+        <button class="btn" onclick="myFunction(this)">Inicio</button>
+        <button class="btn" onclick="myFunction(this)">Para compartir</button>
+        <button class="btn" onclick="myFunction(this)">Hamburguesas</button>
+        <button class="btn" onclick="myFunction(this)">Veggie</button>
+        <button class="btn" onclick="myFunction(this)">Sanguches</button>
+        <button class="btn" onclick="myFunction(this)">Platos</button>
+        <button class="btn" onclick="myFunction(this)">Ensaladas</button>
+        <button class="btn" onclick="myFunction(this)">Postres</button>`;
+
+        //Cambiamos el color del border bottom de nuestro header y las img logo y menu icon a amarillo.
+        document.querySelector(".header").style.borderBottom = "4px solid #feb000";
+        document.querySelector(".logo_index").firstChild.src = "assets/img/logo_white.png"
+        document.querySelector(".menu_icon").firstChild.src = "assets/icons/menu_icon.png"
+    } else {
+        categories.innerHTML = `
+        <button class="btn" onclick="myFunction(this)">Home</button>
+        <button class="btn" onclick="myFunction(this)">To Share</button>
+        <button class="btn" onclick="myFunction(this)">Burgers</button>
+        <button class="btn" onclick="myFunction(this)">Veggie</button>
+        <button class="btn" onclick="myFunction(this)">Sandwish</button>
+        <button class="btn" onclick="myFunction(this)">Main courses</button>
+        <button class="btn" onclick="myFunction(this)">Salads</button>
+        <button class="btn" onclick="myFunction(this)">Desserts</button>`;
+
+        //Cambiamos el color del border bottom de nuestro header y las img logo y menu icon a amarillo.
+        document.querySelector(".header").style.borderBottom = "4px solid #feb000";
+        document.querySelector(".logo_index").firstChild.src = "../assets/img/logo_white.png"
+        document.querySelector(".menu_icon").firstChild.src = "../assets/icons/menu_icon.png"
+    }
 }
 
 //Funcion del checkbox en el header.

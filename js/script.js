@@ -10,6 +10,7 @@ function menuOn() {
 
     //Ocultamos el checkbox del header cuando se abre el menu lateral.
     document.getElementById("toggle").style.display = "none";
+    document.getElementById("btn-title").style.display = "none";
 }
 
 //Funcion que quita el menu lateral
@@ -23,6 +24,8 @@ function menuOff() {
 
     //Añadimos el boton del checkbox al header nuevamente.
     document.getElementById("toggle").style.display ="block";
+    
+    document.getElementById("btn-title").style.display = "block";
 }
 
 // Sistema de navegacion por scrollintoView
@@ -233,8 +236,9 @@ function changeMenu() {
             //Llama a la funcion que cambia color y contenido a tragos
             changetoDrink();
             //Hace scroll a la seccion de cocteleria.
+            document.querySelector("html").style.scrollBehavior = "auto";
             document.getElementById("index_coctel").scrollIntoView();
-                        
+            document.querySelector("html").style.scrollBehavior = "smooth";            
             //De lo contrario          
         } else {
             //Cambia el estado del checkbox del menu lateral.
@@ -242,7 +246,9 @@ function changeMenu() {
             //Llama a la funcion que cambia color y contenido a comidas
             changetoFood();
             //Hace scroll a la seccion de comida
+            document.querySelector("html").style.scrollBehavior = "auto";
             document.getElementById("index").scrollIntoView();
+            document.querySelector("html").style.scrollBehavior = "smooth";
         }
 }
 
@@ -258,8 +264,9 @@ function changeMenu2() {
             //Llama a la funcion que cambia color y contenido a tragos
             changetoDrink();
             //Hace scroll a la seccion de cocteleria.
+            document.querySelector("html").style.scrollBehavior = "auto";
             document.getElementById("index_coctel").scrollIntoView();
-                        
+            document.querySelector("html").style.scrollBehavior = "smooth";  
             //De lo contrario          
         } else {
             //Cambia el estado del checkbox del header.
@@ -267,7 +274,9 @@ function changeMenu2() {
             //Llama a la funcion que cambia color y contenido a comidas
             changetoFood();
             //Hace scroll a la seccion de comida
+            document.querySelector("html").style.scrollBehavior = "auto";
             document.getElementById("index").scrollIntoView();
+            document.querySelector("html").style.scrollBehavior = "smooth";
         }
 }
 
@@ -284,3 +293,18 @@ function changeLanguage() {
     }
 }
 
+window.addEventListener("scroll", function(){
+    let target = document.getElementById("index_coctel");
+    // console.log(target);
+    let targetPos = target.getBoundingClientRect().top;
+    console.log(targetPos)
+    if(targetPos <= 100){
+        changetoDrink();
+        document.getElementById("toggle_carta").checked = true;
+        document.getElementById("toggle_carta2").checked = true;
+    } else {
+        changetoFood();
+        document.getElementById("toggle_carta").checked = false;
+        document.getElementById("toggle_carta2").checked = false;
+    }
+});

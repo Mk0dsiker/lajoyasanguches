@@ -21,6 +21,11 @@
     /* transition: all 200ms ease-in; */
 }
 
+.header .c_title p {
+    color:white;
+    font-family: 'Andora';
+}
+
 
 .header img {
     width: 80px;
@@ -87,6 +92,12 @@
     
     
 }
+.boxdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 .btn {
     font-family: 'Drustic Dialy';
@@ -107,6 +118,8 @@
 #idioma .c_title p, #carta .c_title p {
     text-align: center;
     color: black;
+    font-size: 20px;
+    font-family: 'Andora';
 }
 
 

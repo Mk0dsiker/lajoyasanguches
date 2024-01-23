@@ -1,19 +1,39 @@
 @font-face {
     font-family: 'Drustic Dialy';
     src: url("../assets/fonts/DrusticDialy-Sans.otf");
+    font-style: normal;
+    font-weight: 400;
 }
 
 @font-face {
-    font-family: 'Avenir';
-    src:    
-            url("../assets/fonts/AvenirLTStd-Roman.otf"),
+    font-family: 'Drustic Dialy Condensed';
+    src: url("../assets/fonts/DrusticDialy-Condensed.otf");
+    font-style: normal;
+    font-weight: 300;
+}
 
-            url("../assets/fonts/AvenirLTStd-Book.otf"),
-            
-            url("../assets/fonts/AvenirLTStd-Black.otf");
+@font-face {
+    font-family: 'Drustic Dialy Script Half';
+    src: url("../assets/fonts/DrusticDialy-ScriptHalftone.otf");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Drustic Dialy Script';
+    src: url("../assets/fonts/DrusticDialy-Script.otf");
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+
+@font-face {
+    font-family: 'Avenir';
+    src: url("../assets/fonts/AvenirLTStd-Book.otf");
 }
 
 @font-face {
     font-family: 'Andora';
-    src: url("../assets/fonts/DrusticDialy-ScriptHalftone.otf");
+    src: url("../assets/fonts/Andora\ Stamp.otf");
 }

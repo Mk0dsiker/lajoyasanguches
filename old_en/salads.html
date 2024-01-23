@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salads</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <!-- <link rel="stylesheet" href="css/screen_size.css"> -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/salads.css">
+    <!-- My Fonts -->
+    <link rel="stylesheet" href="../css/font_rule.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a href="index.html" target="_self"><img src="../assets/img/logo_white.png" alt="logo white png"></a>
+            <div class="menu_icon" type="button"><img src="../assets/icons/menu_icon.png" alt="menu icon" onclick="menuOn()"></div>
+        </div>
+    </header>
+    <main>
+        <div id="salads" class="container">
+            <div class="page_header">
+                <img src="../assets/img/logo_veggie.png" alt="logo golden png">
+                <div class="page_title">
+                    <h4>Salads</h4>
+                </div>                                       
+            </div> 
+            
+            <div id="atun" class="row">
+                <div class="card">
+                    <div class="c_head">
+                        <div class="c_title">
+                            <h4>Atún Caprichoso</h4>
+                        </div>
+                        
+                    </div>
+                    <div class="c_body">
+                        <div class="c_content">
+                            <p>Tuna bits covered with sesame seeds, seared in a soy sauce marinade, watercress, pickled red onion rings, cherry tomatoes, quail eggs, asparagus and a mango & almond dressing.</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$8.900.-</p>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="c_img">
+                    <img src="../assets/img/salads_atun_caprichoso.png" alt="atun caprichoso png">
+                </div>
+            </div>
+            <div class="h_divisor">
+                <img src="../assets/icons/h_divisor_pua_green.png" alt="horizontal divisor green png">
+            </div>
+            <div class="row">
+                <div class="card">
+                    <div class="c_head">
+                        <div class="c_title">
+                            <h4>Mosaico</h4>
+                        </div>
+                        
+                    </div>
+                    <div class="c_body">
+                        <div class="c_content">
+                            <p>Cured Salmon bits with beetroots, with a subtle bed of hidroponic lettuce and a creamy mix of corn, cherry tomatoes, avocado cubes, chives and sour cream.</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$8.900.-</p>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="c_img">
+                    <img src="../assets/img/salads_mosaico.png" alt="mosaico png">
+                </div>
+            </div>
+            <div class="h_divisor">
+                <img src="../assets/icons/h_divisor_pua_green.png" alt="horizontal divisor green png">
+            </div>
+            <div class="row">
+                <div class="card">
+                    <div class="c_head">                
+                        
+                        <div class="c_title">
+                            <h4>Antojadisima</h4>
+                        </div>
+                        
+                    </div>
+                    <div class="c_body">
+                        <div class="c_content">
+                            <p>Hydroponic lettuce, Crispy chicken tenders with American seasoning, avocado, oregano croutons, cous cous, crunchy bell peppers and yogurt & brie cheese dressing.</p>
+                        </div>
+                        <div class="c_price">
+                            <p>$7.900.-</p>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="c_img">
+                    <img src="../assets/img/salads_antojadisima.png" alt="antojadisima png">
+                </div>
+            </div>
+            <div class="pagef">
+                <div class="c_head">
+                    <div class="c_title">
+                        <h4>Veggie note:</h4>
+                    </div>                    
+                </div>
+                <div class="c_body">
+                    <div class="c_content">
+                        <p>You can change the protein for falafel.</p>
+                </div>                    
+                </div>
+                <div class="c_img">
+                    <img src="../assets/img/sello_veggie.png" alt="sello veggie png">
+                </div>
+            </div>
+        </div>
+            
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="rowf">
+                <div class="colf2">
+                    <p>Follow us on Social Media:</p>
+                    <a href="https://www.instagram.com/lajoyasanguches/?hl=es" target="_self"><img src="../assets/icons/instagram_icon.png" alt="instagram icono"></a>
+                </div>
+                
+                <div class="colf">
+                    <a href="https://www.tripadvisor.cl/Restaurant_Review-g294306-d12595048-Reviews-La_Joya_Sanguches_Restaurant-Valparaiso_Valparaiso_Region.html" target="_blank"><img src="../assets/img/trip_advisor_logo_white.png" alt="trip advisor logo"></a> 
+                    <a href="https://cav.cl/revista/articulo/el-dato-del-dia-joya-le-llaman" target="_self"><img src="../assets/img/cav_logo.png" alt="cav logo"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <nav class="menu">
+        <div class="x" onclick="menuOff()" type="button"><img src="../assets/icons/x_icon.png" alt="x_icon"></div>
+        <ul class="menu_kind">
+            <span class="comida">Food</span>
+            <input type="checkbox"class="checkm">
+            <span class="tragos">Drinks</span>
+        </ul>
+        <ul id="parent" class="categories">
+            <li><a href="index.html" target="_self">Home</a></li>
+            <li><a href="toshare.html" target="_self">To Share</a></li>
+            <li><a href="burger.html" target="_self">Burgers</a></li>
+            <li><a href="veggie.html" target="_self">Veggie</a></li>
+            <li><a href="sanguches.html" target="_self">Sandwish</a></li>
+            <li><a href="plates.html" target="_self">Main courses</a></li>
+            <li><a href="salads.html" target="_self">Salads</a></li>
+            <li><a href="postres.html" target="_self">Desserts</a></li>
+        </ul>
+        <div class="language">
+            <span class="es">Spa</span>
+            <input type="checkbox"class="check" checked>
+            <span class="en">Eng</span>
+        </div>
+    </nav>
+    <script src="../js/script.js"></script>
+</body>
+</html>

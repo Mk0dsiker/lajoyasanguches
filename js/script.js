@@ -188,7 +188,7 @@ function changetoDrink() {
 function changetoFood() {
 
     let menu = document.querySelector(".menu");
-    menu.style.backgroundColor = "#feb000";
+    menu.style.backgroundColor = "#daa520";
 
     let categories = document.querySelector(".categories");
     // console.log(categories);
@@ -206,7 +206,7 @@ function changetoFood() {
         <button class="btn" onclick="myFunction(this)">Postres</button>`;
 
         //Cambiamos el color del border bottom de nuestro header y las img logo y menu icon a amarillo.
-        document.querySelector(".header").style.borderBottom = "4px solid #feb000";
+        document.querySelector(".header").style.borderBottom = "4px solid #daa520";
         document.querySelector(".logo_index").firstChild.src = "assets/img/logo_white.png"
         document.querySelector(".menu_icon").firstChild.src = "assets/icons/menu_icon.png"
     } else {
@@ -221,7 +221,7 @@ function changetoFood() {
         <button class="btn" onclick="myFunction(this)">Desserts</button>`;
 
         //Cambiamos el color del border bottom de nuestro header y las img logo y menu icon a amarillo.
-        document.querySelector(".header").style.borderBottom = "4px solid #feb000";
+        document.querySelector(".header").style.borderBottom = "4px solid #daa520";
         document.querySelector(".logo_index").firstChild.src = "../assets/img/logo_white.png"
         document.querySelector(".menu_icon").firstChild.src = "../assets/icons/menu_icon.png"
     }

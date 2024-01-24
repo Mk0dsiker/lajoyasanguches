@@ -30,7 +30,9 @@ function menuOff() {
 
 // Sistema de navegacion por scrollintoView
 function myFunction(element) {
-        
+    element.style.background = "#333";
+    element.style.borderRadius = "15px"   
+    element.style.transform = "scale(128%)" 
     console.log(element.innerText);
 
     if(element.innerText == "Inicio"){
@@ -312,3 +314,8 @@ window.addEventListener("scroll", function(){
         document.getElementById("toggle_carta2").checked = false;
     }
 });
+
+//Funcion que desactiva el uso de menus contextuales
+document.addEventListener("contextmenu", function(event){
+        event.preventDefault();
+    }, false);

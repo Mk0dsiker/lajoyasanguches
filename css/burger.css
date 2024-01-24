@@ -36,6 +36,11 @@
     color: white;
 }
 
+#ahumadas .c_subt p {
+    font-size: 18px;
+    font-family: 'Andora';
+}
+
 /* css imagen:tarjeta */
 #ahumadas .c_img img {
     width: 140px;
@@ -52,6 +57,12 @@
     color: white;
 }
 
+#normalb .c_subt p {
+    font-size: 18px;
+    font-family: 'Andora';
+}
+
+
 /* css imagen:tarjeta */
 #normalb .c_img img {
     width: 160px;
@@ -60,4 +71,34 @@
 /* css corners */
 #burgers .bottomcorners {
     padding-bottom: 20px;
+}
+
+#panzer.row, #pancho.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sello2 {
+    top: 4%;
+    left: unset;
+    right: 0;
+}
+
+.sello2 img {
+    width: 60px;
+}
+
+.sello3 {
+    top: 8%;
+    left: 12%;
+    right: unset;
+}
+
+.sello3 img {
+    width: 60px;
+}
+
+.hd {
+    padding: 20px 5px;
 }

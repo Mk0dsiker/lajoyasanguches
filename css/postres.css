@@ -6,6 +6,7 @@
     
     background-image: url("../assets/img/background_white.png");
     background-size: cover;
+    background-repeat: repeat-y;
 }
 
 #postres .page_header {

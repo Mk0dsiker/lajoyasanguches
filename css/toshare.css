@@ -83,6 +83,18 @@
 }
 
 /* css imagen:tarjeta */
+#chivato .c_img img {
+    width: 150px;
+}
+
+#provoleta .c_img img {
+    width: 150px;
+}
+
+#fritanga .c_img img {
+    width: 110px;
+}
+
 #papasjoya .c_img img {
     width: 160px;
 }

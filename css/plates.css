@@ -53,6 +53,7 @@
 
 /* css footer:pagina*/
 #plates .pagef {
+    flex-direction: column;
     background-image: url("../assets/img/cover_2.png");
     background-size: cover; 
     
@@ -67,14 +68,14 @@
 }
 
 .mp_head h4 {
-    font-family: 'Drustic Dialy';
+    font-family: 'Drustic Dialy Condensed';
     color: white;
-    font-size: 18px;
+    font-size: 25px;
 }
 
 .mp_heada h2 {
     text-align: center;
-    font-family: 'Drustic Dialy';
+    font-family: 'Drustic Dialy Condensed';
     color: #ffbe00;
     font-size: 26px;
 }
@@ -103,3 +104,8 @@
     height: 140px;
     padding: 0 10px; 
 }
+
+.mp_a img, .mp_b img {
+    width: 170px;
+}
+

@@ -103,6 +103,12 @@
     top: 0;
     left: 15px;
 }
+
+#gines .c_subt p {
+    font-family: 'Avenir';
+    color: white;
+    font-size: 12px;
+}
 #vodka.card, #ron.card {
     align-items: normal;
     justify-content: center;

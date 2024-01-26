@@ -167,3 +167,12 @@
 #destiled .v_divisor img {
     height: 150px;
 }
+
+#gines .icons {
+    display: flex;
+    align-items: center;
+}
+
+#gines .icons img {
+    width: 20px;
+}

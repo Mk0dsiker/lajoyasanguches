@@ -42,3 +42,10 @@
 #postresp {
     margin-bottom: 20px;
 }
+
+#tiramisu .new img{
+    width: 40px;
+    position: absolute;
+    top: -12%;
+    right: 2%;
+}

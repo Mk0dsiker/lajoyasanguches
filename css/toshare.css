@@ -138,3 +138,17 @@
 #chorrillana .c_img img {
     width: 220px;
 }
+
+#toshare .new img{
+    width: 40px;
+    position: absolute;
+    top: -8%;
+    right: -6%;
+}
+
+#toshare .new2 img{
+    width: 40px;
+    position: absolute;
+    top: -8%;
+    right: 2%;
+}

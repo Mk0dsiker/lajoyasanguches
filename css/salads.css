@@ -56,3 +56,10 @@
 #atun .c_title h4 {
     text-align: center;
 }
+
+#medi .new img{
+    width: 40px;
+    position: absolute;
+    top: -12%;
+    right: 2%;
+}

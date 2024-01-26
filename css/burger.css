@@ -5,6 +5,8 @@
 
 /*css header:pagina */
 #burgers .page_title h2 {
+    margin-top: 10px;
+    font-size: 55px;
     color: #feb000;
 }
 
@@ -79,6 +81,31 @@
     justify-content: center;
 }
 
+.sello_logo {
+    top: 35%;
+}
+
+.sello_logo {
+    top: 36%;
+}
+
+#ahumadas .new img{
+    width: 40px;
+    position: absolute;
+    top: -8%;
+    right: 0;
+}
+
+#ahumadas .new2 img{
+    width: 40px;
+    position: absolute;
+    top: -4%;
+    right: 0;
+}
+
+.logo2 {
+    top: 70%;
+}
 .sello2 {
     top: 4%;
     left: unset;

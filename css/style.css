@@ -145,12 +145,12 @@ body {
 }
 
 .c_title p {
-    font-family: 'Drustic Dialy';
+    font-family: 'Drustic Dialy Condensed';
     font-size: 16px;
     font-style: normal;
     font-weight: 300;    
     text-align: left;
-    color: #feb000;
+    color: #ddaa46;
 }
 
 /* css subt:tarjeta */
@@ -227,7 +227,7 @@ body {
 
 .divisor {
     width: 100%;
-    border: 2px solid #feb000;
+    border: 2px solid #ddaa46;
 }
 
 .divisor2 {

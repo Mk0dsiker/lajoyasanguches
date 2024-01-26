@@ -7,7 +7,7 @@
 #burgers .page_title h2 {
     margin-top: 10px;
     font-size: 55px;
-    color: #feb000;
+    color: #ddaa46;
 }
 
 #burgers .page_subt {
@@ -31,7 +31,7 @@
 /* css tarjetas ahumadas */
 /* css header:tarjeta */
 #ahumadas .c_title h4 {
-    color: #feb000;
+    color: #ddaa46;
 }
 
 #ahumadas .c_subt p, #ahumadas .c_content p, #ahumadas .c_price p {
@@ -51,7 +51,7 @@
 /* css tarjetas normales */
 /* css header:tarjeta */
 #normalb .c_title h4{
-    color: #feb000;
+    color: #ddaa46;
 }
 
 /* css body:tarjeta */
@@ -128,4 +128,9 @@
 
 .hd {
     padding: 20px 5px;
+}
+
+#rubia span {
+    font-family: 'Andora';
+    color: white;
 }

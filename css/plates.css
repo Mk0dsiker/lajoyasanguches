@@ -9,7 +9,7 @@
 #plates .page_title h4 {    
     font-size: 48px;
     font-family: 'Drustic Dialy';
-    color: #ffbe00;
+    color: #ddaa46;
 }
 
 #plates .page_subt {
@@ -35,7 +35,7 @@
 
 /* css tarjeta */
 #plates .c_title h4 {
-    color: #feb000;
+    color: #ddaa46;
 }
 
 #plates .c_subt p, #plates .c_content p, #plates .c_price p {
@@ -62,7 +62,7 @@
 
 .mp_head h2 {
     font-family: 'Drustic Dialy';
-    color: #ffbe00;
+    color: #ddaa46;
     font-size: 26px;
     text-align: left;
 }
@@ -76,7 +76,7 @@
 .mp_heada h2 {
     text-align: center;
     font-family: 'Drustic Dialy Condensed';
-    color: #ffbe00;
+    color: #ddaa46;
     font-size: 26px;
 }
 

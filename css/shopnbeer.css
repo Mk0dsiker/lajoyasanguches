@@ -42,7 +42,7 @@
     font-size: 12px;
     text-align: center;
     /* text-transform: uppercase; */
-    color: #feb000;
+    color: #ddaa46;
     
 }
 
@@ -123,9 +123,15 @@
     margin-bottom: 5px;
     
 }
+
+#nacional.cardflxr {
+    width: 65%;
+}
+
 #nac .c_head, #free .c_head {
     width: 100%;
 }
+
 #free_title.c_title p {
     font-size: 28px;
     font-family: 'Andora';

@@ -111,12 +111,20 @@
     width: 170px;
 }
 
+#caleta .c_subt p {
+    text-align: center;
+}
+
 #victoria .c_img img {
     width: 170px;
 }
 
+#trilogia .c_subt p {
+    text-align: center;
+}
+
 #pacifico .c_img img {
-    width: 260px;
+    width: 220px;
 }
 
 #pacifico .c_img {
@@ -127,12 +135,12 @@
 
 #patrimonial .c_img {
     position: absolute;
-    right: 0px;  
+    right: 0;  
     
 }
 
 #patrimonial .c_img img {
-    width: 280px;
+    width: 220px;
 }
 
 #chorrillana .c_img img {

@@ -21,7 +21,7 @@
 
 #jar .c_title h4 {
     font-size: 64px;
-    color: #feb000;
+    color: #ddaa46;
 }
 
 #jar .c_subt p {
@@ -38,7 +38,7 @@
     font-family: 'Avenir';
     font-size: 32px;
     font-weight: 700;
-    color: #feb000;
+    color: #ddaa46;
 }
 
 #jar .c_price p {
@@ -50,10 +50,10 @@
 
 
 #sangria .c_title p, #bogatuna .c_title p {
-    font-family: 'Avenir';
+    font-family: 'Drustic Dialy';
     font-size: 24px;
     text-align: center;
-    color: #feb000;
+    color: #ddaa46;
 }
 
 #sangria .c_content p, #summer .c_content p, #bogatuna .c_content p {
@@ -64,7 +64,7 @@
     font-family: 'Andora';
     font-size: 22px;
     text-align: center;
-    color: #feb000;
+    color: #ddaa46;
 }
 
 #sour img {
